@@ -1,10 +1,10 @@
 {
-  "crawled_at": "2026-01-27 05:39:17",
+  "crawled_at": "2026-01-27 06:53:13",
   "page_url": "https://now.nexon.com/service/maplestory?page=562d346f-f2c9-4425-bb08-12680e165251",
   "tables_metadata": [],
   "prob_data": [
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTfeUUkYFdgOTqNgm3FmRq2hG78xPR-yRuRaSMml91TgSA0_dbdL&trialid=AWHKTTcqBVcYVsIybrJMt3d1Q2EpQwwKjvShR-BeyKMP8aEd0ygHQiQE&probtableid=AWHKTTfYutMhOMHn0zJAKK7-TfetcZq0ERf1SV_U1rxgxrLui-cV_dLARsVw08z4hSYRG-xAc6kUjF1g",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTe91A1RB2TV05RxF4HmA-EBcEF_2PmPUo7lKIBMci6ihRBNP4AC&trialid=AWHKTTcN8iBxiPfrE8j7WoQ5A4K850-sFNXGw4KaTjuTvC-wnUju9-ei&probtableid=AWHKTTeEdWXjSRNtPcJ-WpusLwSXvCf8eqw5u66SSHwKRnytrmgqyKjTKHStEKS6m0DmMs9PWnI0kZ6k",
       "data": {
         "code": 0,
         "message": null,
@@ -18,11 +18,11 @@
               "trialresult_name": "성공",
               "prob": "99.7500%",
               "custom_columns": {},
-              "count": 59749,
-              "realprob": "99.7779%",
+              "count": 59963,
+              "realprob": "99.7770%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -32,20 +32,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "0.2500%",
               "custom_columns": {},
-              "count": 133,
-              "realprob": "0.2221%",
+              "count": 134,
+              "realprob": "0.2230%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:38:59"
+      "captured_at": "2026-01-27 06:52:54"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTeB9da4lI3zLRzYP1hykH9HrJ2Vxu0tl_-7iWqTz6ejfpPuYfC9&trialid=AWHKTTe0Yj7W_04AfAFi9oRfrE6G84DOHho8kb6vR9fVboj-qOqaM1-1&probtableid=AWHKTTeVrs-6KsBbKubLm-KvZB05nIuU5AsNELPIpI199__6MW51UCoAKyeGo5zXWh_0SbBC9a6bjIuj",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcbbqDInFOn1qKyePj0UB3dGksNrsh5AuQUxMeIhDAei00-zgzw&trialid=AWHKTTdMv3PuRIarvmN8vl2xUJMcpj8Z3YWNi_4rOiVuYGPwIY4QJ1z0&probtableid=AWHKTTeAFRVNXjqt_aQ7TlX3gndIajDsX6PilVud1SKV4s-udgrQ_yrYhDlrxqQf7kWYH0TREJ0IPG-M",
       "data": {
         "code": 0,
         "message": null,
@@ -59,11 +59,11 @@
               "trialresult_name": "성공",
               "prob": "94.5000%",
               "custom_columns": {},
-              "count": 33520,
+              "count": 33624,
               "realprob": "94.5424%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -73,20 +73,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "5.5000%",
               "custom_columns": {},
-              "count": 1935,
+              "count": 1941,
               "realprob": "5.4576%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:38:59"
+      "captured_at": "2026-01-27 06:52:55"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTd9J55H4MOq7nofgB9TomQ0fsxyzcNihGGn4OCgn0FRe25d7Ijf&trialid=AWHKTTeHu6Yqwf_grEflmSSH8ZybDKr42L-qFKdRdzeV19xTPU_TDgOs&probtableid=AWHKTTf896YM4mMhAMYgxe_5nQLdzrFKr1INGbmwl302woTkt6QfF1ZDPD0kjZOn-fwkBZeHoVmSbL3O",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTd7890YjhLK2JoHQonntOwqPKrZ7BRSs_h-_BIxPZUvTYo1aN9C&trialid=AWHKTTfidaPpEjhWpXlx0JH7Imx1xGLhZS__3Z06GvPGXmku0RoRMQj-&probtableid=AWHKTTd6IafJWQy-piY-jtAMqMmasCkvvBvoyR9-maHtKDyt_yiMTtDz0NO7Wg7cX2Ms_c7IxgTMJgBK",
       "data": {
         "code": 0,
         "message": null,
@@ -100,11 +100,11 @@
               "trialresult_name": "성공",
               "prob": "89.2500%",
               "custom_columns": {},
-              "count": 31194,
-              "realprob": "89.4375%",
+              "count": 31288,
+              "realprob": "89.4326%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -114,20 +114,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "10.7500%",
               "custom_columns": {},
-              "count": 3684,
-              "realprob": "10.5625%",
+              "count": 3697,
+              "realprob": "10.5674%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:00"
+      "captured_at": "2026-01-27 06:52:55"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTe4xQPjgYGUOoaUVuLp2HFs-GIeQ0aMbNabStn_XTH0bvJ11sqa&trialid=AWHKTTfkUyMR1llDZd73PEeIjT2HLmnb6UXMI7PBqIFJck223HxheRG-&probtableid=AWHKTTd7xpWhzNHKYRyjov_PaMar-g_gwy-NoKThmL9LYiiLNcTDXMTrNYlSCFDiiQgaWxFYOZ6uwOKB",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTc6tgNB06Be9x8o6CLJ_sa-FYHcDeRQGjIg9aP8UbpI7bUwX1Pi&trialid=AWHKTTfLYF4Fa3RC1Fx1JR341kt4Auv5PsWAC-r--peuKfIjodNPWblG&probtableid=AWHKTTccSW5yoHBLSPOzKQ7LVvKagtizYeSbUjcfo75gti_v_zqIuWBKSy5dtz5FC7qhQvupSDAwuF0g",
       "data": {
         "code": 0,
         "message": null,
@@ -141,11 +141,11 @@
               "trialresult_name": "성공",
               "prob": "89.2500%",
               "custom_columns": {},
-              "count": 30434,
-              "realprob": "89.4013%",
+              "count": 30526,
+              "realprob": "89.3985%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -155,20 +155,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "10.7500%",
               "custom_columns": {},
-              "count": 3608,
-              "realprob": "10.5987%",
+              "count": 3620,
+              "realprob": "10.6015%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:00"
+      "captured_at": "2026-01-27 06:52:55"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTc9gKNmajJGPYY_e97Ggj6A1cViTaT5SIM_-B4TiiAgnZgQWTmY&trialid=AWHKTTctrYisow7ZegukeQUJlz0hsxeAGBIX6vhmud98vCqWOzczkt7W&probtableid=AWHKTTe67Cq2_NcU464i3CbvgrxVaudug1V93HHUA3eVYqxn2SaOGdYK6cJz7unKxObFXQJr8leQENc2",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcWexZmQ9umj2kp-fQDIUNraqcUxPMdQ4If1AwiwvMaYKlH_WK8&trialid=AWHKTTdf5I7ou_DLmoh7Bf4cIg6Ipj8P9Q3kThPVtUEiGGVvqfSxXTi2&probtableid=AWHKTTcDYxQ7P5R_JvtYXFwSRbkmY_yXJS3F3k3rZOwsGapE4Y9dW9s31kkMiKD44q-rwR0-rTwjzkWV",
       "data": {
         "code": 0,
         "message": null,
@@ -182,11 +182,11 @@
               "trialresult_name": "성공",
               "prob": "84.0000%",
               "custom_columns": {},
-              "count": 30436,
-              "realprob": "84.2986%",
+              "count": 30530,
+              "realprob": "84.3091%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -196,20 +196,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "16.0000%",
               "custom_columns": {},
-              "count": 5669,
-              "realprob": "15.7014%",
+              "count": 5682,
+              "realprob": "15.6909%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:00"
+      "captured_at": "2026-01-27 06:52:55"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcX_h5hxPqRVTKNpQ9-pxH_zYloyLyyTkglOTtkrbX3E_1NjRaz&trialid=AWHKTTe_HlXRtcR4qdbgCGvLn7uMleH754vveQKMd4wvrFsdOvBY9rYq&probtableid=AWHKTTeSLIRSmWqpGTe-rhneWKDkcPMQLiJr4dkdqs3QgL--AVhZovyTJKJgD12_2JWVIM3YW2PnDqSz",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTeztXOf3jfohneyeuwVysWJRUlw6XcULnPYgjBIxRDlyqfU5Blo&trialid=AWHKTTcPv4JbdTTqX31GTAjgTFYKR81Gfin8EDn7Aas2XVN2QEVmH0rm&probtableid=AWHKTTebjkZZwa1tjDLdz-5tOWEGQqKfLmCK0YEX664-1o5TqjXHPiveN03XeyTXjv6QGtRxqv21GqpR",
       "data": {
         "code": 0,
         "message": null,
@@ -223,11 +223,11 @@
               "trialresult_name": "성공",
               "prob": "78.7500%",
               "custom_columns": {},
-              "count": 24050,
-              "realprob": "78.7698%",
+              "count": 24126,
+              "realprob": "78.7582%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -237,20 +237,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "21.2500%",
               "custom_columns": {},
-              "count": 6482,
-              "realprob": "21.2302%",
+              "count": 6507,
+              "realprob": "21.2418%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:01"
+      "captured_at": "2026-01-27 06:52:56"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTd5PZpwC7PvMWgh3t8bebCNPYVslNPRhliT1fN5jy13XHsbVvW_&trialid=AWHKTTejcg8usYJ1bfhMOIzQhaVmkw1Cl0v75uesIxUqH2fhR4e3wn94&probtableid=AWHKTTcKwQEZu0qDBtUkHWus4f1a9Vpzi43cu8YmUvagePIrvXf8dMiwve5PZEMu1REbVjH7ATrv7b0W",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcjDcsQj6tlrE_guX7EmlK2L4pQGR5KNZfBrW87NBJQ00kh9_s_&trialid=AWHKTTd7GYCikud4ZXF7yDt-5N0ZiNqowzWuMyEpgNf7BAVWsH4VaeYw&probtableid=AWHKTTcO0WSBXslg-p2fZKQoFmPcn599QRuTYS0p0rkx3-xKwKZk2OsKGDRiZ0ULyvqBVy_JeIrhpwBA",
       "data": {
         "code": 0,
         "message": null,
@@ -264,11 +264,11 @@
               "trialresult_name": "성공",
               "prob": "73.5000%",
               "custom_columns": {},
-              "count": 23955,
-              "realprob": "73.4568%",
+              "count": 24034,
+              "realprob": "73.4603%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -278,20 +278,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "26.5000%",
               "custom_columns": {},
-              "count": 8656,
-              "realprob": "26.5432%",
+              "count": 8683,
+              "realprob": "26.5397%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:01"
+      "captured_at": "2026-01-27 06:52:56"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTc-AN2iw_Bwy9HnHrLOyZLGqotJKr9RlV2o5FqnWes5g2ZUTARb&trialid=AWHKTTfoLlDIielalITY7gyAQZeZxfSwFdf7_u5P72uLyGenKHeGTLmP&probtableid=AWHKTTdFVEXuON4HQpGp60PbKGFWN67MSq6MH4Q2oYPh5tDnk5OIpLDzcZFs6K1cCAfP_A2BMva28Imj",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTdz7mLpITAtEjIGVhbssNgpP_mmnT4rZZOPhMQ5PfPc-Y1svoay&trialid=AWHKTTdhRNHL8e1TSsAfqUzFmL8_SxHKafPWlBvXaZuImfv1NSPl1d5X&probtableid=AWHKTTc9NCGWgaHzJydzyNMB6R7UX1taTXZXGkg2wDu21pDcVwdpxYBC6e69YI4MTnsI5T30ztgxnPJe",
       "data": {
         "code": 0,
         "message": null,
@@ -305,11 +305,11 @@
               "trialresult_name": "성공",
               "prob": "68.2500%",
               "custom_columns": {},
-              "count": 24806,
-              "realprob": "68.3323%",
+              "count": 24887,
+              "realprob": "68.3577%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -319,20 +319,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "31.7500%",
               "custom_columns": {},
-              "count": 11496,
-              "realprob": "31.6677%",
+              "count": 11520,
+              "realprob": "31.6423%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:01"
+      "captured_at": "2026-01-27 06:52:56"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTeSAglbzruO_HRUu4LVnoJRQS3FhHHs_nzkzwHqrjKLzxz78Qdz&trialid=AWHKTTcKYBiB6g1emO_xEkDVuFUh7CdMzUUKdT_nq0EcpmtQUJ2yXK2p&probtableid=AWHKTTdrcJ6oUpcnFuEEe5I4bZApzfVNHTbaeC4b7f2FOL67J5lMFNhdO5dsTykIqHlbcVWWG-ijVzb5",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTduE2HoI0bncUbKtDVWqewe7RV_2YJOT3milMGSMN-mSfalIN78&trialid=AWHKTTcWVHBBjcg1NCoq4Pqv1VSGHaEmqsHAtruEL-cDml0wD7eRvSY4&probtableid=AWHKTTcLEK-YlgEXnF77c7APKDonYjr8ZlkwaXQajfl4MpgEuETk877SzABYPIIvcJqXxhKzQBSESMI0",
       "data": {
         "code": 0,
         "message": null,
@@ -346,11 +346,11 @@
               "trialresult_name": "성공",
               "prob": "63.0000%",
               "custom_columns": {},
-              "count": 13453,
-              "realprob": "62.5575%",
+              "count": 13492,
+              "realprob": "62.5672%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -360,20 +360,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "37.0000%",
               "custom_columns": {},
-              "count": 8052,
-              "realprob": "37.4425%",
+              "count": 8072,
+              "realprob": "37.4328%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:02"
+      "captured_at": "2026-01-27 06:52:57"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTdopGBOzHdA3ni5jMCXqB8-mMAlPkl_0menwFSqra9ilaXDp-dD&trialid=AWHKTTfKajtrdHWIZw_powVQvePav6DH603lvrqQxpp6dIiaLrH2NxaV&probtableid=AWHKTTcJLwyhRJoGPoMDHmtEkBKXjf2u64BGTrXdHxaFKWFjh71TkSkYPB3ObASG4kWyXDWnUWCgUga5",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcTqkI3UgGabzh1v5QJyND5trSjPCd1W9NFXl5_lGjaXjSinMDM&trialid=AWHKTTe9sM1oCGsMLALGhvw2i_pLIPKp3fUu_LGz78-BlNK6mf2HLKMJ&probtableid=AWHKTTdOuu0ju78S0IJIBl_rIZeP51hPJGRmnta6A7hJcNU4EORwDqGenc7poMFy3UaiLgz_lE2gQN-n",
       "data": {
         "code": 0,
         "message": null,
@@ -387,11 +387,11 @@
               "trialresult_name": "성공",
               "prob": "57.7500%",
               "custom_columns": {},
-              "count": 14830,
-              "realprob": "58.1523%",
+              "count": 14872,
+              "realprob": "58.1596%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -401,20 +401,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "42.2500%",
               "custom_columns": {},
-              "count": 10672,
-              "realprob": "41.8477%",
+              "count": 10699,
+              "realprob": "41.8404%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:02"
+      "captured_at": "2026-01-27 06:52:57"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTf4fzmc7wzjTZa0ciXCOYlbMLY_ksTjt7XWO1lZYx-6mf05Nibb&trialid=AWHKTTdkApr2N7zk9TFVdmIt70WC6knijoPcbDs1N_ityNDxQQtNEg8p&probtableid=AWHKTTdDxY2Ne-Irwyt-gRrAaHA-LY1z_YxzorXF4nZaM6aAhMjUEg1NqytZf1BkU2bWEVEE9OVj_0pO2A%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTfzTT7t9GTUr0Wr-nI9AjWSt6igXas5NT1eXh7pYN4K_weY5gfZ&trialid=AWHKTTcrCR3H8VBFu7LmhrNCjWTixxHcwN20NaT0uoNynWgRyzt9N01s&probtableid=AWHKTTfPtDMg6Flx4A9UgMpfdcju3JKAGm2b4AhlCe0F1r4bEHTMeLhQAqctHeUd-K_pObQEdZfW2kUGUg%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -428,11 +428,11 @@
               "trialresult_name": "성공",
               "prob": "52.5000%",
               "custom_columns": {},
-              "count": 11743,
-              "realprob": "52.2236%",
+              "count": 11779,
+              "realprob": "52.1911%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -442,20 +442,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "47.5000%",
               "custom_columns": {},
-              "count": 10743,
-              "realprob": "47.7764%",
+              "count": 10790,
+              "realprob": "47.8089%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:03"
+      "captured_at": "2026-01-27 06:52:57"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTdmNM5EEZWB39aitceDUTQEhq-oRIBEPXx-fSJ7fuzMMMI_Omat&trialid=AWHKTTfIAPYjDbIPW7mnH5eF2I5voj5ny7Q1jVMraaWaEXj8Q0L8qfKH&probtableid=AWHKTTcdTz3kyBFy16bpUPoD9XJGaYkBbZHQl1nY5_XKgXPkqxR2JUxXBoeIFwCbRy1rOk8E50qfBmW2jA%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcjB9OsKLh_7yiZUOy9LC37d2ADk0Pk2zAcUkoAbv7jqT9OsdcW&trialid=AWHKTTe1lhMn6UNV48BFjJ6uKnTB-Q0nHpxtqPsMdzedXSb-sYYWd_QJ&probtableid=AWHKTTcXwZwV7NS8sToI3qPO2GsgdBMvc5SNlqY4LBGbxokX93HrU-RVP9DslluMZCvWp3l18OA-bIyULg%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -469,11 +469,11 @@
               "trialresult_name": "성공",
               "prob": "47.2500%",
               "custom_columns": {},
-              "count": 11880,
-              "realprob": "47.5771%",
+              "count": 11917,
+              "realprob": "47.5596%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -483,20 +483,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "52.7500%",
               "custom_columns": {},
-              "count": 13090,
-              "realprob": "52.4229%",
+              "count": 13140,
+              "realprob": "52.4404%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:03"
+      "captured_at": "2026-01-27 06:52:57"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcZJlt0__uSslIWpKOQgGvLp49376k3zjM4z6Uwu0coLKGmirJP&trialid=AWHKTTcl_N2q2jO_q5WvISwxt0dp3WJMoOtIf1s3B7aD0ZhIOx-wgYNR&probtableid=AWHKTTczXfWVrkwDd1v1AJ5uXaOS06sdiABsyrKWIrG_0PpSXEorCS6cOCkxztFcUTF7Ef6SfbmckFS0tg%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTeoqgvuaAUVb0n3oad-Q7rpz1JHznvnn7xZhsRIaXDrICVHt9Ut&trialid=AWHKTTcmAfhHt4KTdYW89tI4dTAXx-2OlpCHEUrCbctSKES72ROIAC6k&probtableid=AWHKTTdDVVgcKJdcAhY5I1P72Hk4swuLxMTVXhkD6U0GdCC0hTbPg2FybcuOenQNBOaRbxDsYt1e9XINoQ%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -510,11 +510,11 @@
               "trialresult_name": "성공",
               "prob": "42.0000%",
               "custom_columns": {},
-              "count": 16572,
-              "realprob": "41.8063%",
+              "count": 16627,
+              "realprob": "41.8153%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -524,20 +524,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "58.0000%",
               "custom_columns": {},
-              "count": 23068,
-              "realprob": "58.1937%",
+              "count": 23136,
+              "realprob": "58.1847%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:03"
+      "captured_at": "2026-01-27 06:52:58"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTdTD0ofzO9jxDvYOZR1s0Q3e-8WkPkbfO6jzfGcPrqUl4yAtkzQ&trialid=AWHKTTfuE9QeDaVDCc-hT7uJz-XOMHEcU-HxHw3mkJViZi0nTy8DM61E&probtableid=AWHKTTeTwUoQAEaxzRuOKXeBrjsOepvi33HPdor2vsIeedwAzfSLr2MF-9AwE0ShEhJmt5kU1y5Kj9lN3w%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTe6g84MLbTs8jt8ahRUkXMsSfmeZU5eGGa81DeJCXDhitiPSI42&trialid=AWHKTTe8m3Hx1mGjuoE46ITXJz9z0W8aEDZ0ltCQibnlt0_5_m4tHucD&probtableid=AWHKTTfA7Kt-QsER9Jk04LIwRGAa1oQP85V078LxWVXgeEaFu51gXIvhy_zVbFKiw8QJ0G13OlTiwpG4SA%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -551,11 +551,11 @@
               "trialresult_name": "성공",
               "prob": "36.7500%",
               "custom_columns": {},
-              "count": 15829,
-              "realprob": "36.9396%",
+              "count": 15883,
+              "realprob": "36.9475%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -565,20 +565,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "63.2500%",
               "custom_columns": {},
-              "count": 27022,
-              "realprob": "63.0604%",
+              "count": 27105,
+              "realprob": "63.0525%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:04"
+      "captured_at": "2026-01-27 06:52:58"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTf7clwkAf2qNjW7ueTpFveci04Tk2wUnJLnYIEiJMPH5O34Ffkz&trialid=AWHKTTdoQa8XXcRzJ8YqSQp2knHmhGaJxYeC0hq0GxpSAlUIeDVYEIDz&probtableid=AWHKTTfk2frhXcEwRwZuCfdGiUacakpWlU49XW8TXl3GkzBeMZ_0c7y7Rlv56E7lt2pGUSWwsOZ7BWhkaA%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTd0gul6dgNBlHN8mY-DyZ0TbIgCXRnrBIYGPEh38cItL9DhRn2E&trialid=AWHKTTceyUeW44WaogAx3EbVM26xg5DPCuopQWqb3Nsfx7sj1fHtlwD4&probtableid=AWHKTTeY2Xw6BDoSOmCNYqNnxJyjDSZcCNAbyjHuW4nDTnv50NfDgWN8_x6YO5_2pNlKKtpsKzdLsZYjVA%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -592,11 +592,11 @@
               "trialresult_name": "성공",
               "prob": "31.5000%",
               "custom_columns": {},
-              "count": 17600,
-              "realprob": "31.4095%",
+              "count": 17663,
+              "realprob": "31.4093%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -606,20 +606,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "68.5000%",
               "custom_columns": {},
-              "count": 38434,
-              "realprob": "68.5905%",
+              "count": 38572,
+              "realprob": "68.5907%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:04"
+      "captured_at": "2026-01-27 06:52:58"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTdteOjBrrw7D4lFMAcElgA_bTMSvxPwqititLYeoxYBnw51yC_O&trialid=AWHKTTdCwn41WO7zZTAxuUtveMa5VdkGJHAOMtMEytWOpWtY5dRq8Jxc&probtableid=AWHKTTfSubvFdKEoGUc8YMAaP35PdK7kRH7LBHewonO1NE1A8ZB9zqfwrUuZiRk9ErNBB3ybo6QkCPkItg%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTeZhaehrd2oMzanvpokBoyijoAJMsQPMpCl5997yT-oLxXT_5We&trialid=AWHKTTe3bqdBcMEZj8EFpwy9u65Yy6H7RcoVunqBqsIdkL-zPPGDBEPn&probtableid=AWHKTTdF7oXXbKRfnHbnUGlMSHGmPc4bUsuNozT6sez2psEycwpe_S4DH5ZgTxN1riv_wOw2jQtcNM1aYQ%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -633,11 +633,11 @@
               "trialresult_name": "성공",
               "prob": "31.5000%",
               "custom_columns": {},
-              "count": 17672,
-              "realprob": "31.7414%",
+              "count": 17743,
+              "realprob": "31.7520%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -647,11 +647,11 @@
               "trialresult_name": "실패 (유지)",
               "prob": "66.4450%",
               "custom_columns": {},
-              "count": 36911,
-              "realprob": "66.2973%",
+              "count": 37041,
+              "realprob": "66.2867%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -661,20 +661,20 @@
               "trialresult_name": "파괴",
               "prob": "2.0550%",
               "custom_columns": {},
-              "count": 1092,
-              "realprob": "1.9614%",
+              "count": 1096,
+              "realprob": "1.9613%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:04"
+      "captured_at": "2026-01-27 06:52:59"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTciZqB42Rhnjtg7S_1RLpLKChVbhfVsyPhKI7olIvkwBw57Q792&trialid=AWHKTTcbwGdR7wSA9h0J47hZGP9BNPAtByHMiz0ezCod_9cViQz69dgJ&probtableid=AWHKTTe8VCwhg9AHYQ_XJK-G5R2DI1As36dwhaUDi0EmsnsirImHO7dO5PFtqtHh3FJMU-6d44jY6i_lDA%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTeuUOLN-1mrdeoOJZgvCDtagRxSuqSvx87JMA4g-RzKJ2J76LJ2&trialid=AWHKTTcyx_SUma7K_HkFz6bR32vs_sR8jLPcspaQQ8ABRlMgExiFrDaE&probtableid=AWHKTTeOmlM_m9SPrm67g2rsQYH6KxMofTQpk3MnPON8lt4_ssBlB26UP_4GnZ_sBrXdOjJII9jOU49ivg%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -688,11 +688,11 @@
               "trialresult_name": "성공",
               "prob": "31.5000%",
               "custom_columns": {},
-              "count": 17840,
-              "realprob": "31.1736%",
+              "count": 17899,
+              "realprob": "31.1590%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -702,11 +702,11 @@
               "trialresult_name": "실패 (유지)",
               "prob": "66.4450%",
               "custom_columns": {},
-              "count": 38223,
-              "realprob": "66.7907%",
+              "count": 38375,
+              "realprob": "66.8042%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -716,20 +716,20 @@
               "trialresult_name": "파괴",
               "prob": "2.0550%",
               "custom_columns": {},
-              "count": 1165,
-              "realprob": "2.0357%",
+              "count": 1170,
+              "realprob": "2.0368%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:05"
+      "captured_at": "2026-01-27 06:52:59"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTf6oZ7O-l7ZoYvOiaqBOi9O9o_rB8XqYLpw8mvBBVEsZ6xTuKl7&trialid=AWHKTTeEV5sEteE1vd6uAWq4P9qL0kZBACNzCs_eZFw92pxL91L2h6mA&probtableid=AWHKTTeLXAilfOXhwKL4xNRbeHbc-5bXRdkKjJMlRokmNcCCHQv9mzWyjAnHa1KVm0nPpBv6W_QMJCLOjQ%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTeaUyY1Hm10Gk-yY5FMhc5LP9irjJnoathZZr_ldsOuDorY4Nvn&trialid=AWHKTTdOsPw3_IE4qa-aAkwQqKMjnEsoMtYLWTDgkmZMnPsNUho_aNJK&probtableid=AWHKTTeI0PKafAMGIVLhp24YR9Zacrs47rudKzpvn3bgLFaA6aC1fBFu79l7vMHqWs2m9WHq_FayX_mkyA%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -743,11 +743,11 @@
               "trialresult_name": "성공",
               "prob": "15.7500%",
               "custom_columns": {},
-              "count": 13341,
-              "realprob": "16.0064%",
+              "count": 13387,
+              "realprob": "16.0111%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -757,11 +757,11 @@
               "trialresult_name": "실패 (유지)",
               "prob": "77.5100%",
               "custom_columns": {},
-              "count": 64470,
-              "realprob": "77.3504%",
+              "count": 64666,
+              "realprob": "77.3415%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -771,20 +771,20 @@
               "trialresult_name": "파괴",
               "prob": "6.7400%",
               "custom_columns": {},
-              "count": 5537,
-              "realprob": "6.6432%",
+              "count": 5558,
+              "realprob": "6.6475%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:05"
+      "captured_at": "2026-01-27 06:52:59"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTffvRBYUMzKF5SRT-_iNqeIyggE0Wu91pFlC_TQXODqprlNIEA-&trialid=AWHKTTdXPk6LfHK02cHIsCSQqdHMJi3SNfInmVVs4KT7GFOQ4bunZbfq&probtableid=AWHKTTeYCB1dMkL2ijYw1WU0U8AMdZTmVsH4MqYWGmxVBcZSppMFPpJul23MKAGZDfEEpcNvC5kw2MU22g%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTdSfJFq5curjEnRflobnqkn5Xer38reG1Ea_Lja1GTDCez8GT1U&trialid=AWHKTTdV5lSP-yRBHIyTL13BSXvkbR86R_LBtn7qZ82Oy4_WryeGV3Oo&probtableid=AWHKTTffRsFveaT9eMyzCJka6idJlW_YEnfmZ6gP7rIk8o8j4nPNvVizVfSvzUORr2QKJZ7RsnBiJYGyiQ%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -798,11 +798,11 @@
               "trialresult_name": "성공",
               "prob": "15.7500%",
               "custom_columns": {},
-              "count": 7083,
-              "realprob": "15.9308%",
+              "count": 7094,
+              "realprob": "15.9226%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -812,11 +812,11 @@
               "trialresult_name": "실패 (유지)",
               "prob": "77.5100%",
               "custom_columns": {},
-              "count": 34360,
-              "realprob": "77.2812%",
+              "count": 34434,
+              "realprob": "77.2877%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -826,20 +826,20 @@
               "trialresult_name": "파괴",
               "prob": "6.7400%",
               "custom_columns": {},
-              "count": 3018,
-              "realprob": "6.7880%",
+              "count": 3025,
+              "realprob": "6.7897%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:05"
+      "captured_at": "2026-01-27 06:53:00"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTfTdg2cAgPoj8w4T2DkMLdWrCiJFz5cH64Uo-ykviLKKhu5HYUb&trialid=AWHKTTfiq7n0mbLa1gx9vNBKm8USeJuGpZTlfMyeIGxzlR_e8vmtKuZF&probtableid=AWHKTTfkmrgTXHxWHfPWIpuRTZA1-804RYKanB5AUfNeHDojsoGG0-xvnF7MbwCtZY6qu_M2XkdVnRbXEw%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTeLY2B1CWdNqlddkUS7JBXGDd4yiwtRd9GuyHT3ncuVJmJ5JhMq&trialid=AWHKTTc3bi-FWqsbeVKKMIZCTIISUT68ZGUFzTGhRerAALKP2Wbezpje&probtableid=AWHKTTciJLdTTFjfr4GcqoSGDN4PHHnNYq6_Gu9qi4PdXKnFohuLVeX4AitXmjsEt9nHC_-toU1ch0XXMA%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -853,11 +853,11 @@
               "trialresult_name": "성공",
               "prob": "15.7500%",
               "custom_columns": {},
-              "count": 4714,
-              "realprob": "15.6783%",
+              "count": 4723,
+              "realprob": "15.6822%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -867,11 +867,11 @@
               "trialresult_name": "실패 (유지)",
               "prob": "75.8250%",
               "custom_columns": {},
-              "count": 22894,
-              "realprob": "76.1433%",
+              "count": 22930,
+              "realprob": "76.1364%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -881,20 +881,20 @@
               "trialresult_name": "파괴",
               "prob": "8.4250%",
               "custom_columns": {},
-              "count": 2459,
-              "realprob": "8.1784%",
+              "count": 2464,
+              "realprob": "8.1814%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:06"
+      "captured_at": "2026-01-27 06:53:00"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTdFP3v7-2qhOek16Bf_fza1tUmfta9oXrcChnm8XrDNjOYKebiL&trialid=AWHKTTer84qJVfr6QpfH7nA2pBnC88nMq5kxfTD6680CBjBZAmFmXkXB&probtableid=AWHKTTdbH40jU0lwJc07qC3n3b_h2H0bhiE5azDAu3ZvdfIGSWNcSSuhiCR17FGH-T71m7dXpAz7niAblg%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcEwTLSoPuwv3cpLLh65HLFMPUap5nGR1_RAObskQD2WlEVxA9d&trialid=AWHKTTflya5WZt9q31267Bj8A49QJHjp2UrRQKOvTYhroVSmnPqVhYGO&probtableid=AWHKTTdxK1Zz7cH14GoQGa7F3kbt4KQwy6STg4_IqHcs89fJv4bM8gBzfuboEemsuR7s02t9qObI_vQdhw%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -908,11 +908,11 @@
               "trialresult_name": "성공",
               "prob": "31.5000%",
               "custom_columns": {},
-              "count": 3326,
-              "realprob": "31.7003%",
+              "count": 3333,
+              "realprob": "31.6705%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -922,11 +922,11 @@
               "trialresult_name": "실패 (유지)",
               "prob": "58.2250%",
               "custom_columns": {},
-              "count": 6056,
-              "realprob": "57.7202%",
+              "count": 6081,
+              "realprob": "57.7822%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -937,19 +937,19 @@
               "prob": "10.2750%",
               "custom_columns": {},
               "count": 1110,
-              "realprob": "10.5795%",
+              "realprob": "10.5473%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:06"
+      "captured_at": "2026-01-27 06:53:00"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTdOpoEB-a4J1l1zdZWGZ95BflylBrZfFljJJzp8t6YYNSdBaVA6&trialid=AWHKTTdwmUnnSMYgH_OzZa17D9ofPmAuH_LsRlG38r4bpUM5BgjKcsjV&probtableid=AWHKTTefHFoS-XsIDAbE6qObs3XbcrDWEgnAjSsvA4NstVlqoIMEqtsEvT8T3FdCk0b1CL5xnDg84jIOAA%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcHjNfBHlExTlGZ7ksWpaVmYM3j_bkhLrTnTeGBbvTS6JVKOa_d&trialid=AWHKTTf--CCDJD2GIkZw_epYZMKQXFp_ICyOcqmSjOkhjE9DYFqM1faB&probtableid=AWHKTTch-CAL-Ec8BU7pLTE4EITOPjETt09Kz87Zb54Vwj07phERi-MAqPKZzW_8XjmPwJLHekj_oxY0zg%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -963,11 +963,11 @@
               "trialresult_name": "성공",
               "prob": "15.7500%",
               "custom_columns": {},
-              "count": 1901,
-              "realprob": "15.6229%",
+              "count": 1905,
+              "realprob": "15.6340%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -977,11 +977,11 @@
               "trialresult_name": "실패 (유지)",
               "prob": "71.6125%",
               "custom_columns": {},
-              "count": 8711,
-              "realprob": "71.5894%",
+              "count": 8721,
+              "realprob": "71.5716%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -991,20 +991,20 @@
               "trialresult_name": "파괴",
               "prob": "12.6375%",
               "custom_columns": {},
-              "count": 1556,
-              "realprob": "12.7876%",
+              "count": 1559,
+              "realprob": "12.7944%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:06"
+      "captured_at": "2026-01-27 06:53:00"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTfzs2baGol3sgfVYMi0Jmm-tUNO_0JT1UeWNjB56Fwlp8erhSez&trialid=AWHKTTehRx5sED6tpw4aL74FYoSF6yYzRmM_PyzYOO7Zm49huhhNqEI3&probtableid=AWHKTTcUFMA9fZTAkHDaC75eFGx914rVdQWAfbazQTws-zyJ5IcB6e2DdSx7xJh3oQwicDFXJK7J2wcTJg%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTfassPXdCYp3rOmm4PX9czFqQq7OOCWRE_jNNZvK8k-X1C8KUk9&trialid=AWHKTTd9PJa0iFIS1_jsQ1p2nvNsICTYAhN7bGTDg95GW9p78MLLkNkF&probtableid=AWHKTTdqBsqnOij7hVT29wmDzJugcHT39Jj4OXNwdyq3d3P2anj9HWYIdUW1msoTd3ykgCHK2C0kWomgJQ%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -1018,11 +1018,11 @@
               "trialresult_name": "성공",
               "prob": "15.7500%",
               "custom_columns": {},
-              "count": 1031,
-              "realprob": "15.6378%",
+              "count": 1032,
+              "realprob": "15.6458%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1032,11 +1032,11 @@
               "trialresult_name": "실패 (유지)",
               "prob": "67.4000%",
               "custom_columns": {},
-              "count": 4444,
-              "realprob": "67.4048%",
+              "count": 4445,
+              "realprob": "67.3893%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1046,20 +1046,20 @@
               "trialresult_name": "파괴",
               "prob": "16.8500%",
               "custom_columns": {},
-              "count": 1118,
-              "realprob": "16.9574%",
+              "count": 1119,
+              "realprob": "16.9648%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:07"
+      "captured_at": "2026-01-27 06:53:01"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcRXqu-N9t9TQZjgLR8QWgz6IsYlHKgX0gop-ykmM_juyhIMl99&trialid=AWHKTTeEBLfVVNKLzrRmdqRBtei3YkQNYyVQVDpRRI1aaRJxSoR9DQpA&probtableid=AWHKTTfmqdjRpj0Q0XrOTVd6J4e7N6le-QaF8oodz2NhLNozWpZzZ2fSym1w2PVo0l4C0w4KLVX7XfA3bQ%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTelGjnprbluojC5EzA9ldusQEVIL7SPpyZcyK7hN3q5a2JswNko&trialid=AWHKTTc1IfMZ1ivL8qk6UrN_4T0n1o3ZUhWyMK7gURm3w6LUJ12vzVpo&probtableid=AWHKTTfibU1_pPIKFGlWU155dE13ortMmYc1kXhjruihjEw_Cobn6vtoZ_EEMxfOVg0IqXN3MdeJYgs8Tw%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -1076,8 +1076,8 @@
               "count": 187,
               "realprob": "9.8369%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1090,8 +1090,8 @@
               "count": 1378,
               "realprob": "72.4882%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1104,17 +1104,17 @@
               "count": 336,
               "realprob": "17.6749%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:07"
+      "captured_at": "2026-01-27 06:53:01"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTfC1nC71YIX7mZjYeYh0jz_qqZNXeGeTMcYtjN6p8h7j9PTJrX9&trialid=AWHKTTc8f5Kb9Q_1Ui6B3YFgLyQcb-r727ZvZE-qMsdBgfJCnIRBvkFD&probtableid=AWHKTTeK69UfhUZRAqjU7vUwUQzHjmufkoFfLolS_boanPVw991Axaoxdff2Q8naK7pTqP3NciXEsfTGmA%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTe76ZZ1j8GmmsnK-WkCqCNBiZeXYRAk5wJyNBt_OW00PqyylsvP&trialid=AWHKTTdF4m0CZKWbO0iENMkTvH-Ibql0iUk_iGVEFfOm1CrgY388oVJf&probtableid=AWHKTTc2UfGuYJv-EW-VD4S0gBI3ihmgdCNJfWZTxXYZF997DR05zyrEfGfhOjhCNxiosRsSDee7BljwVw%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -1131,8 +1131,8 @@
               "count": 50,
               "realprob": "10.8932%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1145,8 +1145,8 @@
               "count": 332,
               "realprob": "72.3312%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1159,17 +1159,17 @@
               "count": 77,
               "realprob": "16.7756%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:08"
+      "captured_at": "2026-01-27 06:53:01"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcbA39x0-qVw_kFaSvvl_uFSZQ6ySEm6NIBmdbx7NGYI7r7fLXX&trialid=AWHKTTfscMVi2Q0WcM7v07LYVof1v4p2Cu1eYuQ33iJN4O0FdYOSUW_H&probtableid=AWHKTTdcNpPcvlum_siNZtvrrSMvL2SmOkDAHjtaUmZPlvBFMmcAK5gl5bCXW02jUhTSnwp6ykY1PumQDQ%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTfyak83QU1OZKadMqXeam7ABdR4s_ycfP68iNujRZdhwH1TEVYK&trialid=AWHKTTf2_apbYj_dBdi2bfM5tZlZ7Qsvo49q5JzBKMJcm8IL0tasUn_f&probtableid=AWHKTTfG5i9WIWuLVW1TRWCDWxKtH2qcvWevkop1kh1bXKYvG4TDBsp3NvfSrstO10Fc24jS1BRSPdmZMg%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -1186,8 +1186,8 @@
               "count": 10,
               "realprob": "8.7719%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1200,8 +1200,8 @@
               "count": 86,
               "realprob": "75.4386%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1214,17 +1214,17 @@
               "count": 18,
               "realprob": "15.7895%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:08"
+      "captured_at": "2026-01-27 06:53:02"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTdqAyMqT-6QkrjTgXZHwYJP47tWrcDi5PQ6xpEL4TSxOd0kPOSK&trialid=AWHKTTf_dcelieTjF7T5wLZ-v_fNLxBLVz_KzxPT3KOgD4CirFrrhHII&probtableid=AWHKTTeyhNHBWIJnzICjezjrBBxyH07fpGgCQ8lJde3h8Vb5pOZ4lUnsH3KMbNpckgolnxeW9O71uFF8Ww%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTfmhPq-HeyIU7yr9RlOzxrZ2P7HZEWUfQGbYFwoXsYQ5Tpjpq4v&trialid=AWHKTTfRxtdF0kQsH37JXaP9-cumShMHar06dBB_KYjSWoMCpXbHf9zP&probtableid=AWHKTTdKtiwPpbY-HUhv7qDfB0OuoChGX8z8bcXTsAV3S8IHUhNskXG3pgpLwphcdnU14Ap0IkXvpRGJgw%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -1241,8 +1241,8 @@
               "count": 1,
               "realprob": "10.0000%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1255,8 +1255,8 @@
               "count": 7,
               "realprob": "70.0000%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1269,17 +1269,17 @@
               "count": 2,
               "realprob": "20.0000%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:08"
+      "captured_at": "2026-01-27 06:53:02"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTdXFHfLYIDnGOawgXs5ne1F8V4pGn4yGSn5Emv02PUN5YIDU0du&trialid=AWHKTTdbvFEHjsO5vLuD-NqflzNwXRUh4CPOmcpEm4-2Hh39Kxt7Ai2p&probtableid=AWHKTTfOzTkk0aqdIFgusKizYrT6WZ5CzH57wsoDFSxNrPRVdLlfgp_JIuw1wsAFzlrX70DqNjf8YNFKGQ%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTd_lDjtzhlbKCXDK7xUH63WV6kibAvsBPs1p1EwK_pjiIeaGsxC&trialid=AWHKTTe1-Dn6yYO0HB5iqBpmncc0lQBjH2B7G0clwihS-xP4s_-uPGk9&probtableid=AWHKTTdECfcB9UrKrhK1Q-LuZzoSHL29d1-GqKmlAuRyIWYfqs2Q4cOT5eKU2nsPpVUaSHc-iKba1VAoxQ%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -1296,8 +1296,8 @@
               "count": 1,
               "realprob": "11.1111%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1310,8 +1310,8 @@
               "count": 7,
               "realprob": "77.7778%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1324,17 +1324,17 @@
               "count": 1,
               "realprob": "11.1111%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:09"
+      "captured_at": "2026-01-27 06:53:02"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTf2aqaPBra_WA8OvAlkWSfuI84QsuuFIqzAEJDu84LzdU0lmbIO&trialid=AWHKTTdu_9tWlpQO4w6nABkcL4UoQiMV4B-59H4bf0lplbAaIPUUSdpP&probtableid=AWHKTTcwA8fnm5N-_vLIuNVS56xvh5BbgVaFYgZ1Ac0bjwSza-DRNRUsorJsEapChqks9_bzSTcr3klVVw%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTchk0hnG-GM93tNzPd99hvW0IkY_cJmafdQ6D2h4t4aIUmJHBQP&trialid=AWHKTTcSYeu-lopIF25D7lJVlh7tAG4iXzjVnIo1F2Zl61xxH8IQ4q5A&probtableid=AWHKTTe2sSjZuVUklfuCCFvXkQjcaC8uXDu7kgMK7NrWnCrL6P3U1TAIgJk8oaW4RfA0oWf4RNqqqhG4NA%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -1386,10 +1386,10 @@
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:09"
+      "captured_at": "2026-01-27 06:53:02"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcUpJywxLPZwRE8yJ5AyaVJzvWNHumPQozbK4lxu0ZQIOiIbBF5&trialid=AWHKTTdSeF_6uxMtubFS9wJmjn6tfeqU7Qm4TGso_CCVMw2-IGYFBE3J&probtableid=AWHKTTffqByu8GjFoZFW9FuLpLTm0Se880BnaOx8-x6Vauwzo5Y3bRJLZ83CK0qXR3_C5BFAI-oRstvWWQ%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTeNunQCoiAyKdGZsWkDcxTZS0rpeIXH9FiIV3R1NsBXo9cQZyZZ&trialid=AWHKTTfSIIJA4WznZLXBgxM_01O-IWE7cCm-WuA6ZlTL20eqq6KGYixS&probtableid=AWHKTTfOwr1dDwBTNHkq1T0HVMV_LLX8ho1BfQRLzP1TB4XYv37Bymdd-E6vq74DVC0Zu3sXNhPvsWGZdQ%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -1441,10 +1441,10 @@
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:09"
+      "captured_at": "2026-01-27 06:53:03"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTdk_OE_e7eIV9osyWX29jrLHn2GwlYX5yT-S_hSszmjhkqloT9i&trialid=AWHKTTfX7nkh1rvF18sDLymnHJwUw7QzvcKXafFN5_9hkp-dk-E4ElWw&probtableid=AWHKTTczoy2oKp1H2ggbbhK5e2Bmj1rkDVv68fiKTOwks0Ohof_lnMbbXnnWMWTU",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTcWCK7_ogsN8YmC8MO8RoX2Vjc3phEss-DvYDPBPHUtJNAR8Gsy&trialid=AWHKTTdLPHuQZff0n0x4nXvfNIEfhIeDnbX1LqSMfvLUMjDeXAPuKh7B&probtableid=AWHKTTeVLGNf4wT7gcSQ-5wtrgO1Sj7_jW57TFhv_qKdFP8SMZkpMEAXNpw3NuVA",
       "data": {
         "code": 0,
         "message": null,
@@ -1458,11 +1458,11 @@
               "trialresult_name": "성공",
               "prob": "95.0000%",
               "custom_columns": {},
-              "count": 238895,
-              "realprob": "95.0807%",
+              "count": 239707,
+              "realprob": "95.0845%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1472,20 +1472,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "5.0000%",
               "custom_columns": {},
-              "count": 12360,
-              "realprob": "4.9193%",
+              "count": 12392,
+              "realprob": "4.9155%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:10"
+      "captured_at": "2026-01-27 06:53:03"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTfHAg0tK3mTrwTjEgZbnV9DEcfBe5SPqU9Fk5wfUKmptA2Y54Tw&trialid=AWHKTTfOYOx46e0A3FFADqsJufeKfC91-igVwNCwNvnXElgf8OFfu3iL&probtableid=AWHKTTf_DcIvYLRDI95ed6iuDJ7puLvrDHD_Tyc2E3uXO3m2wPj3ODPTDfOAPxa9",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTcMCWfPilocLzoKV1SYDJqYsxrIuIyvlTfay6cuKEkZKJb7h1RI&trialid=AWHKTTdWjBmXB7VzgAqxuAZM61R0OfMyLpnrDYgjx4at8q1qcMuJRna9&probtableid=AWHKTTfHkS1Q66jnc4jpSJwMc5LK3FcV4ZwoiaIUuQqPcr0KTulxDTx1MhJcuaAm",
       "data": {
         "code": 0,
         "message": null,
@@ -1499,11 +1499,11 @@
               "trialresult_name": "성공",
               "prob": "90.0000%",
               "custom_columns": {},
-              "count": 259503,
-              "realprob": "90.0652%",
+              "count": 260395,
+              "realprob": "90.0647%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1513,20 +1513,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "10.0000%",
               "custom_columns": {},
-              "count": 28625,
-              "realprob": "9.9348%",
+              "count": 28725,
+              "realprob": "9.9353%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:10"
+      "captured_at": "2026-01-27 06:53:03"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTf7joiW1DjSeX-enPSt96JWlzPrcfbeBq8HIA_oPySJrk6H6UqP&trialid=AWHKTTezQ_YqS_C0upmavsDilB7rMdS8PFz3d9GXSGCtS7p6kdRt36fs&probtableid=AWHKTTcwBpYDUKGdEIRwM-97ttLyNjaLfesj4GzCciXeHtuN5LzmttKCN9UBKVDn",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTfTxsM0DGQGR8t-VMhlLyr9KLNMBL0AmNTZyFAZYoHlkR15v1lv&trialid=AWHKTTcZKHhnPZlJ0GDSRUQ0L9e5KWb6RFyDVxsXNXVh9rYht7GJvfj3&probtableid=AWHKTTcjubgW01tOXDSviUqrSBFuCrUpObUb_gBBYGJ9FEFx8sw8EncS1BfO9FUi",
       "data": {
         "code": 0,
         "message": null,
@@ -1540,11 +1540,11 @@
               "trialresult_name": "성공",
               "prob": "85.0000%",
               "custom_columns": {},
-              "count": 260168,
-              "realprob": "85.0356%",
+              "count": 261067,
+              "realprob": "85.0370%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1554,20 +1554,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "15.0000%",
               "custom_columns": {},
-              "count": 45784,
-              "realprob": "14.9644%",
+              "count": 45937,
+              "realprob": "14.9630%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:10"
+      "captured_at": "2026-01-27 06:53:04"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTfb4WBPZHaEDPO-2mCHZKqdc4qGK9MveFPDlH4KYsnTOFQzxyVX&trialid=AWHKTTfsrBn56YoHJ63HPSA5NFDReTtT1gHjTuG2Rkksik7TTeBeBBmE&probtableid=AWHKTTetlzUUbg6YiVjoN0Aam9mNNrL_tkAuk2yFl5P3VYRkTpWarJXP0TGE4VZa",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTfyZb2H4CLiF9loZY0rFR6eKeTjyVqSCN4zePDIzLP3c0xb6VX4&trialid=AWHKTTewOdFsYk5Kfbdyu_IgqOsWPU-moSgPfeMxDnK6c4iXdmOw0ChV&probtableid=AWHKTTdVlLqtYC7S8ebDqGhJYWohEMHf3jr--u4GlBPcZNgChU4t_C3VL5Guz7tb",
       "data": {
         "code": 0,
         "message": null,
@@ -1581,11 +1581,11 @@
               "trialresult_name": "성공",
               "prob": "85.0000%",
               "custom_columns": {},
-              "count": 259386,
-              "realprob": "84.9321%",
+              "count": 260270,
+              "realprob": "84.9343%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1595,20 +1595,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "15.0000%",
               "custom_columns": {},
-              "count": 46018,
-              "realprob": "15.0679%",
+              "count": 46167,
+              "realprob": "15.0657%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:11"
+      "captured_at": "2026-01-27 06:53:04"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTdK_hI8yPN5vca2XqgSmUPXC5tU8ZeWTUlG_e2OSY25mPml6ToE&trialid=AWHKTTeRSo9yb2yH6tXrZuP7yftLaHNMmmmtU1cnfwmw9rn6l0pMfDeA&probtableid=AWHKTTcDcskIO4Eskv-wpavkMI9B_y6Tv9RwmIHX_fnisZQHqz6RiusHME_m4Xvx",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTd3hZBEAUkk2bhPwact4nzm9M7OAQLnCh6i4YHyssdmkRLgfazR&trialid=AWHKTTcmqpHO8Cd37_j3kNd66B86Z1sKnVtcHpNeOhsa8m-K-Mh9VwzT&probtableid=AWHKTTc0C_w-iJ7ENMfkdKy6aXQbCeGUQnL6XiEQ4h8YCf7eMEZAYkxYPmN7Ve_L",
       "data": {
         "code": 0,
         "message": null,
@@ -1622,11 +1622,11 @@
               "trialresult_name": "성공",
               "prob": "80.0000%",
               "custom_columns": {},
-              "count": 258758,
-              "realprob": "79.9927%",
+              "count": 259636,
+              "realprob": "79.9931%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1636,20 +1636,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "20.0000%",
               "custom_columns": {},
-              "count": 64719,
-              "realprob": "20.0073%",
+              "count": 64937,
+              "realprob": "20.0069%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:11"
+      "captured_at": "2026-01-27 06:53:04"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTc1r_KOIkruNMlVNt7Pi2ApberLuFxVHnp-J94Dd2paMl9oK410&trialid=AWHKTTeYoO-pqbOBwVUpLev9tGb5HCbRso6p6yMwminUPxT-JGVOcsg6&probtableid=AWHKTTdNDs6jiAWoA80zZY1hjCmwKYXrv6DggOuR85pHyKbCoWscQfzzaW48axpE",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTf-steC3bLu-iKO3AMIi5T8HsZ3fR0KtdwA7Rj9wJxoR_4d37d9&trialid=AWHKTTd1PdRsuTkJoCmrtcLrMYF5GtRMAwO5rcesRSrH2CnoQWvbVe72&probtableid=AWHKTTceSN2NcWKGw-MkeSPQk2LR_PtVVataz9RdJFo-W_Nb2PEjPBGjAixBSrYy",
       "data": {
         "code": 0,
         "message": null,
@@ -1663,11 +1663,11 @@
               "trialresult_name": "성공",
               "prob": "75.0000%",
               "custom_columns": {},
-              "count": 197902,
-              "realprob": "75.0365%",
+              "count": 198626,
+              "realprob": "75.0379%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1677,20 +1677,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "25.0000%",
               "custom_columns": {},
-              "count": 65839,
-              "realprob": "24.9635%",
+              "count": 66075,
+              "realprob": "24.9621%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:11"
+      "captured_at": "2026-01-27 06:53:05"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTct94z0yQ1siuTuAXmE20wADWaBjv5QTRiZk79e6IHSL-3fS2Kp&trialid=AWHKTTcW56nLoEFcpx79KEr4f3uyFlYxTDtynlARe_B8Na0QeHJ0TIjz&probtableid=AWHKTTfYaqr70MDk344dTvmACJyCjPaKOkfoYReYRT-f0Q6qIs1KgJyNRVEog0Pp",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTdoBqZ4sDYhe1zg7JOqtbMWGSBq2MX7CkH7IVLlSVmQ_JIyLI9a&trialid=AWHKTTdBNlVAmzbVbZQpIp9LGm1q-EIVmlvml4LfXiKfAYEm9NbR8FGz&probtableid=AWHKTTeJ9l-9Zqiyt1EEJACbnfBgJoNJBUNPcttgc8uSyeOS-KzNu4R1AIoROU0B",
       "data": {
         "code": 0,
         "message": null,
@@ -1704,11 +1704,11 @@
               "trialresult_name": "성공",
               "prob": "70.0000%",
               "custom_columns": {},
-              "count": 196668,
-              "realprob": "69.8896%",
+              "count": 197392,
+              "realprob": "69.8886%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1718,20 +1718,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "30.0000%",
               "custom_columns": {},
-              "count": 84730,
-              "realprob": "30.1104%",
+              "count": 85046,
+              "realprob": "30.1114%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:12"
+      "captured_at": "2026-01-27 06:53:05"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTf26ZUTUEvuwUmmzsKUVL776tliOo1tzOWj4DwA_dhOUhE7leO9&trialid=AWHKTTc6yeJ6OvHGXFjGh7tqKhEuC6Z-Rq4Azzv3XccJ-UEvavXZMARL&probtableid=AWHKTTeWaBDhgy08CHh5QIZ7zThLnfpXx45AEXBgCFNb_QriLPYk_66paHH2fH1t",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTdBYZ5Rt2iYAJbtVPNqYWRVnJ0qH1d2hwUCRwaWCQDLI4m-1pYv&trialid=AWHKTTds43UwkW0hAJIdlHgxvInxJIhd1X6sIDlkQ4e8PsKVTa7sjPjq&probtableid=AWHKTTeTtcyC_eIjglAKJEYRi44n8cTK2f4mrGiyTU1Fr7ky5z0OpIS_6h_j1Tj9",
       "data": {
         "code": 0,
         "message": null,
@@ -1745,11 +1745,11 @@
               "trialresult_name": "성공",
               "prob": "65.0000%",
               "custom_columns": {},
-              "count": 197091,
-              "realprob": "65.1215%",
+              "count": 197810,
+              "realprob": "65.1183%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1759,20 +1759,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "35.0000%",
               "custom_columns": {},
-              "count": 105560,
-              "realprob": "34.8785%",
+              "count": 105960,
+              "realprob": "34.8817%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:12"
+      "captured_at": "2026-01-27 06:53:05"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTeA1vEaLi-UM5QkyZik9hChQA4XjZ6xJTfk_zvxu7IE6A9JS2Sl&trialid=AWHKTTdFQe3ZRpNRLjkmcbbObuVLrnNPb0aHvmhYkAVWqRrhXQ0cx0TB&probtableid=AWHKTTckN4gZ129jue8aUbg3Qza9b9AkxjyyX0NSo8TJ522HfjSnlgfqazySmwHM",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTcXJUJZwt8nL5TjKfu0wjlX_tToK_PqiS6bPTsFWqirY5Gb9Frz&trialid=AWHKTTfh5MWiA2axw6wzu8tPGRhK8I4sQgx3IV1QHVnKtFMWRL_X316Q&probtableid=AWHKTTe5JixhwI0-UobcleZYQWj497ON_-xW-0H47c3fzut4GR_TfaE6PttUCOWW",
       "data": {
         "code": 0,
         "message": null,
@@ -1786,11 +1786,11 @@
               "trialresult_name": "성공",
               "prob": "60.0000%",
               "custom_columns": {},
-              "count": 97559,
-              "realprob": "60.1318%",
+              "count": 97805,
+              "realprob": "60.1226%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1800,20 +1800,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "40.0000%",
               "custom_columns": {},
-              "count": 64683,
-              "realprob": "39.8682%",
+              "count": 64871,
+              "realprob": "39.8774%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:13"
+      "captured_at": "2026-01-27 06:53:05"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTeaD7e9mnREYxCkLUWBNFpRbhMlRmDF0kckktDszoboRSC4yQ-M&trialid=AWHKTTcgbsch4ZlaXz_JKZWIx9r3NHUAe6nNBadNrrILgd-w9yxvgX2o&probtableid=AWHKTTddZ7UFZFUMzgfPR5pZ5DKJTdxMMRggl8VT3Tmf_abnyMJ6iRVsBZs9azX9",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTfCF3flPjY5ET840wYvSUMEP7RMf0SpKfhCYZKJrPrFXCSsyLI4&trialid=AWHKTTdFku-gG0JqkJN8Nt7Wu58EV-6gIKK-OQUxujO3oXuSr7zRBJtz&probtableid=AWHKTTePnFZ7CL3XTL56xkp8aOtaBtMBq-0wB8dIcIojp9TyMmMtS2bdDzngJ9a4",
       "data": {
         "code": 0,
         "message": null,
@@ -1827,11 +1827,11 @@
               "trialresult_name": "성공",
               "prob": "55.0000%",
               "custom_columns": {},
-              "count": 99939,
-              "realprob": "55.0774%",
+              "count": 100188,
+              "realprob": "55.0810%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1841,20 +1841,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "45.0000%",
               "custom_columns": {},
-              "count": 81513,
-              "realprob": "44.9226%",
+              "count": 81704,
+              "realprob": "44.9190%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:13"
+      "captured_at": "2026-01-27 06:53:06"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTd00nylqnEWhakXJt3ZASdNMlVJ6lxhwQZV512pbw_7BOZ65ZVg&trialid=AWHKTTfBDvgzQ42pZMZTBIaNSLUOImztUm4pdHc9PdSV8d_IFIRpqACZ&probtableid=AWHKTTcZlaw3BBfzEpPodXnjAKFv3CT7TtBOMgKPHsgqeed6DKkeuEO4E1sH4cGcPg%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTe-h_j_38iemyfb2KH0RV9V-1wyl4cm4UHRGBNGf4fYwaCXJTKM&trialid=AWHKTTcmU1EqZHMWk3SIpSz3yUNA0BFoN138t0C_qxuEVQUqZJYHIN1T&probtableid=AWHKTTffR1M8XMYbH5apxIQfO6ueLET7mlxzq7PGwtghAdlU-N-BDeCswb1JZhppNg%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -1868,11 +1868,11 @@
               "trialresult_name": "성공",
               "prob": "50.0000%",
               "custom_columns": {},
-              "count": 34070,
-              "realprob": "49.8143%",
+              "count": 34162,
+              "realprob": "49.7967%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1882,20 +1882,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "50.0000%",
               "custom_columns": {},
-              "count": 34324,
-              "realprob": "50.1857%",
+              "count": 34441,
+              "realprob": "50.2033%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:13"
+      "captured_at": "2026-01-27 06:53:06"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTciodoPBvUhVlwDiG9EHWhsbm_XF1HsSEclCvzqIDhDMrVJKWyV&trialid=AWHKTTccav1dpMGMifYbqslU1cWlqCStIJ7RCumY72fPXw7g5No0BKmt&probtableid=AWHKTTfrl58Lo7p2jSAMh7r4Y1A3tmNcEBewz6S9chy0KmKwr2tKvdfiDoHGnQ6Bzg%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTdjmatDuLsHEEaWls1EaLTK0nzbJW0o6s3odHnSuu1oABWqMA0d&trialid=AWHKTTemyZjegwwOJYeuDag1Pyj8PLmkIEqUh_NzJggjUrs9nO47M2xy&probtableid=AWHKTTeLIlLqda7zKyG0Wvl-xRUCMrOTPcLyEY3mxBArykRuOplarXIllNTYRnGy-w%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -1909,11 +1909,11 @@
               "trialresult_name": "성공",
               "prob": "45.0000%",
               "custom_columns": {},
-              "count": 28560,
-              "realprob": "45.0879%",
+              "count": 28641,
+              "realprob": "45.0855%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1923,20 +1923,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "55.0000%",
               "custom_columns": {},
-              "count": 34783,
-              "realprob": "54.9121%",
+              "count": 34885,
+              "realprob": "54.9145%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:14"
+      "captured_at": "2026-01-27 06:53:06"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTdAoXGKUQQeHuXPDgg70Y42GfbQtPEGSOtU6OdLCcNg3s64VYgz&trialid=AWHKTTdI7yAUAraMU8HSAOpUnTW0zXPP5VO6K3OwO_9-upfTvWJuTT7e&probtableid=AWHKTTe5QdgTKggrYBaYN7i9Vm5LqhREAAQnj7VoN7iAuKCUN-HyIuPXJ84DhVH_Ww%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTcs1s-yBcDhUiGwj-I7weRRF7XFywyQqht-Gfkmwm-OIkEmPypF&trialid=AWHKTTdOHR5DLDl8ci2vTvEIBDXeDNkjbJPOidw_IWA6pTD0yzOxdIVj&probtableid=AWHKTTfLLddaI0XGj03WIbWK_2-jtYtrS_VzwOlUWNSaY6CT8BOzhIJHxg5RaVue4g%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -1950,11 +1950,11 @@
               "trialresult_name": "성공",
               "prob": "40.0000%",
               "custom_columns": {},
-              "count": 34927,
-              "realprob": "40.0456%",
+              "count": 35038,
+              "realprob": "40.0572%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -1964,20 +1964,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "60.0000%",
               "custom_columns": {},
-              "count": 52291,
-              "realprob": "59.9544%",
+              "count": 52432,
+              "realprob": "59.9428%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:14"
+      "captured_at": "2026-01-27 06:53:07"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTfkpZz_Z6otQIED0o9qBeyyptsm4LxxFY2ic2u3H514KfpDrQ_T&trialid=AWHKTTezfr1dLfa9tZWavb66hLJxEIAo-DB0su7EyiD-d16JMq0rMV-C&probtableid=AWHKTTfLCCm362-dPpLX4cOy20rakDDMF0augb6XNrxTXoTovuSwLwxdQrqf96Z12Q%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTdl3WsGwZ2TRA_91k3Be_CrlYqCwZLZQkF7ZYUqVtTU98ydcuSK&trialid=AWHKTTeqCV9NWumOVsQo5Abuci_Hm6i2o_z_9jxiPX-_r-ihaVFycSI4&probtableid=AWHKTTd-BHlCSmfj9gbbJVu5-R1Qhx4TPY00Nk6OQjmay0hjsuycBwTx3tqRRD5BXA%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -1991,11 +1991,11 @@
               "trialresult_name": "성공",
               "prob": "35.0000%",
               "custom_columns": {},
-              "count": 32743,
-              "realprob": "34.7956%",
+              "count": 32851,
+              "realprob": "34.7762%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -2005,20 +2005,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "65.0000%",
               "custom_columns": {},
-              "count": 61358,
-              "realprob": "65.2044%",
+              "count": 61613,
+              "realprob": "65.2238%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:14"
+      "captured_at": "2026-01-27 06:53:07"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTfZVxqJWubvKNQPZUWMXt3NWi8YRjc5KMi6InIuvrkoGATJ1ZQ-&trialid=AWHKTTdzbIK0tcShlaYW_uUz8VnQfRuIhAYBmE0YqUvHzMBTHnqJOsdW&probtableid=AWHKTTcAdUzo-L14-QD6DUS5jbhEkaD5XgjVuBT5hqO-tWSf1X5Wol4EocCP9mJt7w%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTdVmkKYnEGKE3fe3lUvo3S6EqrCjP2pJD86_n14WdBp8vxsUvRO&trialid=AWHKTTecBSoMcx5uUKCe2s-ACwjNDyKwLyixHVNXaGqWX0Z9PMJYk-8T&probtableid=AWHKTTcSwtDHdf5b0Fjs6ZKuyHC5jXaPZoqHPAhVvImAEXAYee1_89Ed0lKwAj4hrg%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -2032,11 +2032,11 @@
               "trialresult_name": "성공",
               "prob": "30.0000%",
               "custom_columns": {},
-              "count": 28942,
-              "realprob": "30.1372%",
+              "count": 29038,
+              "realprob": "30.1384%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -2046,20 +2046,20 @@
               "trialresult_name": "실패 (유지)",
               "prob": "70.0000%",
               "custom_columns": {},
-              "count": 67092,
-              "realprob": "69.8628%",
+              "count": 67311,
+              "realprob": "69.8616%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:15"
+      "captured_at": "2026-01-27 06:53:07"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTcT_LiGKDGuO2_1aAh6GAyGBZJra6vibr3NFh_vE_VbPy5hAAji&trialid=AWHKTTfTdx1QKaf-yD2J5_YF9grW8VPuQjIGkKj7H5rADIe5q6eWT7sz&probtableid=AWHKTTdPbd2BuCv_yukrnVDaNZ0zwo_ztGy50HtFuEYw3TxskxN0redLRF9vLWAL2A%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTeY2CgdLbanoJKVMeNhmNhU8aCB5YaxXUbR9Juke3JZKvBXb7fu&trialid=AWHKTTeuOrOnBp5K1uKraV7UAkpREynFC89ZQ52AdGS-5wVZqGXtdOxx&probtableid=AWHKTTcgsAhVqz6BvaqwalYIb-0uFezfeuBbtm_ENf7NhEvvogpeKgIQyzDSosWzGw%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -2073,11 +2073,11 @@
               "trialresult_name": "성공",
               "prob": "30.0000%",
               "custom_columns": {},
-              "count": 16482,
-              "realprob": "29.9809%",
+              "count": 16537,
+              "realprob": "29.9784%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -2087,11 +2087,11 @@
               "trialresult_name": "실패 (유지)",
               "prob": "67.9000%",
               "custom_columns": {},
-              "count": 37329,
-              "realprob": "67.9018%",
+              "count": 37459,
+              "realprob": "67.9060%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -2101,20 +2101,20 @@
               "trialresult_name": "파괴",
               "prob": "2.1000%",
               "custom_columns": {},
-              "count": 1164,
-              "realprob": "2.1173%",
+              "count": 1167,
+              "realprob": "2.1155%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:15"
+      "captured_at": "2026-01-27 06:53:07"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTc8gcuYNOfoJoOZX7MIg8IY433JX1ICRHbBoDmLMCivsb5H6hd2&trialid=AWHKTTfVFVJp6qoEAAGsH86frER-mqHDja3TlSxljJHfeybLozqipQ-W&probtableid=AWHKTTcFwn8Dc-PzUZVvfE5Z7lb5_2YtJ9ofg-Mxa3ENg0j8vecFOuJjT0CUL1nWnw%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTck-WY2cyXpZPZQ2UnPVA0sRYe4HZ0PalAgZ02lr3Kzk8z_0sEW&trialid=AWHKTTfsG3VbxvkP6PZffPv44IjsLN5COmIB8UGPLCQqdp-jPl0PI8YK&probtableid=AWHKTTeX76p7HeSPzuz7HurEeGQyLFgpy2H6iOOtIk9zGvX0WPn9PpXVOZyAwV7ZRg%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -2128,11 +2128,11 @@
               "trialresult_name": "성공",
               "prob": "30.0000%",
               "custom_columns": {},
-              "count": 13761,
-              "realprob": "30.1070%",
+              "count": 13811,
+              "realprob": "30.1123%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -2142,11 +2142,11 @@
               "trialresult_name": "실패 (유지)",
               "prob": "67.9000%",
               "custom_columns": {},
-              "count": 31024,
-              "realprob": "67.8758%",
+              "count": 31128,
+              "realprob": "67.8687%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -2156,20 +2156,20 @@
               "trialresult_name": "파괴",
               "prob": "2.1000%",
               "custom_columns": {},
-              "count": 922,
-              "realprob": "2.0172%",
+              "count": 926,
+              "realprob": "2.0190%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:15"
+      "captured_at": "2026-01-27 06:53:08"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTdfOuVuhvcb5bsbW6I1lCeuyv2MoftmmJnWPFtFcKfp7zGD89KT&trialid=AWHKTTd_IVkjZDHpj4_Rm-LUBu29mgMkdi2_iHMG-CXUH4pWmsmEjmgy&probtableid=AWHKTTdvTQU__roviCTmMCjEpAsLx2wS7OoFrkDE5qolRwUG1NcK2EiI5QbBPEQi1w%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTesBeYdQMFNmDLT6fRjM5xsNamz4MVsHyeoDyX5fEM2MIPJfezE&trialid=AWHKTTcSZPc_ZcOtZyEaM5CG9Dw7iEj3HH3_3AscR-BBhdOCs0ZOMhH1&probtableid=AWHKTTfEIwvizcZOxNoGOh3dTOfOjoSvgXasVp8I_J1Jpm84DKeLhuph6QK_K3kvPg%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -2183,11 +2183,11 @@
               "trialresult_name": "성공",
               "prob": "15.0000%",
               "custom_columns": {},
-              "count": 5809,
-              "realprob": "15.2567%",
+              "count": 5827,
+              "realprob": "15.2515%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -2197,11 +2197,11 @@
               "trialresult_name": "실패 (유지)",
               "prob": "78.2000%",
               "custom_columns": {},
-              "count": 29655,
-              "realprob": "77.8858%",
+              "count": 29756,
+              "realprob": "77.8831%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -2211,20 +2211,20 @@
               "trialresult_name": "파괴",
               "prob": "6.8000%",
               "custom_columns": {},
-              "count": 2611,
-              "realprob": "6.8575%",
+              "count": 2623,
+              "realprob": "6.8654%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:16"
+      "captured_at": "2026-01-27 06:53:08"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTe1R_wm0LY2GjMvu9BpB45FfLFSDOQyTgVPQKCiO2NSkNNP0mON&trialid=AWHKTTd6pGd6jV6zrJGKHVBBIS2czky97ZMadII1wE3qGF7g-Y_SbhTz&probtableid=AWHKTTdie5Qr_M7nkkUOPxHNuqpxg4Pll7P6YLX8LYCnkB85M3oMSc2I5B2oGjBCgw%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTcHYhEjpOAT1OuDJdwitoKeayW1difqWHJ69sRRZ7eEDst3crmy&trialid=AWHKTTeaCqqWqutXsIOQ7IpuxH-0-1zE6HcEJiiKRumiThSf3IKrzAxn&probtableid=AWHKTTdF0G8k9MmCfpXXCN4SUXUjI5aM52Ec5YBt8F5PpzWFUqn4ulThNcOpmu7CKA%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -2238,11 +2238,11 @@
               "trialresult_name": "성공",
               "prob": "15.0000%",
               "custom_columns": {},
-              "count": 2141,
-              "realprob": "14.9376%",
+              "count": 2147,
+              "realprob": "14.9367%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -2252,11 +2252,11 @@
               "trialresult_name": "실패 (유지)",
               "prob": "78.2000%",
               "custom_columns": {},
-              "count": 11185,
-              "realprob": "78.0367%",
+              "count": 11216,
+              "realprob": "78.0298%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -2266,20 +2266,20 @@
               "trialresult_name": "파괴",
               "prob": "6.8000%",
               "custom_columns": {},
-              "count": 1007,
-              "realprob": "7.0257%",
+              "count": 1011,
+              "realprob": "7.0335%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:16"
+      "captured_at": "2026-01-27 06:53:08"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTcRDhEaMh_tjTXLNxIYFyVIz9BIBowT91ruIZKld9qvRoka5g-I&trialid=AWHKTTckrqlgb3MBfkcv3glBxjjCA0NDEs4QcaWBmQkl1JMUhSqSVBPD&probtableid=AWHKTTd3qHdh7U1Ef-NiL-05swac7eSP4G9dFs3YJXvca-AApz-VtRK3eUWRGb2kuQ%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTc81L88VIJOjijEvAGL3MFIKhfZdK4kD9Hl3ohkO-R8SdPjdm2B&trialid=AWHKTTf8Y5DVTiDbPmhccpMHeGdQy55QQ_Cg4mlnMzzAe6_FA_Qu-IWE&probtableid=AWHKTTd9XnPEq7cZUtxpknLZIhHdLXQQbLL03p57EmPVQXLWMoLAWB28o71vifZV_g%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -2293,11 +2293,11 @@
               "trialresult_name": "성공",
               "prob": "15.0000%",
               "custom_columns": {},
-              "count": 988,
-              "realprob": "14.6544%",
+              "count": 989,
+              "realprob": "14.6237%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -2307,11 +2307,11 @@
               "trialresult_name": "실패 (유지)",
               "prob": "76.5000%",
               "custom_columns": {},
-              "count": 5207,
-              "realprob": "77.2323%",
+              "count": 5224,
+              "realprob": "77.2438%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -2321,20 +2321,20 @@
               "trialresult_name": "파괴",
               "prob": "8.5000%",
               "custom_columns": {},
-              "count": 547,
-              "realprob": "8.1133%",
+              "count": 550,
+              "realprob": "8.1325%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:16"
+      "captured_at": "2026-01-27 06:53:09"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTdlUjqBDeiSBciknVd_Oly3RkcpkZnmINUAMG_8lmZkL7AWrP4B&trialid=AWHKTTcu-1XidS228M7wH96uVYgUXsCDnbRHpcV1OJeOLjR71JI3TTL_&probtableid=AWHKTTfjPFsOTwJWDKnWt7XZZWe9XkmzzFcPVXj8YT4naKqK9bJuXBjwRcC9OaYBww%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTfo2hlA7uqlTKHV3l4I79w3zpyaUB76xTkpp-cfog-EatgS9fBQ&trialid=AWHKTTfOIZ1iSnJHov8-9MF0Uh9ylt3V16IL70IyAsN7_on3Ekm5rOME&probtableid=AWHKTTfaTkV0lF9i7uOOTZnPTmYitv_MM9a2aMqSzjQF1lINBNK-dB8YGCRjZ7CbRQ%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -2349,10 +2349,10 @@
               "prob": "30.0000%",
               "custom_columns": {},
               "count": 481,
-              "realprob": "30.3662%",
+              "realprob": "30.3470%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -2363,10 +2363,10 @@
               "prob": "59.5000%",
               "custom_columns": {},
               "count": 918,
-              "realprob": "57.9545%",
+              "realprob": "57.9180%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -2376,20 +2376,20 @@
               "trialresult_name": "파괴",
               "prob": "10.5000%",
               "custom_columns": {},
-              "count": 185,
-              "realprob": "11.6793%",
+              "count": 186,
+              "realprob": "11.7350%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:17"
+      "captured_at": "2026-01-27 06:53:09"
     },
     {
-      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTdgegRtXSW7Hod-GZ8TY7P2DW4jrhEQxON5wntM1rj7d4KKCkGV&trialid=AWHKTTeCeEMQ4swSxKxpA8r-HMXn-zMBkgbhWrM2Ys9hH7tGthDQWHsl&probtableid=AWHKTTdeFIRLvB2_YH8_7TzVIOfvDlpCM1ADHeNgeXij1hrSq59mRdxlXx3MEIHx5Q%3D%3D",
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTcvOV9lvwKrlQAV5roymcYZBokiWCiLJ3eiMXeSAm6cS4JYj3t8&trialid=AWHKTTcJtoSs6X9l0NyjBtsN-2_JhK3L9BEaBH8ohsh70BdOSnMBfr1k&probtableid=AWHKTTc9nx2XQZJSDwnpOOL5aFWYXAlkDlEw-GF6Qo0qdlMgHnJ51G8AtmqVY1TP2g%3D%3D",
       "data": {
         "code": 0,
         "message": null,
@@ -2404,10 +2404,10 @@
               "prob": "15.0000%",
               "custom_columns": {},
               "count": 175,
-              "realprob": "13.8669%",
+              "realprob": "13.8449%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -2417,11 +2417,11 @@
               "trialresult_name": "실패 (유지)",
               "prob": "72.2500%",
               "custom_columns": {},
-              "count": 920,
-              "realprob": "72.9002%",
+              "count": 922,
+              "realprob": "72.9430%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             },
             {
@@ -2432,20 +2432,460 @@
               "prob": "12.7500%",
               "custom_columns": {},
               "count": 167,
-              "realprob": "13.2330%",
+              "realprob": "13.2120%",
               "windowStart": null,
-              "windowEnd": "2026-01-27T04:00:00",
-              "updateDt": "2026-01-27T05:02:44",
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
               "showRealprobWarning": false
             }
           ]
         }
       },
-      "captured_at": "2026-01-27 05:39:17"
+      "captured_at": "2026-01-27 06:53:09"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTeoSVq28C2_CC55paW-5ryDl9J1QefvEn3grMOXOMfc__IdPmT6&trialid=AWHKTTfakaNVX1U3nA1A-JWLKQjaqHYNHSBW2JorpmPVsBWLrPCPWmWg&probtableid=AWHKTTf4d8FHIpWaD_Db-C_rdlk1RGSm4LUmam8nHwJ8eHoSMUxDNVpSZupW0b2T6g%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "22성",
+              "trialresult_name": "성공",
+              "prob": "15.0000%",
+              "custom_columns": {},
+              "count": 57,
+              "realprob": "14.8438%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "22성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "68.0000%",
+              "custom_columns": {},
+              "count": 255,
+              "realprob": "66.4063%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "22성",
+              "trialresult_name": "파괴",
+              "prob": "17.0000%",
+              "custom_columns": {},
+              "count": 72,
+              "realprob": "18.7500%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 06:53:10"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTdqeHJisJZhP5j1nFAcZm6YCgTyi6wmACJxPFtg2oU3nBnFSAGG&trialid=AWHKTTfUry1WsWVkvHKPAEB2e-IzefjEfqAzPKRYxs5GaHD927ILqKnb&probtableid=AWHKTTdkXLKEmzAfzVZo0Be3ZPVllSKFD4T24d2q6F5vyus4_fZB9Drmf20Jm7a8QA%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "23성",
+              "trialresult_name": "성공",
+              "prob": "10.0000%",
+              "custom_columns": {},
+              "count": 15,
+              "realprob": "9.6774%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "23성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "72.0000%",
+              "custom_columns": {},
+              "count": 108,
+              "realprob": "69.6774%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "23성",
+              "trialresult_name": "파괴",
+              "prob": "18.0000%",
+              "custom_columns": {},
+              "count": 32,
+              "realprob": "20.6452%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 06:53:10"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTeI2ZyoB-s7YUOizm7aBmx1O9BQpKbqGSoHv9K3UsxxkRVQroI_&trialid=AWHKTTfw2cEKQbb6-dL39qGmYBGiQA6fca48wCWvBj0x0CdX440PbT9Y&probtableid=AWHKTTd-aCgrwhwY5am6SAvQRBGWQM5OS2TkdlFRyBqeQr8JY9bsAeIDRMhDB8KXzA%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "24성",
+              "trialresult_name": "성공",
+              "prob": "10.0000%",
+              "custom_columns": {},
+              "count": 2,
+              "realprob": "5.2632%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "24성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "72.0000%",
+              "custom_columns": {},
+              "count": 29,
+              "realprob": "76.3158%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "24성",
+              "trialresult_name": "파괴",
+              "prob": "18.0000%",
+              "custom_columns": {},
+              "count": 7,
+              "realprob": "18.4211%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 06:53:10"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTd7DCn8lN74DXRM7OAj6cTpdY6f0wzvJ6jI6X99if-BZ_v9gZxI&trialid=AWHKTTfiAup8xzfr2BZcM6Y7sFj0Ey8yRMYpOyfDk5xMXurZ3EDk_c5h&probtableid=AWHKTTfppQagK8VJKP1R3HPETHXBjh7-Hte28Ltts0d9CiR-DIqrWewd_mgCpIk5YQ%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": true,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "25성",
+              "trialresult_name": "성공",
+              "prob": "10.0000%",
+              "custom_columns": {},
+              "count": 0,
+              "realprob": "0.0000%",
+              "windowStart": null,
+              "windowEnd": null,
+              "updateDt": null,
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "25성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "72.0000%",
+              "custom_columns": {},
+              "count": 7,
+              "realprob": "77.7778%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "25성",
+              "trialresult_name": "파괴",
+              "prob": "18.0000%",
+              "custom_columns": {},
+              "count": 2,
+              "realprob": "22.2222%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 06:53:10"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTd_T3KZnvIX1OOpOq-47oNxOwbR2T_FRJggzngutzjGASghs6hv&trialid=AWHKTTftJiywMDuHmp86tP0j8d4lXl3YfWV3Dd8hNC4JOuQRKDBStYO4&probtableid=AWHKTTewagieji2FEamDZi5GyzXxak_3EZdaB6M3zE1c6er8dyunwvNXi56Jto_xPA%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": true,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "26성",
+              "trialresult_name": "성공",
+              "prob": "7.0000%",
+              "custom_columns": {},
+              "count": 0,
+              "realprob": "0.0000%",
+              "windowStart": null,
+              "windowEnd": null,
+              "updateDt": null,
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "26성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "74.4000%",
+              "custom_columns": {},
+              "count": 0,
+              "realprob": "0.0000%",
+              "windowStart": null,
+              "windowEnd": null,
+              "updateDt": null,
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "26성",
+              "trialresult_name": "파괴",
+              "prob": "18.6000%",
+              "custom_columns": {},
+              "count": 0,
+              "realprob": "0.0000%",
+              "windowStart": null,
+              "windowEnd": null,
+              "updateDt": null,
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 06:53:11"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTc5tQlU5NA4VaSpc7ue6nd-J0fblwJQ51XsSDusyUtMmeSiPnfi&trialid=AWHKTTf2hz80wYW4gJ9NBaU827Ce2nQKCqGYIwX6RIwc2JUIArbyWTmB&probtableid=AWHKTTdoI972ZqHTRYR-vRCV89eYqkmGi2JGy59mWBT-Vcr345p3DV6vBrujPegS-g%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": true,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "27성",
+              "trialresult_name": "성공",
+              "prob": "5.0000%",
+              "custom_columns": {},
+              "count": 0,
+              "realprob": "0.0000%",
+              "windowStart": null,
+              "windowEnd": null,
+              "updateDt": null,
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "27성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "76.0000%",
+              "custom_columns": {},
+              "count": 1,
+              "realprob": "100.0000%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T05:00:00",
+              "updateDt": "2026-01-27T06:02:58",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "27성",
+              "trialresult_name": "파괴",
+              "prob": "19.0000%",
+              "custom_columns": {},
+              "count": 0,
+              "realprob": "0.0000%",
+              "windowStart": null,
+              "windowEnd": null,
+              "updateDt": null,
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 06:53:11"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTe1I7UPUgxGVJP6VCnZX0PEWSBhtSbYgzjxk-ET_Q8maPnoRDjN&trialid=AWHKTTfZeN7UI3pq12mr8qVySj-9iPCW_8w_5daP64eWtraNDJq7Yi4D&probtableid=AWHKTTeQ5sEs269amYtwcTyQQDxI5YegvN3jt1W-ZvRKvid0hMhhdU7myapHs5SNcg%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": true,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "28성",
+              "trialresult_name": "성공",
+              "prob": "3.0000%",
+              "custom_columns": {},
+              "count": 0,
+              "realprob": "0.0000%",
+              "windowStart": null,
+              "windowEnd": null,
+              "updateDt": null,
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "28성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "77.6000%",
+              "custom_columns": {},
+              "count": 0,
+              "realprob": "0.0000%",
+              "windowStart": null,
+              "windowEnd": null,
+              "updateDt": null,
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "28성",
+              "trialresult_name": "파괴",
+              "prob": "19.4000%",
+              "custom_columns": {},
+              "count": 0,
+              "realprob": "0.0000%",
+              "windowStart": null,
+              "windowEnd": null,
+              "updateDt": null,
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 06:53:11"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTcwbtbOm1d5nM2O9Fm95oM-m58PiV4DyJ5sFZUj3uhpoqt4UJ-v&trialid=AWHKTTc9CT3YWRpG4OVixZu41Exf4E62gDpPQha08QR8qSMt2IjdVibI&probtableid=AWHKTTdfKtU_Nh9TSLKWnfTQfHPFcRvcOx-gwlGqycLrH9U9J_FmoRj4W-s9GTZbRg%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": true,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "29성",
+              "trialresult_name": "성공",
+              "prob": "1.0000%",
+              "custom_columns": {},
+              "count": 0,
+              "realprob": "0.0000%",
+              "windowStart": null,
+              "windowEnd": null,
+              "updateDt": null,
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "29성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "79.2000%",
+              "custom_columns": {},
+              "count": 0,
+              "realprob": "0.0000%",
+              "windowStart": null,
+              "windowEnd": null,
+              "updateDt": null,
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "29성",
+              "trialresult_name": "파괴",
+              "prob": "19.8000%",
+              "custom_columns": {},
+              "count": 0,
+              "realprob": "0.0000%",
+              "windowStart": null,
+              "windowEnd": null,
+              "updateDt": null,
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 06:53:12"
     }
   ],
   "summary": {
     "total_tables": 0,
-    "total_prob_responses": 52
+    "total_prob_responses": 60
   }
 }
