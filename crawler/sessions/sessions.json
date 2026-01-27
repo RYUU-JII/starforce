@@ -32,6 +32,12 @@
   {
     "name": "patch_20260127_0945",
     "start_date": "2026-01-27T09:45:30.761990",
+    "end_date": "2026-01-27T16:46:03.934572",
+    "active": false
+  },
+  {
+    "name": "patch_20260127_1646",
+    "start_date": "2026-01-27T16:46:03.934574",
     "end_date": null,
     "active": true
   }
