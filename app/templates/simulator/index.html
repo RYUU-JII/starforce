@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starforce Audit Simulator: The Comparison</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .range-thumb::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #ef4444;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100 font-sans min-h-screen p-4 overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="max-w-7xl mx-auto flex justify-between items-center py-4 border-b border-gray-800 mb-6">
+        <div>
+            <h1 class="text-2xl font-bold text-white tracking-widest">🚨 AUDIT SIMULATOR <span
+                    class="text-xs text-gray-500 font-mono">v2.1 DETAILED</span></h1>
+            <p class="text-xs text-gray-400">Fair Logic vs Block Logic Comparison</p>
+        </div>
+        <div class="flex items-center">
+            <div class="bg-gray-800 px-4 py-2 rounded border border-gray-700 flex items-center space-x-4">
+                <div class="flex flex-col text-right">
+                    <span class="text-[10px] text-gray-500 uppercase font-bold">Luck Handling</span>
+                    <span class="text-xs text-red-400 font-bold" id="mode-label">Independent</span>
+                </div>
+                <label class="inline-flex items-center cursor-pointer">
+                    <input type="checkbox" id="toggle-deck-mode" value="" class="sr-only peer" checked>
+                    <div
+                        class="relative w-11 h-6 bg-gray-600 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-red-600">
+                    </div>
+                </label>
+            </div>
+        </div>
+        <script>
+            document.getElementById('toggle-deck-mode').addEventListener('change', function () {
+                const label = document.getElementById('mode-label');
+                if (this.checked) {
+                    label.textContent = "Independent";
+                    label.classList.add('text-red-400');
+                    label.classList.remove('text-gray-400');
+                } else {
+                    label.textContent = "Shared";
+                    label.classList.remove('text-red-400');
+                    label.classList.add('text-gray-400');
+                }
+            });
+        </script>
+    </header>
+
+    <!-- Controls -->
+    <div
+        class="max-w-4xl mx-auto bg-gray-800 rounded-xl p-4 mb-8 shadow-2xl border border-gray-700 flex space-x-6 items-center">
+        <div class="w-32">
+            <label class="text-xs text-gray-400 block mb-1">Simulations</label>
+            <input type="number" id="sim-count" value="200"
+                class="w-full bg-gray-900 border border-gray-600 rounded p-1 text-center text-white text-sm focus:border-blue-500 outline-none">
+        </div>
+        <div class="flex-1">
+            <label class="text-xs text-red-400 font-bold block mb-2">Rigged Block Intensity (Prison Factor)</label>
+            <input type="range" id="intensity-slider" min="1" max="100" value="40"
+                class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-red-500">
+            <div class="flex justify-between text-[10px] text-gray-500 mt-1">
+                <span>Weak (1)</span>
+                <span class="text-red-400 font-bold" id="intensity-val">40</span>
+                <span>Strong (100)</span>
+            </div>
+        </div>
+        <div class="flex-none">
+            <button onclick="runCompare()" id="run-btn"
+                class="bg-gradient-to-r from-blue-600 to-red-600 hover:from-blue-500 hover:to-red-500 text-white font-bold py-3 px-8 rounded-lg text-sm transform hover:scale-[1.05] transition shadow-xl whitespace-nowrap">
+                RUN AUDIT
+            </button>
+        </div>
+    </div>
+
+    <!-- Variance Dashboard -->
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+
+        <!-- Left: Fair World -->
+        <div class="bg-gray-800 rounded-lg p-6 border-l-4 border-blue-500 shadow-lg">
+            <h2 class="text-xl font-bold text-blue-400 mb-4">😇 Fair World</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-blue-900/10 p-4 rounded border border-blue-900/30">
+                    <div class="text-xs text-gray-400">Success Variance</div>
+                    <div class="text-2xl font-mono text-blue-300" id="fair-s-var">0.00</div>
+                </div>
+                <div class="bg-blue-900/10 p-4 rounded border border-blue-900/30">
+                    <div class="text-xs text-gray-400">Failure Variance</div>
+                    <div class="text-2xl font-mono text-blue-300" id="fair-f-var">0.00</div>
+                </div>
+                <div class="col-span-2 bg-blue-900/10 p-4 rounded border border-blue-900/30">
+                    <div class="text-xs text-gray-400">Avg Cost to 22★</div>
+                    <div class="text-2xl font-mono text-blue-300" id="fair-cost">0</div>
+                    <div class="text-[10px] text-gray-500">Expected Meso Burn</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle: Rigged World -->
+        <div class="bg-gray-800 rounded-lg p-6 border-l-4 border-red-500 shadow-lg relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
+                <svg class="w-24 h-24 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </div>
+            <h2 class="text-xl font-bold text-red-500 mb-4">😈 Rigged World</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-red-900/10 p-4 rounded border border-red-900/30">
+                    <div class="text-xs text-red-400">Success Variance</div>
+                    <div class="text-2xl font-mono text-red-300" id="rigged-s-var">0.00</div>
+                </div>
+                <div class="bg-red-900/10 p-4 rounded border border-red-900/30">
+                    <div class="text-xs text-red-400">Failure Variance</div>
+                    <div class="text-2xl font-mono text-red-300" id="rigged-f-var">0.00</div>
+                </div>
+                <div class="col-span-2 bg-red-900/10 p-4 rounded border border-red-900/30 ring-1 ring-red-500/20">
+                    <div class="text-xs text-red-400">Avg Cost to 22★</div>
+                    <div class="text-2xl font-mono text-red-300" id="rigged-cost">0</div>
+                    <div class="text-[10px] text-red-900/40">Real Meso Burn</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Execution Stats -->
+        <div class="bg-gray-800 rounded-lg p-6 border-l-4 border-purple-500 shadow-lg flex flex-col justify-center">
+            <div class="text-center mb-4">
+                <div class="text-sm text-gray-400">Simulations Run</div>
+                <div class="text-4xl font-bold text-purple-400" id="sim-run-count">-</div>
+            </div>
+            <div class="text-center">
+                <div class="text-sm text-gray-400">Computing Time</div>
+                <div class="text-2xl font-mono text-purple-300" id="sim-time">-</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Charts Section -->
+    <div class="max-w-7xl mx-auto bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-xl mb-8">
+        <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+            <div class="flex space-x-2 mb-4 md:mb-0">
+                <button onclick="setChartMode('fail')" id="tab-fail"
+                    class="px-4 py-2 rounded bg-gray-700 text-gray-300 hover:bg-gray-600 text-sm font-bold transition">Fail
+                    Streaks</button>
+                <button onclick="setChartMode('success')" id="tab-success"
+                    class="px-4 py-2 rounded bg-gray-900 text-gray-500 hover:bg-gray-700 text-sm font-bold transition">Success
+                    Streaks</button>
+                <button onclick="setChartMode('meso')" id="tab-meso"
+                    class="px-4 py-2 rounded bg-gray-900 text-gray-500 hover:bg-gray-700 text-sm font-bold transition">Meso
+                    Cost</button>
+            </div>
+
+            <div class="flex items-center space-x-3 bg-gray-900 px-4 py-2 rounded-lg border border-gray-700">
+                <span class="text-xs text-gray-400 uppercase font-bold">Options</span>
+                <button onclick="toggleCurve()" id="btn-curve"
+                    class="text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded hover:bg-gray-600 transition">
+                    Histogram (Bar)
+                </button>
+                <div class="w-px h-4 bg-gray-600"></div>
+                <button onclick="toggleLog()" id="btn-log"
+                    class="text-xs bg-gray-900 text-gray-500 px-3 py-1 rounded hover:bg-gray-800 transition">
+                    Log Scale: OFF
+                </button>
+            </div>
+        </div>
+
+        <div class="relative h-96 w-full">
+            <canvas id="chart-comparison"></canvas>
+        </div>
+        <p class="text-center text-xs text-gray-500 mt-4" id="chart-desc">
+            Displaying consecutive failure streak distribution.
+        </p>
+    </div>
+
+    <!-- Detailed Audit Table -->
+    <div class="max-w-7xl mx-auto bg-gray-800 rounded-lg border border-gray-700 mb-8 overflow-hidden">
+        <div class="bg-gray-700/50 p-4 border-b border-gray-700 flex justify-between items-center">
+            <h3 class="font-bold text-gray-200">📋 Detailed Audit Report: Theory vs Actual</h3>
+            <span class="text-xs text-gray-500">Checking for "The Alibi" (Probability Compliance)</span>
+        </div>
+        <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs">
+                <thead class="bg-gray-900 text-gray-400">
+                    <tr>
+                        <th class="p-3 border-r border-gray-800">Level</th>
+                        <th class="p-3 border-r border-gray-800 text-center text-yellow-500">Theoretical</th>
+                        <th class="p-3 border-r border-gray-800 text-center text-blue-400">Fair Actual</th>
+                        <th class="p-3 text-center text-red-400">Rigged Actual</th>
+                    </tr>
+                </thead>
+                <tbody id="audit-tbody" class="text-gray-300 divide-y divide-gray-700">
+                    <!-- Rows generated by JS -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        let cmpChart = null;
+        let currentData = null;
+        let chartMode = 'fail'; // fail, success, meso
+        let useBellCurve = false;
+        let useLogScale = false;
+
+        document.getElementById('intensity-slider').addEventListener('input', (e) => {
+            document.getElementById('intensity-val').textContent = e.target.value;
+        });
+
+        async function runCompare() {
+            const btn = document.getElementById('run-btn');
+            const total = parseInt(document.getElementById('sim-count').value);
+            const intensity = parseInt(document.getElementById('intensity-slider').value);
+            const isIndependent = document.getElementById('toggle-deck-mode').checked;
+
+            btn.disabled = true;
+            btn.innerHTML = `Running...`;
+            btn.classList.add('opacity-50');
+
+            try {
+                const res = await fetch('/compare', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        total_tries: total,
+                        block_intensity: intensity,
+                        independent_deck: isIndependent
+                    })
+                });
+                const data = await res.json();
+                currentData = data;
+                renderData(data);
+            } catch (e) {
+                alert("Error: " + e);
+            }
+
+            btn.disabled = false;
+            btn.innerHTML = "RUN AUDIT";
+            btn.classList.remove('opacity-50');
+        }
+
+        function formatMeso(num) {
+            if (num >= 100000000) return (num / 100000000).toFixed(1) + '억';
+            if (num >= 10000) return (num / 10000).toFixed(1) + '만';
+            return num;
+        }
+
+        function renderData(data) {
+            // Stats
+            document.getElementById('fair-s-var').textContent = data.fair.s_var.toFixed(1);
+            document.getElementById('fair-f-var').textContent = data.fair.f_var.toFixed(1);
+            document.getElementById('fair-cost').textContent = formatMeso(data.fair.avg_cost);
+
+            document.getElementById('rigged-s-var').textContent = data.rigged.s_var.toFixed(1);
+            document.getElementById('rigged-f-var').textContent = data.rigged.f_var.toFixed(1);
+            document.getElementById('rigged-cost').textContent = formatMeso(data.rigged.avg_cost);
+
+            document.getElementById('sim-run-count').textContent = data.simulation_count;
+            document.getElementById('sim-time').textContent = data.execution_time.toFixed(2) + 's';
+
+            // Audit Table
+            const tbody = document.getElementById('audit-tbody');
+            tbody.innerHTML = '';
+
+            for (let lv = 12; lv <= 21; lv++) {
+                const slv = lv.toString();
+                const theory = data.theory[slv];
+                const fair = data.fair.level_stats[slv] || { try: 0, success_rate: 0, fail_rate: 0, boom_rate: 0 };
+                const rigged = data.rigged.level_stats[slv] || { try: 0, success_rate: 0, fail_rate: 0, boom_rate: 0 };
+
+                const t_s = (theory[0] * 100).toFixed(1);
+                const t_f = (theory[1] * 100).toFixed(1);
+                const t_b = (theory[2] * 100).toFixed(1);
+
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-gray-700";
+                tr.innerHTML = `
+                    <td class="p-3 border-r border-gray-700 font-bold bg-gray-800">${lv}★</td>
+                    <td class="p-3 border-r border-gray-700 text-center font-mono text-yellow-500">
+                        S:${t_s}% / F:${t_f}% / B:${t_b}%
+                    </td>
+                    <td class="p-3 border-r border-gray-700 text-center font-mono text-blue-300">
+                        S:${fair.success_rate.toFixed(1)}% / F:${fair.fail_rate.toFixed(1)}% / B:${fair.boom_rate.toFixed(1)}%
+                    </td>
+                    <td class="p-3 text-center font-mono text-red-300">
+                        S:${rigged.success_rate.toFixed(1)}% / F:${rigged.fail_rate.toFixed(1)}% / B:${rigged.boom_rate.toFixed(1)}%
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            }
+
+            // Chart
+            updateChart();
+        }
+
+        function setChartMode(mode) {
+            chartMode = mode;
+            // Update tabs UI
+            ['fail', 'success', 'meso'].forEach(m => {
+                const btn = document.getElementById('tab-' + m);
+                if (m === mode) {
+                    btn.classList.remove('bg-gray-900', 'text-gray-500');
+                    btn.classList.add('bg-gray-700', 'text-gray-300');
+                } else {
+                    btn.classList.add('bg-gray-900', 'text-gray-500');
+                    btn.classList.remove('bg-gray-700', 'text-gray-300');
+                }
+            });
+            updateChart();
+        }
+
+        function toggleCurve() {
+            useBellCurve = !useBellCurve;
+            const btn = document.getElementById('btn-curve');
+            btn.textContent = useBellCurve ? "Bell Curve (Line)" : "Histogram (Bar)";
+            updateChart();
+        }
+
+        function toggleLog() {
+            useLogScale = !useLogScale;
+            const btn = document.getElementById('btn-log');
+            if (useLogScale) {
+                btn.textContent = "Log Scale: ON";
+                btn.classList.remove('bg-gray-900', 'text-gray-500');
+                btn.classList.add('bg-blue-600', 'text-white');
+            } else {
+                btn.textContent = "Log Scale: OFF";
+                btn.classList.add('bg-gray-900', 'text-gray-500');
+                btn.classList.remove('bg-blue-600', 'text-white');
+            }
+            updateChart();
+        }
+
+        function getGaussian(mean, variance, x) {
+            const sigma = Math.sqrt(variance);
+            if (sigma === 0) return x === Math.round(mean) ? 1 : 0;
+            const factor = 1 / (sigma * Math.sqrt(2 * Math.PI));
+            const exponent = -0.5 * Math.pow((x - mean) / sigma, 2);
+            return factor * Math.exp(exponent);
+        }
+
+        function updateChart() {
+            if (!currentData) return;
+
+            const ctx = document.getElementById('chart-comparison').getContext('2d');
+            let fairHist, riggedHist;
+            let label = "";
+
+            if (chartMode === 'fail') {
+                fairHist = currentData.fair.histogram;
+                riggedHist = currentData.rigged.histogram;
+                label = "Fail Streak Length";
+                document.getElementById('chart-desc').textContent = "Distribution of consecutive failure strings. Longer tail = harsher bad luck.";
+            } else if (chartMode === 'success') {
+                fairHist = currentData.fair.s_histogram;
+                riggedHist = currentData.rigged.s_histogram;
+                label = "Success Streak Length";
+                document.getElementById('chart-desc').textContent = "Distribution of consecutive success strings.";
+            } else {
+                fairHist = currentData.fair.m_histogram;
+                riggedHist = currentData.rigged.m_histogram;
+                label = "Meso Cost (1 Billion Units)";
+                document.getElementById('chart-desc').textContent = "Distribution of Total Meso Cost to reach 22 stars. (Unit: 1,000,000,000 Mesos)";
+            }
+
+            // Prepare Data keys
+            const allKeys = new Set([
+                ...fairHist.map(d => d.x),
+                ...riggedHist.map(d => d.x)
+            ]);
+            // If meso, we might have gaps, fill them for smooth line? 
+            // For histograms, we usually want sorted keys.
+            let labels = Array.from(allKeys).sort((a, b) => a - b);
+
+            // If Bell Curve, generate range
+            if (useBellCurve) {
+                // Calculate implicit stats from histogram if not available directly for that specific metric,
+                // But wait, the backend sends Variance/Mean for some, but not all component stats like success streaks specifically.
+                // Actually, backend calculates variance for S and F streaks.
+                // We'll calculate Mean/Var from the histogram data client-side for visualization if needed.
+                const calcStats = (hist) => {
+                    let sum = 0, count = 0;
+                    hist.forEach(d => { sum += d.x * d.y; count += d.y; });
+                    const mean = count ? sum / count : 0;
+                    let sumSq = 0;
+                    hist.forEach(d => { sumSq += d.y * Math.pow(d.x - mean, 2); });
+                    const variance = count ? sumSq / count : 0;
+                    return { mean, variance, count };
+                };
+
+                const fStats = calcStats(fairHist);
+                const rStats = calcStats(riggedHist);
+
+                // Generate smooth points
+                const minX = labels[0] || 0;
+                const maxX = labels[labels.length - 1] || 10;
+                const range = maxX - minX;
+                const step = range / 100; // 100 points
+                labels = [];
+                const fData = [], rData = [];
+
+                for (let x = minX; x <= maxX; x += (step || 1)) {
+                    labels.push(x.toFixed(1));
+                    // Scale probability density by total count to match histogram scale roughly?
+                    // Or just show normalized density. Let's show normalized density (probability).
+                    fData.push(getGaussian(fStats.mean, fStats.variance, x));
+                    rData.push(getGaussian(rStats.mean, rStats.variance, x));
+                }
+
+                drawChart(ctx, labels, fData, rData, 'line');
+            } else {
+                // Histogram
+                const getVal = (hist, k) => { const item = hist.find(d => d.x === k); return item ? item.y : 0; };
+                drawChart(ctx, labels, labels.map(k => getVal(fairHist, k)), labels.map(k => getVal(riggedHist, k)), 'bar');
+            }
+        }
+
+        function drawChart(ctx, labels, fData, rData, type) {
+            if (cmpChart) cmpChart.destroy();
+
+            const isBell = (type === 'line' && useBellCurve);
+
+            cmpChart = new Chart(ctx, {
+                type: type === 'bar' ? 'bar' : 'line',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: 'Fair World',
+                            data: fData,
+                            borderColor: '#60a5fa',
+                            backgroundColor: 'rgba(96, 165, 250, 0.4)',
+                            borderWidth: 2,
+                            pointRadius: isBell ? 0 : 2,
+                            fill: isBell ? false : true,
+                            tension: 0.4
+                        },
+                        {
+                            label: 'Rigged World',
+                            data: rData,
+                            borderColor: '#ef4444',
+                            backgroundColor: 'rgba(239, 68, 68, 0.4)',
+                            borderWidth: 2,
+                            pointRadius: isBell ? 0 : 2,
+                            fill: isBell ? false : true,
+                            tension: 0.4
+                        }
+                    ]
+                },
+                options: {
+                    maintainAspectRatio: false,
+                    interaction: { mode: 'index', intersect: false },
+                    scales: {
+                        y: {
+                            // Apply log scale if enabled, but usually log scale for density (bell curve) is weird.
+                            // Only apply log scale if NOT bell curve OR if user really wants it.
+                            type: useLogScale ? 'logarithmic' : 'linear',
+                            beginAtZero: !useLogScale, // beginAtZero should be false for log scales unless min is 1
+                            min: useLogScale ? 1 : undefined, // Log scales usually start at 1
+                            grid: { color: '#374151' },
+                            title: { display: true, text: isBell ? 'Density' : 'Count' }
+                        },
+                        x: {
+                            grid: { display: false }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function (context) {
+                                    return context.dataset.label + ': ' + context.raw.toFixed(isBell ? 4 : 0);
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

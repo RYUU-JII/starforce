@@ -1,0 +1,25 @@
+<div id="audit-root" class="audit-wrapper">
+    <h1>🔬 확률 무결성 감사 대시보드</h1>
+    <h2>목표: "목표 확률을 맞추는 과정에서 무작위성이 훼손되었는지"를 통계적으로 점검</h2>
+
+    <div class="tabs">
+        <button class="tab-btn active" onclick="ui.activateTab(this, 'general')">기본 분석</button>
+        <button class="tab-btn" onclick="ui.activateTab(this, 'seasonal')">시즌별 대조 모드 (Debt/Loan)</button>
+    </div>
+
+    <div id="generalSection" class="tab-content active">
+        {% include "audit/partials/_summary.html" %}
+        {% include "audit/partials/_audit_cards.html" %}
+        {% include "audit/partials/_event_analysis.html" %}
+        {% include "audit/partials/_controls.html" %}
+        {% include "audit/partials/_charts.html" %}
+        {% include "audit/partials/_heatmap.html" %}
+        {% include "audit/partials/_table.html" %}
+        {% include "audit/partials/_more_charts.html" %}
+        {% include "audit/partials/_hypothesis.html" %}
+    </div>
+
+    <div id="seasonalSection" class="tab-content">
+        {% include "audit/partials/_seasonal.html" %}
+    </div>
+</div>

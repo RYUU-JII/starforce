@@ -1,0 +1,27 @@
+<h3>📊 시즌별 대조 분석: [성수기 대출] vs [비성수기 추심]</h3>
+<p style="color:#888; margin-bottom:20px;">* 특정 기간 동안 확률을 퍼주고, 다른 기간에 이를 회수하는 '할당량 보존 법칙'을 교차 분석합니다.
+</p>
+
+<div class="controls"
+    style="background: rgba(187, 134, 252, 0.05); border-color: rgba(187, 134, 252, 0.2); margin-bottom: 25px;">
+    <div class="control-group" style="width: 100%;">
+        <label style="display:flex; justify-content:space-between;">
+            <span>시즌 분할 시점 (Split Point)</span>
+            <b id="splitDateLabel" style="color:var(--accent)">날짜 로딩 중...</b>
+        </label>
+        <input type="range" id="splitSlider" style="width:100%; margin: 10px 0;">
+        <div style="display:flex; justify-content:space-between; font-size:0.75em; color:#666;">
+            <span id="sliderMinDate">--</span>
+            <span id="sliderMaxDate">--</span>
+        </div>
+    </div>
+</div>
+
+<div class="season-grid" id="seasonGrid">
+    <!-- Season cards here -->
+</div>
+
+<div class="chart-card full">
+    <div class="chart-title">⚖️ 시즌별 누적 오차 및 메소 손실액 추이</div>
+    <canvas id="debtChart"></canvas>
+</div>

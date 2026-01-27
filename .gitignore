@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# Crawler Data (수집된 원본 raw JSON은 용량이 크므로 제외 권장)
+# 만약 데이터도 깃허브에 백업하고 싶다면 아래 주석을 해제하세요.
+# crawler/data/starforce_*.json
+# !crawler/data/latest.json
+
+# 세션 데이터 (분석용 Delta 데이터는 깃허브에 저장하여 Actions에서 활용)
+# crawler/sessions/*/hourly_snapshots.jsonl
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

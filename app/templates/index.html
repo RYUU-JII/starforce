@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="flex h-screen overflow-hidden">
+    <!-- Sidebar / Tabs -->
+    <nav class="w-16 md:w-20 bg-gray-800 flex flex-col items-center py-6 border-r border-gray-700 z-50 flex-none">
+        <button onclick="switchMainTab('simulator')"
+            class="p-3 mb-4 rounded-xl transition-all duration-300 hover:bg-gray-700 active-tab-btn" id="btn-simulator"
+            title="Simulator">
+            <span class="text-2xl">🎲</span>
+        </button>
+        <button onclick="switchMainTab('audit')"
+            class="p-3 mb-4 rounded-xl transition-all duration-300 hover:bg-gray-700 opacity-50" id="btn-audit"
+            title="Audit">
+            <span class="text-2xl">🔬</span>
+        </button>
+    </nav>
+
+    <!-- Content Area -->
+    <main class="flex-1 overflow-auto relative">
+        <div id="tab-simulator" class="tab-pane w-full h-full p-4 block">
+            {% include "simulator/_main.html" %}
+        </div>
+        <div id="tab-audit" class="tab-pane w-full h-full hidden p-4">
+            {% include "audit/_main.html" %}
+        </div>
+    </main>
+</div>
+
+<script>
+    function switchMainTab(tab) {
+        document.querySelectorAll('.tab-pane').forEach(el => {
+            el.classList.add('hidden');
+            el.classList.remove('block');
+        });
+        const activePane = document.getElementById('tab-' + tab);
+        activePane.classList.remove('hidden');
+        activePane.classList.add('block');
+
+        document.getElementById('btn-simulator').classList.remove('active-tab-btn', 'opacity-100', 'bg-gray-700');
+        document.getElementById('btn-simulator').classList.add('opacity-50');
+
+        document.getElementById('btn-audit').classList.remove('active-tab-btn', 'opacity-100', 'bg-gray-700');
+        document.getElementById('btn-audit').classList.add('opacity-50');
+
+        const btn = document.getElementById('btn-' + tab);
+        btn.classList.add('active-tab-btn', 'opacity-100', 'bg-gray-700');
+        btn.classList.remove('opacity-50');
+
+        // Optional: Trigger resize for charts if needed
+        window.dispatchEvent(new Event('resize'));
+    }
+</script>
+<style>
+    .active-tab-btn {
+        box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+        border: 1px solid rgba(59, 130, 246, 0.5);
+        background-color: rgba(55, 65, 81, 1);
+    }
+</style>
+{% endblock %}

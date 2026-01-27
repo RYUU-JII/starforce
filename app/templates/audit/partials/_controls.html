@@ -1,0 +1,28 @@
+<div class="controls">
+    <div class="control-group events">
+        <label>이벤트 필터</label>
+        <div class="checkbox-list" id="eventCheckboxes"></div>
+    </div>
+    <div class="controls-right">
+        <div class="control-group">
+            <label>성급 범위</label>
+            <div style="display:flex; gap:5px; align-items:center;">
+                <input type="number" id="starMin" value="15" min="0" max="29" style="width:55px"> ~
+                <input type="number" id="starMax" value="22" min="0" max="29" style="width:55px">
+            </div>
+        </div>
+        <div class="control-group">
+            <label>스타캐치</label>
+            <select id="catchFilter" style="width:100%;">
+                <option value="">전체</option>
+                <option value="ON">ON</option>
+                <option value="OFF">OFF</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <label>최소 N</label>
+            <input type="number" id="minSamples" value="100000" step="100000" style="width:120px">
+        </div>
+        <button onclick="filters.apply()">분석 실행</button>
+    </div>
+</div>

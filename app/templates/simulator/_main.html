@@ -1,0 +1,171 @@
+<!-- Header -->
+<header class="max-w-7xl mx-auto flex justify-between items-center py-4 border-b border-gray-800 mb-6">
+    <div>
+        <h1 class="text-2xl font-bold text-white tracking-widest">🚨 AUDIT SIMULATOR <span
+                class="text-xs text-gray-500 font-mono">v2.1 DETAILED</span></h1>
+        <p class="text-xs text-gray-400">Fair Logic vs Block Logic Comparison</p>
+    </div>
+    <div class="flex items-center">
+        <div class="bg-gray-800 px-4 py-2 rounded border border-gray-700 flex items-center space-x-4">
+            <div class="flex flex-col text-right">
+                <span class="text-[10px] text-gray-500 uppercase font-bold">Luck Handling</span>
+                <span class="text-xs text-red-400 font-bold" id="mode-label">Independent</span>
+            </div>
+            <label class="inline-flex items-center cursor-pointer">
+                <input type="checkbox" id="toggle-deck-mode" value="" class="sr-only peer" checked>
+                <div
+                    class="relative w-11 h-6 bg-gray-600 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-red-600">
+                </div>
+            </label>
+        </div>
+    </div>
+</header>
+
+<!-- Controls -->
+<div
+    class="max-w-4xl mx-auto bg-gray-800 rounded-xl p-4 mb-8 shadow-2xl border border-gray-700 flex space-x-6 items-center">
+    <div class="w-32">
+        <label class="text-xs text-gray-400 block mb-1">Simulations</label>
+        <input type="number" id="sim-count" value="200"
+            class="w-full bg-gray-900 border border-gray-600 rounded p-1 text-center text-white text-sm focus:border-blue-500 outline-none">
+    </div>
+    <div class="flex-1">
+        <label class="text-xs text-red-400 font-bold block mb-2">Rigged Block Intensity (Prison Factor)</label>
+        <input type="range" id="intensity-slider" min="1" max="100" value="40"
+            class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-red-500">
+        <div class="flex justify-between text-[10px] text-gray-500 mt-1">
+            <span>Weak (1)</span>
+            <span class="text-red-400 font-bold" id="intensity-val">40</span>
+            <span>Strong (100)</span>
+        </div>
+    </div>
+    <div class="flex-none">
+        <button onclick="runCompare()" id="run-btn"
+            class="bg-gradient-to-r from-blue-600 to-red-600 hover:from-blue-500 hover:to-red-500 text-white font-bold py-3 px-8 rounded-lg text-sm transform hover:scale-[1.05] transition shadow-xl whitespace-nowrap">
+            RUN AUDIT
+        </button>
+    </div>
+</div>
+
+<!-- Variance Dashboard -->
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+
+    <!-- Left: Fair World -->
+    <div class="bg-gray-800 rounded-lg p-6 border-l-4 border-blue-500 shadow-lg">
+        <h2 class="text-xl font-bold text-blue-400 mb-4">😇 Fair World</h2>
+        <div class="grid grid-cols-2 gap-4">
+            <div class="bg-blue-900/10 p-4 rounded border border-blue-900/30">
+                <div class="text-xs text-gray-400">Success Variance</div>
+                <div class="text-2xl font-mono text-blue-300" id="fair-s-var">0.00</div>
+            </div>
+            <div class="bg-blue-900/10 p-4 rounded border border-blue-900/30">
+                <div class="text-xs text-gray-400">Failure Variance</div>
+                <div class="text-2xl font-mono text-blue-300" id="fair-f-var">0.00</div>
+            </div>
+            <div class="col-span-2 bg-blue-900/10 p-4 rounded border border-blue-900/30">
+                <div class="text-xs text-gray-400">Avg Cost to 22★</div>
+                <div class="text-2xl font-mono text-blue-300" id="fair-cost">0</div>
+                <div class="text-[10px] text-gray-500">Expected Meso Burn</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Middle: Rigged World -->
+    <div class="bg-gray-800 rounded-lg p-6 border-l-4 border-red-500 shadow-lg relative overflow-hidden">
+        <div class="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
+            <svg class="w-24 h-24 text-red-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </div>
+        <h2 class="text-xl font-bold text-red-500 mb-4">😈 Rigged World</h2>
+        <div class="grid grid-cols-2 gap-4">
+            <div class="bg-red-900/10 p-4 rounded border border-red-900/30">
+                <div class="text-xs text-red-400">Success Variance</div>
+                <div class="text-2xl font-mono text-red-300" id="rigged-s-var">0.00</div>
+            </div>
+            <div class="bg-red-900/10 p-4 rounded border border-red-900/30">
+                <div class="text-xs text-red-400">Failure Variance</div>
+                <div class="text-2xl font-mono text-red-300" id="rigged-f-var">0.00</div>
+            </div>
+            <div class="col-span-2 bg-red-900/10 p-4 rounded border border-red-900/30 ring-1 ring-red-500/20">
+                <div class="text-xs text-red-400">Avg Cost to 22★</div>
+                <div class="text-2xl font-mono text-red-300" id="rigged-cost">0</div>
+                <div class="text-[10px] text-red-900/40">Real Meso Burn</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right: Execution Stats -->
+    <div class="bg-gray-800 rounded-lg p-6 border-l-4 border-purple-500 shadow-lg flex flex-col justify-center">
+        <div class="text-center mb-4">
+            <div class="text-sm text-gray-400">Simulations Run</div>
+            <div class="text-4xl font-bold text-purple-400" id="sim-run-count">-</div>
+        </div>
+        <div class="text-center">
+            <div class="text-sm text-gray-400">Computing Time</div>
+            <div class="text-2xl font-mono text-purple-300" id="sim-time">-</div>
+        </div>
+    </div>
+</div>
+
+<!-- Charts Section -->
+<div class="max-w-7xl mx-auto bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-xl mb-8">
+    <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+        <div class="flex space-x-2 mb-4 md:mb-0">
+            <button onclick="setChartMode('fail')" id="tab-fail"
+                class="px-4 py-2 rounded bg-gray-700 text-gray-300 hover:bg-gray-600 text-sm font-bold transition">Fail
+                Streaks</button>
+            <button onclick="setChartMode('success')" id="tab-success"
+                class="px-4 py-2 rounded bg-gray-900 text-gray-500 hover:bg-gray-700 text-sm font-bold transition">Success
+                Streaks</button>
+            <button onclick="setChartMode('meso')" id="tab-meso"
+                class="px-4 py-2 rounded bg-gray-900 text-gray-500 hover:bg-gray-700 text-sm font-bold transition">Meso
+                Cost</button>
+        </div>
+
+        <div class="flex items-center space-x-3 bg-gray-900 px-4 py-2 rounded-lg border border-gray-700">
+            <span class="text-xs text-gray-400 uppercase font-bold">Options</span>
+            <button onclick="toggleCurve()" id="btn-curve"
+                class="text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded hover:bg-gray-600 transition">
+                Histogram (Bar)
+            </button>
+            <div class="w-px h-4 bg-gray-600"></div>
+            <button onclick="toggleLog()" id="btn-log"
+                class="text-xs bg-gray-900 text-gray-500 px-3 py-1 rounded hover:bg-gray-800 transition">
+                Log Scale: OFF
+            </button>
+        </div>
+    </div>
+
+    <div class="relative h-96 w-full">
+        <canvas id="chart-comparison"></canvas>
+    </div>
+    <p class="text-center text-xs text-gray-500 mt-4" id="chart-desc">
+        Displaying consecutive failure streak distribution.
+    </p>
+</div>
+
+<!-- Detailed Audit Table -->
+<div class="max-w-7xl mx-auto bg-gray-800 rounded-lg border border-gray-700 mb-8 overflow-hidden">
+    <div class="bg-gray-700/50 p-4 border-b border-gray-700 flex justify-between items-center">
+        <h3 class="font-bold text-gray-200">📋 Detailed Audit Report: Theory vs Actual</h3>
+        <span class="text-xs text-gray-500">Checking for "The Alibi" (Probability Compliance)</span>
+    </div>
+    <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs">
+            <thead class="bg-gray-900 text-gray-400">
+                <tr>
+                    <th class="p-3 border-r border-gray-800">Level</th>
+                    <th class="p-3 border-r border-gray-800 text-center text-yellow-500">Theoretical</th>
+                    <th class="p-3 border-r border-gray-800 text-center text-blue-400">Fair Actual</th>
+                    <th class="p-3 text-center text-red-400">Rigged Actual</th>
+                </tr>
+            </thead>
+            <tbody id="audit-tbody" class="text-gray-300 divide-y divide-gray-700">
+                <!-- Rows generated by JS -->
+            </tbody>
+        </table>
+    </div>
+</div>

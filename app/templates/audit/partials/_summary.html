@@ -1,0 +1,15 @@
+<div class="summary-grid">
+    <div class="gauge-card">
+        <div class="gauge-title">🎯 시스템 무결성 점수</div>
+        <div class="gauge-value" id="integrityScore">--</div>
+        <div class="gauge-label" id="integrityLabel">분석 중...</div>
+        <div class="gauge-bar">
+            <div class="gauge-fill" id="integrityBar"></div>
+        </div>
+    </div>
+    <div class="smoking-gun">
+        <h4>🚨 SMOKING GUN: 독립 시행 가정과 가장 불일치한 구간 TOP 3</h4>
+        <div id="smokingGunList"></div>
+        <p style="font-size:0.75em; color:#555; margin-top:10px;">* N이 크고(k 충분) VAR Ratio≪1이면, 기간별 Z가 평균(0) 주변에 과도하게 수렴하는 <b>과소산포</b> 패턴입니다.</p>
+    </div>
+</div>

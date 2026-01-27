@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starforce Simulator & Audit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@2.1.0/dist/chartjs-plugin-annotation.min.js"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/static/css/simulator.css">
+    <link rel="stylesheet" href="/static/css/audit.css">
+</head>
+
+<body class="bg-gray-900 text-gray-100 min-h-screen font-sans">
+    {% block content %}{% endblock %}
+
+    <!-- Scripts -->
+    <script src="/static/js/simulator.js"></script>
+    <script type="module" src="/static/js/audit.js"></script>
+</body>
+
+</html>

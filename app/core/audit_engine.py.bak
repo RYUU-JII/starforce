@@ -1,0 +1,235 @@
+import os
+import json
+import statistics
+
+AUDIT_DB = []
+
+def load_audit_data(directory="audit_data"):
+    all_records = []
+    if not os.path.exists(directory):
+        return []
+        
+    for filename in os.listdir(directory):
+        if filename.endswith(".json"):
+            try:
+                with open(os.path.join(directory, filename), "r", encoding='utf-8') as f:
+                    data = json.load(f)
+                    
+                    meta = data.get("meta", {})
+                    event_name = meta.get("event", "스타포스 이벤트 미적용").strip()
+                    if not event_name or event_name == "" or event_name == "No Event":
+                        event_name = "스타포스 이벤트 미적용"
+                    
+                    date_str = filename.split("_")[0]
+                    is_catch = meta.get("star_catch", False)
+                    
+                    for r in data.get("records", []):
+                        flat_record = r.copy()
+                        flat_record["_event"] = event_name
+                        flat_record["_date"] = date_str
+                        flat_record["_is_catch"] = is_catch
+                        flat_record["_filename"] = filename
+                        all_records.append(flat_record)
+            except Exception as e:
+                print(f"Error loading {filename}: {e}")
+                continue
+    return all_records
+
+def get_audit_db():
+    global AUDIT_DB
+    if not AUDIT_DB:
+        AUDIT_DB = load_audit_data()
+    return AUDIT_DB
+
+def filter_audit_data(events=None, stars=None, catch_ops=None, min_samples=100):
+    db = get_audit_db()
+    filtered = []
+    
+    target_events = set(events) if events else None
+    target_stars = set(stars) if stars else None
+    
+    target_catch = None
+    if catch_ops:
+        target_catch = set()
+        if "ON" in catch_ops: target_catch.add(True)
+        if "OFF" in catch_ops: target_catch.add(False)
+
+    total_skipped = 0
+    total_included = 0
+
+    for r in db:
+        if target_events and r["_event"] not in target_events: 
+            total_skipped += 1
+            continue
+        if target_stars and r["star"] not in target_stars:
+            total_skipped += 1
+            continue
+        if target_catch is not None and r["_is_catch"] not in target_catch: 
+            total_skipped += 1
+            continue
+        if r["total_n"] < min_samples: 
+            total_skipped += 1
+            continue
+        
+        filtered.append(r)
+        total_included += 1
+        
+    return filtered, total_included, total_skipped, len(db)
+
+def calculate_stats(filtered_data):
+    stats_map = {}
+    
+    for r in filtered_data:
+        key = (r["star"], r["_is_catch"])
+        if key not in stats_map:
+            stats_map[key] = {
+                "star": r["star"],
+                "catch": "ON" if r["_is_catch"] else "OFF",
+                "total_n": 0,
+                "succ": {"obs": 0, "exp": 0.0, "var": 0.0, "z_list": []},
+                "fail": {"obs": 0, "exp": 0.0, "var": 0.0, "z_list": []},
+                "boom": {"obs": 0, "exp": 0.0, "var": 0.0, "z_list": []},
+            }
+        
+        entry = stats_map[key]
+        n = r["total_n"]
+        entry["total_n"] += n
+        
+        for t, prefix in [("succ", "success"), ("fail", "fail"), ("boom", "boom")]:
+            target_p = r.get(f"{prefix}_p_target", 0.0)
+            obs = r.get(f"{prefix}_n", 0)
+            
+            entry[t]["obs"] += obs
+            entry[t]["exp"] += n * target_p
+            entry[t]["var"] += n * target_p * (1.0 - target_p)
+            
+            if n > 100: 
+                z = r.get(f"{prefix}_z_score", 0.0)
+                entry[t]["z_list"].append(z)
+
+    results = []
+    for key, d in stats_map.items():
+        row = {
+            "star": d["star"],
+            "catch": d["catch"],
+            "total_n": d["total_n"],
+        }
+        
+        for t in ["succ", "fail", "boom"]:
+            total_var = d[t]["var"]
+            if total_var > 0:
+                z_score = (d[t]["obs"] - d[t]["exp"]) / (total_var ** 0.5)
+            else:
+                z_score = 0.0
+            
+            z_list = d[t]["z_list"]
+            if len(z_list) > 1:
+                z_score_var = statistics.variance(z_list)
+            else:
+                z_score_var = 0.0
+                
+            row[f"{t}_z"] = round(z_score, 2)
+            row[f"{t}_var"] = round(z_score_var, 2)
+            
+        results.append(row)
+    
+    results.sort(key=lambda x: (x["star"], x["catch"]))
+    return results
+
+def get_heatmap_stats():
+    db = get_audit_db()
+    heatmap_data = {}
+    
+    for r in db:
+        key = (r["star"], r["_date"])
+        if key not in heatmap_data:
+            heatmap_data[key] = {
+                "star": r["star"],
+                "date": r["_date"],
+                "succ_z_sum": 0.0,
+                "boom_z_sum": 0.0,
+                "count": 0,
+                "total_n": 0
+            }
+        
+        entry = heatmap_data[key]
+        entry["succ_z_sum"] += r.get("success_z_score", 0.0)
+        entry["boom_z_sum"] += r.get("boom_z_score", 0.0)
+        entry["count"] += 1
+        entry["total_n"] += r.get("total_n", 0)
+    
+    results = []
+    for key, entry in heatmap_data.items():
+        if entry["count"] > 0:
+            results.append({
+                "star": entry["star"],
+                "date": entry["date"],
+                "succ_z": round(entry["succ_z_sum"] / entry["count"], 2),
+                "boom_z": round(entry["boom_z_sum"] / entry["count"], 2),
+                "total_n": entry["total_n"]
+            })
+            
+    return results
+
+def get_drift_stats():
+    db = get_audit_db()
+    date_stats = {}
+    
+    for r in db:
+        date = r["_date"]
+        if date not in date_stats:
+            date_stats[date] = {"succ_z_sum": 0.0, "boom_z_sum": 0.0, "count": 0}
+        
+        date_stats[date]["succ_z_sum"] += r.get("success_z_score", 0.0)
+        date_stats[date]["boom_z_sum"] += r.get("boom_z_score", 0.0)
+        date_stats[date]["count"] += 1
+    
+    results = []
+    cumulative_succ = 0.0
+    cumulative_boom = 0.0
+    
+    for date in sorted(date_stats.keys()):
+        stats = date_stats[date]
+        avg_succ_z = stats["succ_z_sum"] / stats["count"] if stats["count"] > 0 else 0
+        avg_boom_z = stats["boom_z_sum"] / stats["count"] if stats["count"] > 0 else 0
+        
+        cumulative_succ += avg_succ_z
+        cumulative_boom += avg_boom_z
+        
+        results.append({
+            "date": date,
+            "avg_succ_z": round(avg_succ_z, 2),
+            "avg_boom_z": round(avg_boom_z, 2),
+            "cumulative_succ_z": round(cumulative_succ, 2),
+            "cumulative_boom_z": round(cumulative_boom, 2)
+        })
+    return results
+
+def get_monthly_stats():
+    db = get_audit_db()
+    monthly_stats = {}
+    
+    for r in db:
+        date_str = r["_date"]
+        if len(date_str) >= 6:
+            yyyymm = date_str[:6]
+            formatted_month = f"{yyyymm[:4]}-{yyyymm[4:]}"
+        else:
+            continue
+            
+        if formatted_month not in monthly_stats:
+            monthly_stats[formatted_month] = {"succ_z_sum": 0.0, "boom_z_sum": 0.0, "count": 0}
+        
+        monthly_stats[formatted_month]["succ_z_sum"] += r.get("success_z_score", 0.0)
+        monthly_stats[formatted_month]["boom_z_sum"] += r.get("boom_z_score", 0.0)
+        monthly_stats[formatted_month]["count"] += 1
+    
+    results = []
+    for month in sorted(monthly_stats.keys()):
+        stats = monthly_stats[month]
+        results.append({
+            "month": month,
+            "total_succ_z": round(stats["succ_z_sum"], 2),
+            "total_boom_z": round(stats["boom_z_sum"], 2)
+        })
+    return results
