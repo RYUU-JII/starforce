@@ -1,10 +1,2396 @@
 {
-  "crawled_at": "2026-01-27 17:39:52",
+  "crawled_at": "2026-01-27 18:55:41",
   "page_url": "https://now.nexon.com/service/maplestory?page=562d346f-f2c9-4425-bb08-12680e165251",
   "tables_metadata": [],
-  "prob_data": [],
+  "prob_data": [
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTelRtZfWJsJOjxF_mf9ZIGwLFhYkH-WJY8HXs7UlhT-_ceqYkwA&trialid=AWHKTTeAPy34mrBU100aky8qvQrNTGVFuRsgBHzfUVnnsC-D9ejxgVeb&probtableid=AWHKTTfQcaFkQb9G20QbebnATvwkgaJB8xg7WbU1WUOW_bWN82jtw2U1pedmmq7sAkqKstYLpUoqN4EM",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "0성",
+              "trialresult_name": "성공",
+              "prob": "99.7500%",
+              "custom_columns": {},
+              "count": 64475,
+              "realprob": "99.7679%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "0성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "0.2500%",
+              "custom_columns": {},
+              "count": 150,
+              "realprob": "0.2321%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:22"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTeTPijfh2_mZryWt0YwwwqJuH6xXs1zAY97nmOD7sa1HEqb_S5L&trialid=AWHKTTeRpw1UipMLvWxfAI-GnBcF2tR3ly0o9G14MDODYRIaxGvqL3mn&probtableid=AWHKTTdb1AJW3hK7v7OpuchUQ-1Y0PdZvOP4miEWoSHILTKs79U8ODtnW9dYjOz9D1OJP_Elg6jVq5Ax",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "1성",
+              "trialresult_name": "성공",
+              "prob": "94.5000%",
+              "custom_columns": {},
+              "count": 35848,
+              "realprob": "94.5907%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "1성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "5.5000%",
+              "custom_columns": {},
+              "count": 2050,
+              "realprob": "5.4093%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:23"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcdoHE7sxl_2bawsL9ONhWdloCfcgJtaVLEIBTf582TZin2q5d_&trialid=AWHKTTflVVc0XYiE-Twol2DIwuKxN2IKP_xQlxoNeoQkHPNm6UuMJeHb&probtableid=AWHKTTcaBVOhDm_qHIlr4XlAXDt6ZFMr-_e2Ss-o_PZRBdONeKm-LwW0xDG9A6Wq5a6nmThigHFdEsCj",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "2성",
+              "trialresult_name": "성공",
+              "prob": "89.2500%",
+              "custom_columns": {},
+              "count": 33355,
+              "realprob": "89.4860%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "2성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "10.7500%",
+              "custom_columns": {},
+              "count": 3919,
+              "realprob": "10.5140%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:23"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTdYCfLo6J3FhJKQYXL6xEYz_-E7UXnPkthXuRGMCOOQf0vaqq80&trialid=AWHKTTdlzd6lArqN_fFDpLsCpPGVUbF7pdRZO-OmzNWj_R8gCyjLZxMq&probtableid=AWHKTTd5BKqbAR7PnWVW-oRH81ep_1wl2c8vBo0bFNRnHE7iJz_CWzrt_kHkSRjtbEqVPC5shDQqVbWL",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "3성",
+              "trialresult_name": "성공",
+              "prob": "89.2500%",
+              "custom_columns": {},
+              "count": 32502,
+              "realprob": "89.3526%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "3성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "10.7500%",
+              "custom_columns": {},
+              "count": 3873,
+              "realprob": "10.6474%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:23"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTf-gW9xCbnJkZFCihFzLQuMMno-1OtkZPyQPpj68ioyF1lUBPsz&trialid=AWHKTTdhjFfXMMZHQ_u1jo2rMq-8Ov1yjtx5dWp_iAtPWzDEUj2HvrKJ&probtableid=AWHKTTdNaHef0jtyrg2vmNMmtFBnV2koWuIy2HEo-FRlO79LSK8yG9QcH5NOeS3i3zusaRHJEpQvLGPW",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "4성",
+              "trialresult_name": "성공",
+              "prob": "84.0000%",
+              "custom_columns": {},
+              "count": 32486,
+              "realprob": "84.2807%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "4성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "16.0000%",
+              "custom_columns": {},
+              "count": 6059,
+              "realprob": "15.7193%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:24"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTePCmo5CsLuLwmOq7oZQNgIgzYDdKHtzxljukvt3ojnfs58VplC&trialid=AWHKTTdUapIpn4a1L1WD_qRAaJsYuv9NMAkq710TKEU4hui3df_30YtN&probtableid=AWHKTTdm1iQ1vNLHmPYte8WFqszVq--2lJ8wd8aKgE_5gqbMFNSM54c0RTDcOsBZzpUG2x8pzEKRlVxa",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "5성",
+              "trialresult_name": "성공",
+              "prob": "78.7500%",
+              "custom_columns": {},
+              "count": 25734,
+              "realprob": "78.7671%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "5성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "21.2500%",
+              "custom_columns": {},
+              "count": 6937,
+              "realprob": "21.2329%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:24"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTd7oZlmyg4GcCd9eQvf_QMlfe5OZ-_-tjZs6TvA7dw_SkNLM2bl&trialid=AWHKTTeQOiNvxOzRfmltX8RHdl7YO27emxnHxgHs2E9GjD12JCeHLELh&probtableid=AWHKTTfpG7WU1GcbbF2BEbl83VvwvFfYyUkkHS2qqPwJbSfaBIfMVbuA4yQ7dvXRQpG1zCY40TpOwJc2",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "6성",
+              "trialresult_name": "성공",
+              "prob": "73.5000%",
+              "custom_columns": {},
+              "count": 25679,
+              "realprob": "73.4336%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "6성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "26.5000%",
+              "custom_columns": {},
+              "count": 9290,
+              "realprob": "26.5664%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:24"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTdFAeW-dZ2Pj4Ijsco29_HGSbxTnfCTH5DBreFwDWp90d5HAp-Y&trialid=AWHKTTcN8xf-vvS-KS5i09FT86ZUuLd9CVJ1DLkCNDzkcB-FkzfWSfQW&probtableid=AWHKTTf4esewZWXM2bGylxeKFYaSu-4kzp4aYjVSURfLKnPkYdoGU7_JTPBg_TDsTkbhagzdRGTrr21v",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "7성",
+              "trialresult_name": "성공",
+              "prob": "68.2500%",
+              "custom_columns": {},
+              "count": 26577,
+              "realprob": "68.3161%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "7성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "31.7500%",
+              "custom_columns": {},
+              "count": 12326,
+              "realprob": "31.6839%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:25"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcbYnYQHhDYfouhc2GCzLI4nSsX_wbv4K8CKPSEWOfxiS4osy_4&trialid=AWHKTTfY4quraAQdBUd1BiFKipjc8B6ZZLVyh8240P71l06seM4xyfk9&probtableid=AWHKTTeoA2sXm5u_oThMK9btrYFcepdA7WcAh5cpP26p7UPk25hiAl909fSwQb-WCoFUmSr2kLuD5w_T",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "8성",
+              "trialresult_name": "성공",
+              "prob": "63.0000%",
+              "custom_columns": {},
+              "count": 14238,
+              "realprob": "62.3954%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "8성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "37.0000%",
+              "custom_columns": {},
+              "count": 8581,
+              "realprob": "37.6046%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:25"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcuxacttu90GQBHt20-aNGUlC8jKijdV2GMuu7guZuRyKUydPBZ&trialid=AWHKTTefcC-rocuAIWdFwBD7sboc1vKLgs2v-o23yc2mfHPHGXiChqfu&probtableid=AWHKTTfQ2sM4bQXX3WzszZZp3w0RTJeZjq0O5Sr0TKwdOn0ujOf5K_u4OW2u8bCePv3p1iFTdIkdqmiN",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "9성",
+              "trialresult_name": "성공",
+              "prob": "57.7500%",
+              "custom_columns": {},
+              "count": 15669,
+              "realprob": "58.1087%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "9성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "42.2500%",
+              "custom_columns": {},
+              "count": 11296,
+              "realprob": "41.8913%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:26"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcxF_nnW-yBsXPt5OUONDlvjXBT9PBdxi2Wum_MtI_2D2RUNk_L&trialid=AWHKTTcOPb0arDt3Sg1deLegaFGkhrKXXVpxkRtifbu7gvjy7zscQu04&probtableid=AWHKTTeL0vZTvsw2EMm7ng5-gZXt5k5kL9n4gvOXkgy7cli4DGIV93We0OqJ0Qn337EOc7DOHm7Y4DeJ7w%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "10성",
+              "trialresult_name": "성공",
+              "prob": "52.5000%",
+              "custom_columns": {},
+              "count": 12480,
+              "realprob": "51.9913%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "10성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "47.5000%",
+              "custom_columns": {},
+              "count": 11524,
+              "realprob": "48.0087%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:26"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTctvlMPNDrdAcRKq9k6tHDrBIBs9zPnlaZmoK27DTlcH9dR1UqR&trialid=AWHKTTcdorye8CWgDOpyLcbkucE8gXpSJQkscALXJeU_xZ_qhjdZH3jb&probtableid=AWHKTTeDLxqD_PyQQqi-Io355tXxil19bWzZXez9gxof6KcDFipHIMFS7giIUpMQMHtW3fpbuN-E0Lt1Aw%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "11성",
+              "trialresult_name": "성공",
+              "prob": "47.2500%",
+              "custom_columns": {},
+              "count": 12637,
+              "realprob": "47.4950%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "11성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "52.7500%",
+              "custom_columns": {},
+              "count": 13970,
+              "realprob": "52.5050%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:26"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTd1vK5z0ar4UNQAV3CjmDQxmmvU41bxYeBQOYoiJzurP227K049&trialid=AWHKTTcvkDUG_d08ezthf6F_K-jA7fZNwJo3CR-OWDbEuyEzc3Z6_TbU&probtableid=AWHKTTdguSI_cJ-bnzH2jDaj4f_wVxXGy8AibY2Q4yEMy7vp2JNUmw5vBTTgVx2mIkCOauQ5ES65FY82XA%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "12성",
+              "trialresult_name": "성공",
+              "prob": "42.0000%",
+              "custom_columns": {},
+              "count": 17727,
+              "realprob": "41.9118%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "12성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "58.0000%",
+              "custom_columns": {},
+              "count": 24569,
+              "realprob": "58.0882%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:27"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcVXsKffuoUYGDaxpJoKX3jFR9cWcub-e3RsixiouJk2QmWHC3O&trialid=AWHKTTeiTcJjyxX39c_f7ii_-gsw3naweA1VT-IprYo2o43JXnxT8OS0&probtableid=AWHKTTfsCJEUhCnJqwPSQDPqXY_y7JfWjCmQoK4abQ9E_QN4ZXPQgh0Kpkk0zJRsoiiwaAonYU9qU3EinA%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "13성",
+              "trialresult_name": "성공",
+              "prob": "36.7500%",
+              "custom_columns": {},
+              "count": 16910,
+              "realprob": "36.9351%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "13성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "63.2500%",
+              "custom_columns": {},
+              "count": 28873,
+              "realprob": "63.0649%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:27"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTeJdV8gHy1NqA4tsuJeJuL7yPu6NIZBO1T_6CZORYcwH_5FdhRm&trialid=AWHKTTcfk99CGbinm68hen-pVsIZkQZDK61r6rsA8RDFxWTjErq7Abhs&probtableid=AWHKTTexjm17DSpgdmlPjVPzv2ZPVo6y9POq0GX-a9Ta-H6l5mFR2PN_5jYp_PfeznqBy3p-qaFl3sLuOg%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "14성",
+              "trialresult_name": "성공",
+              "prob": "31.5000%",
+              "custom_columns": {},
+              "count": 18851,
+              "realprob": "31.3410%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "14성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "68.5000%",
+              "custom_columns": {},
+              "count": 41297,
+              "realprob": "68.6590%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:27"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTeWdCPKRpvFxK5DgSaktBPtaLiEvjdiMLMwOTRF3Lj7h1gTrZ8G&trialid=AWHKTTdB6krGmqgSGLJlWki30-wdGkoetxqYfuG8f339ABzO_la-ze5B&probtableid=AWHKTTfT6NPUpST3dZoyjpJnHg6s52PKyKmPsy4G0CkjnSHOMPieVZomBXG0JK5DoqTT4WjJo_QYw4N4OA%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "15성",
+              "trialresult_name": "성공",
+              "prob": "31.5000%",
+              "custom_columns": {},
+              "count": 19040,
+              "realprob": "31.6022%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "15성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "66.4450%",
+              "custom_columns": {},
+              "count": 40027,
+              "realprob": "66.4360%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "15성",
+              "trialresult_name": "파괴",
+              "prob": "2.0550%",
+              "custom_columns": {},
+              "count": 1182,
+              "realprob": "1.9619%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:28"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTetLO_LBiwvNkbEhjSdKiV-3Mwv7Ebam1MbtShoqFQjtPbRczu3&trialid=AWHKTTdwSyMMDMB-QST0o0tJPhyazg6921J5Cy91khq41yKcbTLkma-l&probtableid=AWHKTTfzuX6Thghh6yT28V_zPI7amkhb9l4glPowWM7Wr6cRDiagu4cq_LvDGo6woBLq6gbXclJ-R4tucg%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "16성",
+              "trialresult_name": "성공",
+              "prob": "31.5000%",
+              "custom_columns": {},
+              "count": 19195,
+              "realprob": "31.1314%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "16성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "66.4450%",
+              "custom_columns": {},
+              "count": 41208,
+              "realprob": "66.8332%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "16성",
+              "trialresult_name": "파괴",
+              "prob": "2.0550%",
+              "custom_columns": {},
+              "count": 1255,
+              "realprob": "2.0354%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:28"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTeabF8HkY2S9DtTIR2zE8CLc4Wee-O0YDS5XjcqkpIRhwd8nt25&trialid=AWHKTTcDasGrjbVrqzpLD6ri-F-wjNardtXyOwwWDjkZ-E9-z20x62z8&probtableid=AWHKTTdYOr771_V4kwtkDV7c5dormSTEjnBS7kuM-TopyZKl1GwGLZj28dixjI4Gqb76QfIRw-1VV6EUwA%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "17성",
+              "trialresult_name": "성공",
+              "prob": "15.7500%",
+              "custom_columns": {},
+              "count": 14300,
+              "realprob": "15.9539%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "17성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "77.5100%",
+              "custom_columns": {},
+              "count": 69349,
+              "realprob": "77.3699%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "17성",
+              "trialresult_name": "파괴",
+              "prob": "6.7400%",
+              "custom_columns": {},
+              "count": 5984,
+              "realprob": "6.6761%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:28"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTdYPJgqvWDPjxivpBMxbELBWh-d4SAgyY0KhNdGNHTL9XGhWzvT&trialid=AWHKTTdHwXNSx9Ptw95tCKKk9AdcJ6DhzKc8O8_YXx4Q6yJaznQitWLP&probtableid=AWHKTTdjkfm_5AiDlLnUnN5mtyGutGJCijwwCxZ8vbDuSpKPW5kJ7ZgBBE1T3QsyqbcsvdRd-L6WOott-g%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "18성",
+              "trialresult_name": "성공",
+              "prob": "15.7500%",
+              "custom_columns": {},
+              "count": 7609,
+              "realprob": "15.8885%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "18성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "77.5100%",
+              "custom_columns": {},
+              "count": 37039,
+              "realprob": "77.3418%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "18성",
+              "trialresult_name": "파괴",
+              "prob": "6.7400%",
+              "custom_columns": {},
+              "count": 3242,
+              "realprob": "6.7697%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:29"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTfSKW8Kkfy4pZGCevyhuq_qlJ60Z87unouR1aNWJ_d8frSaQ4mq&trialid=AWHKTTcJUSzr_KxNRP6n5vesVcWPQlHhZv7g2FSExoktlN8eMoRGCQAW&probtableid=AWHKTTc1kUkEtusJCv05IYeXbGrNJyDJVsjwjEI4oWIqs2OEw3nzkv7ARh7AaYMMK3YWjtJ5ZBb7GOTHew%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "19성",
+              "trialresult_name": "성공",
+              "prob": "15.7500%",
+              "custom_columns": {},
+              "count": 5064,
+              "realprob": "15.6984%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "19성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "75.8250%",
+              "custom_columns": {},
+              "count": 24562,
+              "realprob": "76.1424%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "19성",
+              "trialresult_name": "파괴",
+              "prob": "8.4250%",
+              "custom_columns": {},
+              "count": 2632,
+              "realprob": "8.1592%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:29"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTf5tm_4F8_qzDobNBgJ36Czbvfst44haPQPe1Vd8pwq7gG9CeYu&trialid=AWHKTTf6KNiGNXhiVK3gR6twH9Ba-QeVnWxSC4njVOZd44eO9_0umUI6&probtableid=AWHKTTe0o803HODkrR_C7C_6kRTGFpZbmIYLmKBuVTIRFK7xYphgGAX5Wrlq9S0Z6OU3JHJ_Uh1lU2UKig%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "20성",
+              "trialresult_name": "성공",
+              "prob": "31.5000%",
+              "custom_columns": {},
+              "count": 3594,
+              "realprob": "31.9183%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "20성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "58.2250%",
+              "custom_columns": {},
+              "count": 6491,
+              "realprob": "57.6465%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "20성",
+              "trialresult_name": "파괴",
+              "prob": "10.2750%",
+              "custom_columns": {},
+              "count": 1175,
+              "realprob": "10.4352%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:30"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTfhXssNschCw_ch5KPwIDUkQtB1Ga8vPh_0qwWJowQF-Gva2NbA&trialid=AWHKTTeVKikPdzMx4RKPBvD26rwGTaXLw-8lKqJYO35sASExW_b48lWb&probtableid=AWHKTTePXz5NoWrj6XTzRu311FsaArOeGaEWlYj-i9ZKmQm0AVKkbslhMk373mZVJq1OpoCYwg_qegwTxQ%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "21성",
+              "trialresult_name": "성공",
+              "prob": "15.7500%",
+              "custom_columns": {},
+              "count": 2059,
+              "realprob": "15.6876%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "21성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "71.6125%",
+              "custom_columns": {},
+              "count": 9387,
+              "realprob": "71.5200%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "21성",
+              "trialresult_name": "파괴",
+              "prob": "12.6375%",
+              "custom_columns": {},
+              "count": 1679,
+              "realprob": "12.7924%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:30"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTd2SkVAqcaoHbTemU3AFNiXzVwn7uszcnmMXq37iU7xK5yF4nHS&trialid=AWHKTTcxPw6aC_D4wEgCvcn0sHmXLimhjJVwoZkj2dIBI2bShic80rFE&probtableid=AWHKTTcVMD1Ee84F_QGI-seLU539fA7RsOr-ls2MLiQIyliiDi_ufCp8jlnGgiv3V_cLXq2zPAXq1Xz9DQ%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "22성",
+              "trialresult_name": "성공",
+              "prob": "15.7500%",
+              "custom_columns": {},
+              "count": 1088,
+              "realprob": "15.5185%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "22성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "67.4000%",
+              "custom_columns": {},
+              "count": 4746,
+              "realprob": "67.6936%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "22성",
+              "trialresult_name": "파괴",
+              "prob": "16.8500%",
+              "custom_columns": {},
+              "count": 1177,
+              "realprob": "16.7879%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:30"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcwjQzx22CRTiXHaddKwDScztTQwxyiYIgXc3DTbD0Ov9F3gqKa&trialid=AWHKTTcN_5OilfQQv1VuCOC69YpAoZxv5DqVFTTSXbSHS4ZUdaAqBaPO&probtableid=AWHKTTek36ocuABEF9Lcrz38kdTmgnt4Xysl094Y7L8MkSYQ6Pvs0IoI8qH-pEzPE5phIKsiZB3nD2QYxg%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "23성",
+              "trialresult_name": "성공",
+              "prob": "10.5000%",
+              "custom_columns": {},
+              "count": 195,
+              "realprob": "9.7695%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "23성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "71.6000%",
+              "custom_columns": {},
+              "count": 1446,
+              "realprob": "72.4449%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "23성",
+              "trialresult_name": "파괴",
+              "prob": "17.9000%",
+              "custom_columns": {},
+              "count": 355,
+              "realprob": "17.7856%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:31"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTc56HR8svuE44bWBcLQ_C3U1pLrPP6W0ErEvUWOGNn1bA3Al-Nt&trialid=AWHKTTf3PTXTcH_Mx8IVKv03GootaHAApjR5VvkPd3LES9mS486b_v1p&probtableid=AWHKTTfiMW-yxVnOtu_Sh1sqjHcZi3QN2dsCSUeGcWpS-zFchJdqGeXGHGCZ7my5FsVQwTvu6-cYc8fADg%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "24성",
+              "trialresult_name": "성공",
+              "prob": "10.5000%",
+              "custom_columns": {},
+              "count": 50,
+              "realprob": "10.1215%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "24성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "71.6000%",
+              "custom_columns": {},
+              "count": 362,
+              "realprob": "73.2794%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "24성",
+              "trialresult_name": "파괴",
+              "prob": "17.9000%",
+              "custom_columns": {},
+              "count": 82,
+              "realprob": "16.5992%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:31"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTd3376FMADFs1idDyUbrUI0DfQiSuzJeH8pkqyJ9CrVGAHEvEdE&trialid=AWHKTTf7Abzed89CsCDXVqkI1UvLpXEOvA-5gWIYfN4nOchsgKI-U4Dw&probtableid=AWHKTTdJxyOHiLa2SMIzJFpxWymcgnfrSQ0GqDoZoT_goFo1T2r9X0weICW941aArehPZZyW726cwGg8Lw%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "25성",
+              "trialresult_name": "성공",
+              "prob": "10.5000%",
+              "custom_columns": {},
+              "count": 10,
+              "realprob": "8.7719%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "25성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "71.6000%",
+              "custom_columns": {},
+              "count": 86,
+              "realprob": "75.4386%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "25성",
+              "trialresult_name": "파괴",
+              "prob": "17.9000%",
+              "custom_columns": {},
+              "count": 18,
+              "realprob": "15.7895%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:31"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTfHJCfuAdp7li7O2eG07cSzOas28WKHW-WyJg2mkGSK0reqtiDV&trialid=AWHKTTdVOlRqI13dh66A2SOIxFkZlVjqJsYXweP1GD4kZUEKsCbEMRBR&probtableid=AWHKTTdQ8xnS4rpuNyIcs2v1VrRqjff0_1qlR4HSX9rKXBARWiKTlOVzdDepmN-JLsuALNxyJG8uNuuU1g%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "26성",
+              "trialresult_name": "성공",
+              "prob": "7.3500%",
+              "custom_columns": {},
+              "count": 1,
+              "realprob": "10.0000%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "26성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "74.1200%",
+              "custom_columns": {},
+              "count": 7,
+              "realprob": "70.0000%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "26성",
+              "trialresult_name": "파괴",
+              "prob": "18.5300%",
+              "custom_columns": {},
+              "count": 2,
+              "realprob": "20.0000%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:32"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTd0ERoSqb1cyaPxm1N1f1hKip6d1460Bhz-aE2qfLUuETW3VPGD&trialid=AWHKTTd_B6a4nauwn0ZB7yLN-G9UPX_c_cCfz4Vl73zCriA93-i2lquL&probtableid=AWHKTTePHshwfFcYSJNt9n0-DjwHeEQcM-8hkKdnrVLq5IcBKtY-4HZJZJtl_P6UaaB9ZJmq7_tcbKLu7g%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "27성",
+              "trialresult_name": "성공",
+              "prob": "5.2500%",
+              "custom_columns": {},
+              "count": 1,
+              "realprob": "11.1111%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "27성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "75.8000%",
+              "custom_columns": {},
+              "count": 7,
+              "realprob": "77.7778%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "27성",
+              "trialresult_name": "파괴",
+              "prob": "18.9500%",
+              "custom_columns": {},
+              "count": 1,
+              "realprob": "11.1111%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:32"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcwHSLEZv_8EVOmEqGLxbM7wKdr7MWP5Ntzm_VdZ-8UwLvpi9yY&trialid=AWHKTTfAUvDsSt72JoCDLS3k23bgze9oLs3rU_SCl6rAL4m2lZk244UY&probtableid=AWHKTTfFzAg-8JwlZx0f2M3qwZmHbIQZzjqYtXNlGuwdDJwBIV5fb2tjvnljbfcYpYcqocU0V5i9Q6aZag%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": true,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "28성",
+              "trialresult_name": "성공",
+              "prob": "3.1500%",
+              "custom_columns": {},
+              "count": 0,
+              "realprob": "0.0000%",
+              "windowStart": null,
+              "windowEnd": null,
+              "updateDt": null,
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "28성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "77.4800%",
+              "custom_columns": {},
+              "count": 0,
+              "realprob": "0.0000%",
+              "windowStart": null,
+              "windowEnd": null,
+              "updateDt": null,
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "28성",
+              "trialresult_name": "파괴",
+              "prob": "19.3700%",
+              "custom_columns": {},
+              "count": 0,
+              "realprob": "0.0000%",
+              "windowStart": null,
+              "windowEnd": null,
+              "updateDt": null,
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:32"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/391413ae-3f9a-4c7c-832e-80f8b6084d58/probs?contentid=AWHKTTcMDqxscOGpJL2TtGIKUikdSaNM2-P9MaXxJjGfqOT-2wiGw6jr&trialid=AWHKTTfpoDI5MRl6dnKC6Cw9y70kPQi4Pf4v37PUrhT7-_6NpxQ7crWR&probtableid=AWHKTTcQ1Y-xRORWreuhi7unXOf-OvE4_E9KSuZezIVuyZNtJXUaNNIr94qEPyVjmV-I9zo4fbJg2cO3ZA%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": true,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "29성",
+              "trialresult_name": "성공",
+              "prob": "1.0500%",
+              "custom_columns": {},
+              "count": 0,
+              "realprob": "0.0000%",
+              "windowStart": null,
+              "windowEnd": null,
+              "updateDt": null,
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "29성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "79.1600%",
+              "custom_columns": {},
+              "count": 0,
+              "realprob": "0.0000%",
+              "windowStart": null,
+              "windowEnd": null,
+              "updateDt": null,
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "29성",
+              "trialresult_name": "파괴",
+              "prob": "19.7900%",
+              "custom_columns": {},
+              "count": 0,
+              "realprob": "0.0000%",
+              "windowStart": null,
+              "windowEnd": null,
+              "updateDt": null,
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:33"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTfwmZmfWSzv81v6R7k-sWBEM-4UD6qJJZO9lQB3MxxUYqKhI0go&trialid=AWHKTTeFoncBRiP5zz1sN7-plcp5Fi8BuslpYUfZAcmfXRILDgH8iIZQ&probtableid=AWHKTTexgKjwUGZhIoBvM6f_f3mONg8U6-lhubU6MPsvvygwyeFEoEk_jctS1Vei",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "0성",
+              "trialresult_name": "성공",
+              "prob": "95.0000%",
+              "custom_columns": {},
+              "count": 256997,
+              "realprob": "95.0721%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "0성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "5.0000%",
+              "custom_columns": {},
+              "count": 13321,
+              "realprob": "4.9279%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:33"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTfwCoLf-LhOlB4JLqcJ8ut6BioaJsQ8UuIw8KHJjSgBECI1DkGC&trialid=AWHKTTeRL5LZR6jFZAa7euovhTPVgNABiuyaZKQlwF_rJmylcTHR3ZCp&probtableid=AWHKTTcoH-ZsJ1XjrV3GwMRl_KnfoQ6S_j0TofNk8nnFE8iap7g3w5vpgC3-UMlH",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "1성",
+              "trialresult_name": "성공",
+              "prob": "90.0000%",
+              "custom_columns": {},
+              "count": 279615,
+              "realprob": "90.0607%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "1성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "10.0000%",
+              "custom_columns": {},
+              "count": 30859,
+              "realprob": "9.9393%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:34"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTeFnoUNQrcsftqKyM2zn-N63mWqtmo-chyNRz5JaeHsnz_Bcxis&trialid=AWHKTTckbbosemRQHNA_PPImbHn4kEYiKGP8S2MYKXFu48pjXx7ATpzc&probtableid=AWHKTTcVsmOog3n1y2PF2i9JuY67vPBKZJlPzuvbZY0C89ra1j7QQpjgcGK1liKH",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "2성",
+              "trialresult_name": "성공",
+              "prob": "85.0000%",
+              "custom_columns": {},
+              "count": 280340,
+              "realprob": "85.0280%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "2성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "15.0000%",
+              "custom_columns": {},
+              "count": 49363,
+              "realprob": "14.9720%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:34"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTe9DAC-lWd1F_ZfkXAs8uB7YxwmJoBMAQPVWUvLqRbhx8ohIg4Q&trialid=AWHKTTcxp8z5lW1V6KTLrmfKXoT7n1VUpzqcKnE6WDJsEg389I1hJFx9&probtableid=AWHKTTeqY5AKkBJC2db_-Luitmibf6LtlVh3XZ12zVq5Ta32f0FJ26KkrUDxf8aN",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "3성",
+              "trialresult_name": "성공",
+              "prob": "85.0000%",
+              "custom_columns": {},
+              "count": 279524,
+              "realprob": "84.9168%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "3성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "15.0000%",
+              "custom_columns": {},
+              "count": 49650,
+              "realprob": "15.0832%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:34"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTdQkmmCA0OV5VjKXyQdweLjppY90CU64hZYmxmUAFd4GKkEv6qd&trialid=AWHKTTdf75rB7NYNG8tmz77KktVZHV6Dkvm0YjJhArKKXLGWS1WAAwYP&probtableid=AWHKTTe5cP9mNevyKtgT37Wfyb9vuSGEv0AfqFqjzxOJH8oWoi5pkXfIhtEJg4r7",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "4성",
+              "trialresult_name": "성공",
+              "prob": "80.0000%",
+              "custom_columns": {},
+              "count": 278918,
+              "realprob": "80.0120%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "4성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "20.0000%",
+              "custom_columns": {},
+              "count": 69677,
+              "realprob": "19.9880%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:35"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTf7qbqPwYYfCsMrjCPDrJslUfSwVYlA2PaDZHOM2KhKpjqELjgs&trialid=AWHKTTcAxQaiBUZyf_1AxrI4psf3AxIiIXQ1cUal_tw_nkR6vEb-Og4s&probtableid=AWHKTTeJ-2DS6SjbkFxE5Op9BDxjvOJujZakcJVrKDLuJ9AKuqOhEnzP1vUv6D83",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "5성",
+              "trialresult_name": "성공",
+              "prob": "75.0000%",
+              "custom_columns": {},
+              "count": 214730,
+              "realprob": "75.0495%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "5성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "25.0000%",
+              "custom_columns": {},
+              "count": 71388,
+              "realprob": "24.9505%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:35"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTeHqggI23MzLqjDf7IG3ztm-3YHM-vf31UoPVq3HHABC700ftDn&trialid=AWHKTTeVnjBYbm8ct71pG7JvHxujjUN9ihPalvPLwtEF_7O68VDrWXMy&probtableid=AWHKTTdBA-lPAIZd0JqQvp8gdXMKnSLty5RAcuZ-N_FueZCtGc3Hr2gQs13bE7kl",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "6성",
+              "trialresult_name": "성공",
+              "prob": "70.0000%",
+              "custom_columns": {},
+              "count": 213427,
+              "realprob": "69.8718%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "6성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "30.0000%",
+              "custom_columns": {},
+              "count": 92028,
+              "realprob": "30.1282%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:35"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTf1gsm1X_Kh5plfEz501NGH1wp7W6_q6c69KeENsZ3F2j83pTrC&trialid=AWHKTTe3EKiNMtOrrm37CAqO1KBo3lIJFJt-TjnHmZuxKLmpqrDSHHqQ&probtableid=AWHKTTdHCWkSTmoXNOqsvEUx8XDNcZH0tAYjWewWdzvRv0qm74cW7tXWrstT3emS",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "7성",
+              "trialresult_name": "성공",
+              "prob": "65.0000%",
+              "custom_columns": {},
+              "count": 213831,
+              "realprob": "65.1023%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "7성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "35.0000%",
+              "custom_columns": {},
+              "count": 114623,
+              "realprob": "34.8977%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:36"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTd3C1m-0hba7rym88M2MCqruj2KTzd3WUIZq0rM5I1IDOE9m-XL&trialid=AWHKTTcMgyGK9da--1puGzbgcytgnfWsKfYL3_Jgu27MLKaU9WHKQ9vM&probtableid=AWHKTTfKezKs5et5sB2Ovy53gksJTPPp-ddR9CYTIBJBUuAxRSSEyAjfcMB35Z9H",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "8성",
+              "trialresult_name": "성공",
+              "prob": "60.0000%",
+              "custom_columns": {},
+              "count": 103620,
+              "realprob": "60.1246%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "8성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "40.0000%",
+              "custom_columns": {},
+              "count": 68722,
+              "realprob": "39.8754%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:36"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTd2QrtZr1Nn1T_6vC65B93a1-tgZkLl8SxV0usKzVfAV88Ib6uy&trialid=AWHKTTfWtq1GE-G564IvvgfKBGGZabfamMlQR6Eb03SNJSmXq4p3s_uf&probtableid=AWHKTTeIHrSEKiOM_lR21OJLx-CV2nzg72b3L_VbzP5Q0fzpgPnN5Wnudhd4Qv11",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "9성",
+              "trialresult_name": "성공",
+              "prob": "55.0000%",
+              "custom_columns": {},
+              "count": 106081,
+              "realprob": "55.1531%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "9성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "45.0000%",
+              "custom_columns": {},
+              "count": 86258,
+              "realprob": "44.8469%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:36"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTd82sTuUj-QPdr1n_4iyuRy2MjSJ3083meWcj_Rny0KOzXJU52w&trialid=AWHKTTdFWhQdVy7JpG3ES9G9uDXpq2TUxXeDQjfuppLgwZqlPauRXc6m&probtableid=AWHKTTcHDEKjZKtrVza37poV4wLVUqJdldNcLhDH6EHVakJE0C8qNchfblh6cDpXxA%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "10성",
+              "trialresult_name": "성공",
+              "prob": "50.0000%",
+              "custom_columns": {},
+              "count": 36282,
+              "realprob": "49.7969%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "10성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "50.0000%",
+              "custom_columns": {},
+              "count": 36578,
+              "realprob": "50.2031%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:37"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTf3jowaAWH4nXa683F1mLeXHkW3QQsMfKKA59II3PKXECb-jSu5&trialid=AWHKTTeFoNBB3SGC47lOvUhL0bk6SWzXMAaEVv3PSoJe2aJaN9z_NbvS&probtableid=AWHKTTfB8PnffaaMEpglPcTBVjj7UExLvfawCrtHf2uYUttEAWWLy2MhtpG5xWWPeQ%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "11성",
+              "trialresult_name": "성공",
+              "prob": "45.0000%",
+              "custom_columns": {},
+              "count": 30484,
+              "realprob": "45.0713%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "11성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "55.0000%",
+              "custom_columns": {},
+              "count": 37151,
+              "realprob": "54.9287%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:37"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTftNEdBlB-PBDG0gu-f4czv4xbJEpVVtg6cf35V6xdJJ7dZhyE-&trialid=AWHKTTcFZP4VOKG2XG5jfy4H4IXjuk0Z3bCxbtNnPig5QltlX-KOwp0V&probtableid=AWHKTTecIbB5e9o7YNCwDbyVHl0w6TUi7aliFkEo-23VVTXCGNRQBbab0kLRTTmXdA%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "12성",
+              "trialresult_name": "성공",
+              "prob": "40.0000%",
+              "custom_columns": {},
+              "count": 37410,
+              "realprob": "40.0591%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "12성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "60.0000%",
+              "custom_columns": {},
+              "count": 55977,
+              "realprob": "59.9409%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:38"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTfUezvrwdpf-_TPw-lXemmJGt7JBCwJtOWScKl9j4W8aRN6n-Oi&trialid=AWHKTTd-yIl1yrQbU-gmwTkOM5-5YzXaKO0ze9YbPyYgIVSz0PQQ3jyy&probtableid=AWHKTTfZnGCOtjYXF1CUW2YM4NrRWR3qWcbVp2xu-AX8kJD8ZjqFq0LJAk7rdMfdSw%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "13성",
+              "trialresult_name": "성공",
+              "prob": "35.0000%",
+              "custom_columns": {},
+              "count": 35095,
+              "realprob": "34.7706%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "13성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "65.0000%",
+              "custom_columns": {},
+              "count": 65838,
+              "realprob": "65.2294%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:38"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTdbDCl7GWHwzips5ZSLChzbi1cXuUEMZAKEop32NFk_EHpAA2PD&trialid=AWHKTTdZUfPV11Uq1cAUYNDwTnzJ5eq_IQpS5K-cqaBWsDb7gxzgbLzT&probtableid=AWHKTTfdm3hclJaVdrFYf5glF3rr-utYVBmK4J0pH2xHktVDcGBOMtTjb9abZGpXMw%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "14성",
+              "trialresult_name": "성공",
+              "prob": "30.0000%",
+              "custom_columns": {},
+              "count": 31011,
+              "realprob": "30.1180%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "14성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "70.0000%",
+              "custom_columns": {},
+              "count": 71954,
+              "realprob": "69.8820%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:38"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTd7VC2rPauG-jVgAzW-Bw8eqjeJFNjbnVoAZnOZ_CqUZ2lJ6cjA&trialid=AWHKTTf7idIXSKYOoboCGwxeTtV2WActQ7E4ucwvaEHhqLUv_GlsFG2a&probtableid=AWHKTTfSzgvXIRWBr58RaQckpUBwZEGeTGwLHrR_JgUfPbMpE46BHTrkfbfRo8mVqg%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "15성",
+              "trialresult_name": "성공",
+              "prob": "30.0000%",
+              "custom_columns": {},
+              "count": 17658,
+              "realprob": "29.9085%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "15성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "67.9000%",
+              "custom_columns": {},
+              "count": 40129,
+              "realprob": "67.9692%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "15성",
+              "trialresult_name": "파괴",
+              "prob": "2.1000%",
+              "custom_columns": {},
+              "count": 1253,
+              "realprob": "2.1223%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:39"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTcBwdzMtzu4vhFf2_JFWikfTk2OrZ36-tbtP1H-wVwg4FDEmOQq&trialid=AWHKTTeapkVfOhsvlmM639Nuzn0vk3h-fNR4YQrPY2Kl-rQs4xoCV8yn&probtableid=AWHKTTf6h1wu2FouUPXarZrz_8fV_NYifuj5kZ8gGguEHu3MuMiv4uf9CmPvJYaCkw%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "16성",
+              "trialresult_name": "성공",
+              "prob": "30.0000%",
+              "custom_columns": {},
+              "count": 14739,
+              "realprob": "30.1565%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "16성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "67.9000%",
+              "custom_columns": {},
+              "count": 33148,
+              "realprob": "67.8220%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "16성",
+              "trialresult_name": "파괴",
+              "prob": "2.1000%",
+              "custom_columns": {},
+              "count": 988,
+              "realprob": "2.0215%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:39"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTcPCw12YAkY37GeF4x_Tw-GTvqlktLyuk36mQQSyzr48IhQATpA&trialid=AWHKTTdRWsZ62TwvTzaGYUgeOCqMTwH16mLP1ZDp1VzAP6zbOpn1hPmI&probtableid=AWHKTTeVWkRS2suvLCxu4DD3GAPVpirnYzwg1lrrDNJ80ugNoml9kDjtwyDEOS0XeA%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "17성",
+              "trialresult_name": "성공",
+              "prob": "15.0000%",
+              "custom_columns": {},
+              "count": 6204,
+              "realprob": "15.2301%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "17성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "78.2000%",
+              "custom_columns": {},
+              "count": 31736,
+              "realprob": "77.9084%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "17성",
+              "trialresult_name": "파괴",
+              "prob": "6.8000%",
+              "custom_columns": {},
+              "count": 2795,
+              "realprob": "6.8614%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:39"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTfPk6v8GJjNeHwKNZeB_jfBlobr-7Gm9fMrSnF9taeFKI1UhEEG&trialid=AWHKTTeRkstsisDoNrMZLhQtN85DI9MCZdJaqWjRI_Ka7pHuLx09dXbc&probtableid=AWHKTTeOfvK2bjkxG8w4D568vUBM9bDhKg8tL8jduvHSv91I7pw1Sx_eHxsQqN5T4Q%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "18성",
+              "trialresult_name": "성공",
+              "prob": "15.0000%",
+              "custom_columns": {},
+              "count": 2293,
+              "realprob": "14.9840%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "18성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "78.2000%",
+              "custom_columns": {},
+              "count": 11938,
+              "realprob": "78.0108%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "18성",
+              "trialresult_name": "파괴",
+              "prob": "6.8000%",
+              "custom_columns": {},
+              "count": 1072,
+              "realprob": "7.0052%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:40"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTceVF9VFg-nhVIRPHXJAaiig1vPbXCmZqFDof1IzaQ10hVWTrc3&trialid=AWHKTTe90a8fekcVuwT9ksfgruxmsG8XYUVSYhyMHYyIbSRoA91YeT1V&probtableid=AWHKTTcoD5hAad45spy8hSCz2ah6wVnR8vtUlK3XtMDLF3zVsS2eK4YdEkY4kNx48w%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "19성",
+              "trialresult_name": "성공",
+              "prob": "15.0000%",
+              "custom_columns": {},
+              "count": 1051,
+              "realprob": "14.5588%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "19성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "76.5000%",
+              "custom_columns": {},
+              "count": 5576,
+              "realprob": "77.2406%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "19성",
+              "trialresult_name": "파괴",
+              "prob": "8.5000%",
+              "custom_columns": {},
+              "count": 592,
+              "realprob": "8.2006%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:40"
+    },
+    {
+      "url": "https://orng-api.nexon.com/api/services/maplestory/pages/562d346f-f2c9-4425-bb08-12680e165251/sub-pages/82f1103b-dfe7-432c-9e01-b06100681858/paragraphs/c6f317d6-1668-4f81-a7a8-393fef488d05/probs?contentid=AWHKTTeaffjl_7qTh_YuWiToXROu-umRhK9KwyD4mH0CESbRChAEinW3&trialid=AWHKTTf_HApjAYfXLAG_MUzp8lU5XZcbrrDf037k9qj6NnUfWIICBAG7&probtableid=AWHKTTexzEnFEDhnLHhmLASeEWbqWxCsOOe4m4BWtOkBDrC0TgEKGramKLX6BnSsGw%3D%3D",
+      "data": {
+        "code": 0,
+        "message": null,
+        "data": {
+          "trialresultMissing": false,
+          "probs": [
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "20성",
+              "trialresult_name": "성공",
+              "prob": "30.0000%",
+              "custom_columns": {},
+              "count": 512,
+              "realprob": "30.6587%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "20성",
+              "trialresult_name": "실패 (유지)",
+              "prob": "59.5000%",
+              "custom_columns": {},
+              "count": 966,
+              "realprob": "57.8443%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            },
+            {
+              "content_name": "스타포스",
+              "trialid_name": "스타포스 이벤트 미적용(파괴방지X)",
+              "probtable_name": "20성",
+              "trialresult_name": "파괴",
+              "prob": "10.5000%",
+              "custom_columns": {},
+              "count": 192,
+              "realprob": "11.4970%",
+              "windowStart": null,
+              "windowEnd": "2026-01-27T17:00:00",
+              "updateDt": "2026-01-27T18:02:56",
+              "showRealprobWarning": false
+            }
+          ]
+        }
+      },
+      "captured_at": "2026-01-27 18:55:40"
+    }
+  ],
   "summary": {
     "total_tables": 0,
-    "total_prob_responses": 0
+    "total_prob_responses": 51
   }
 }
