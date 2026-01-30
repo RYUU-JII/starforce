@@ -10,19 +10,21 @@ def load_all_data(base_dir="crawler/sessions"):
     found_files = 0
     
     for root, dirs, files in os.walk(base_dir):
-        for file in files:
-            if file == "hourly_snapshots.jsonl":
-                path = os.path.join(root, file)
-                found_files += 1
-                with open(path, "r", encoding="utf-8") as f:
-                    for line in f:
-                        line = line.strip()
-                        if not line: continue
-                        try:
-                            entry = json.loads(line)
-                            if entry.get("data_by_key"):
-                                all_entries.append(entry)
-                        except: continue
+        # Prefer relabeled snapshots if present
+        relabeled = os.path.join(root, "hourly_snapshots_relabel.jsonl")
+        original = os.path.join(root, "hourly_snapshots.jsonl")
+        path = relabeled if os.path.exists(relabeled) else original
+        if os.path.exists(path):
+            found_files += 1
+            with open(path, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line: continue
+                    try:
+                        entry = json.loads(line)
+                        if entry.get("data_by_key"):
+                            all_entries.append(entry)
+                    except: continue
     
     # Sort ALL entries by timestamp globally
     # This treats data across sessions as a single timeline
@@ -168,8 +170,18 @@ def analyze_temporal_iid(base_dir="crawler/sessions"):
     print(f"{'TIMESTAMP':<20} | {'STAR':<5} | {'N':>8} | {'Z-SCORE':>8} | {'LUCK'}")
     print("-" * 55)
     
-    for target in ["no_event_catch_off_17", "no_event_catch_off_18"]:
-        if target in deltas_map:
+    # (legacy fixed-key trace removed; new key format handled below)
+
+    # New key format support: pick any keys ending with _17 / _18 (prefer no_event)
+    def pick_keys_for_star(star_level: int) -> list[str]:
+        suffix = f"_{star_level}"
+        keys = [k for k in deltas_map.keys() if k.endswith(suffix)]
+        no_event = [k for k in keys if k.startswith("no_event_")]
+        return no_event if no_event else keys
+
+    for star_level in [17, 18]:
+        targets = pick_keys_for_star(star_level)
+        for target in targets:
             for d in deltas_map[target]:
                 n = d["n"]
                 p = d["p_s"]
@@ -178,9 +190,9 @@ def analyze_temporal_iid(base_dir="crawler/sessions"):
                 z = (obs_s - exp_s) / math.sqrt(n * p * (1 - p)) if n > 0 else 0
                 
                 luck = "!!!" if z > 2 else "++" if z > 1 else "--" if z < -1 else "!!!" if z < -2 else "ok"
-                ts_short = d["timestamp"].split(" ")[1] # Just time
-                print(f"{d['timestamp']:<20} | {target[-3:]:>5} | {n:>8,d} | {z:>8.2f} | {luck}")
-            print("-" * 55)
+                print(f"{d['timestamp']:<20} | {star_level:>5} | {n:>8,d} | {z:>8.2f} | {luck}")
+            if targets:
+                print("-" * 55)
 
     print("\n[Analysis Guide]")
     print("  1. Z_VAR < 1.0: Results are 'too consistent'. Potential Global Deck or Smoothing.")

@@ -88,6 +88,7 @@ class DeltaCalculator:
             print(f"⏭️ 데이터 변경 없음 (windowEnd: {current_window_end}), 저장 건너뜀")
             return [], False
         
+        table_counts = {}
         for prob_entry in crawl_result.get("prob_data", []):
             data = prob_entry.get("data", {}).get("data", {})
             probs = data.get("probs", [])
@@ -97,10 +98,18 @@ class DeltaCalculator:
             
             # 첫 번째 prob에서 메타데이터 추출
             first = probs[0]
-            key = self._make_key(first)
+            probtable_id = self._extract_probtableid(prob_entry.get("url", ""))
+            
+            # 순서 기반 라벨링 지원을 위해 발생 횟수 추적
+            table_counts[probtable_id] = table_counts.get(probtable_id, 0) + 1
+            occurrence = table_counts[probtable_id]
+            
+            key = self._make_key(first, probtable_id, occurrence)
             
             # 현재 데이터 집계
             current = self._aggregate_probs(probs)
+            if probtable_id:
+                current["probtableid"] = probtable_id
             current_data[key] = current
             
             # 이전 데이터와 비교
@@ -144,17 +153,28 @@ class DeltaCalculator:
         return deltas, reset_detected
 
     
-    def _make_key(self, prob: dict) -> str:
-        """고유 키 생성: 이벤트_스타캐치_성"""
+    def _make_key(self, prob: dict, probtable_id: Optional[str] = None, occurrence: int = 1) -> str:
+        """고유 키 생성: 이벤트_스타캐치_테이블ID_성"""
         trial_name = prob.get("trialid_name", "unknown")
         table_name = prob.get("probtable_name", "unknown")
         
         # 스타캐치 여부 추출
-        starcatch = "catch_on" if "스타캐치" in trial_name or "Catch" in trial_name.lower() else "catch_off"
+        starcatch = "catch_unknown"
+        
+        # 1. 문자열로 명시되어 있는지 확인
         if "스타캐치 O" in trial_name:
             starcatch = "catch_on"
         elif "스타캐치 X" in trial_name:
             starcatch = "catch_off"
+        elif "스타캐치" in trial_name or "Catch" in trial_name.lower():
+            starcatch = "catch_on"
+        
+        # 2. 명시되어 있지 않으면 순서(Occurrence)로 판정 (사용자 피드백: 1번째는 On, 2번째는 Off)
+        if starcatch == "catch_unknown":
+            if occurrence == 1:
+                starcatch = "catch_on"
+            else:
+                starcatch = "catch_off"
         
         # 성 추출
         star = table_name.replace("성", "").strip()
@@ -170,7 +190,20 @@ class DeltaCalculator:
         elif "비용" in trial_name:
             event = "cost_reduction"
         
-        return f"{event}_{starcatch}_{star}"
+        table_tag = probtable_id or "unknown_table"
+        return f"{event}_{starcatch}_{table_tag}_{star}"
+
+    def _extract_probtableid(self, url: str) -> Optional[str]:
+        """URL 쿼리에서 probtableid 추출"""
+        try:
+            from urllib.parse import urlparse, parse_qs
+            q = parse_qs(urlparse(url).query)
+            v = q.get("probtableid")
+            if v:
+                return v[0]
+        except Exception:
+            pass
+        return None
     
     def _aggregate_probs(self, probs: list) -> dict:
         """prob 배열을 집계된 형태로 변환"""
@@ -214,11 +247,15 @@ class DeltaCalculator:
         if total_delta <= 0:
             return None
         
-        # key 파싱
+        # key 파싱 (event / catch / table / star)
         parts = key.split("_")
         event_type = parts[0] if len(parts) > 0 else "unknown"
-        starcatch = parts[1] == "catch_on" if len(parts) > 1 else False
-        star_level = int(parts[2]) if len(parts) > 2 and parts[2].isdigit() else 0
+        starcatch = "catch_on" in parts
+        star_level = 0
+        for part in reversed(parts):
+            if part.isdigit():
+                star_level = int(part)
+                break
         
         actual_success = success_delta / total_delta if total_delta > 0 else 0
         actual_boom = boom_delta / total_delta if total_delta > 0 else 0

@@ -1,6 +1,9 @@
 <div id="temporal-gap-root" class="audit-wrapper">
     <div class="p-6">
-        <h1 class="text-3xl font-bold text-purple-400 mb-2">📉 IID Gap Analysis</h1>
+        <div class="flex items-center gap-3 mb-2">
+            <h1 class="text-3xl font-bold text-purple-400">📉 IID Gap Analysis</h1>
+            <span id="gapDataSource" class="text-[11px] px-2 py-1 rounded border border-purple-700 text-purple-300 bg-purple-900/30">Source: —</span>
+        </div>
         <h2 class="text-gray-400 mb-8">실제 데이터 vs 독립 시행(Fair World) 비교: "보정 로직"의 실체를 통계로 시각화</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -22,9 +25,33 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-            <div class="bg-gray-800 border border-gray-700 rounded-xl p-6 h-[450px] lg:col-span-2">
-                <h4 class="text-gray-400 text-xs mb-4">Z-Score 시계열: 실제 데이터(Real) vs 독립 시행 시뮬레이션(Fair World)</h4>
-                <div class="h-[380px]">
+            <div class="bg-gray-800 border border-gray-700 rounded-xl p-6 h-[450px] lg:col-span-2 relative">
+                <div class="flex justify-between items-center mb-4">
+                    <h4 class="text-gray-400 text-xs uppercase tracking-wider">Z-Score 시계열: 실제 데이터(Real) vs 독립 시행(Fair
+                        World)</h4>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xs text-gray-500">분석 대상:</span>
+                        <select id="gapStarSelector"
+                            class="bg-gray-700 border border-gray-600 text-purple-400 text-xs rounded px-2 py-1 outline-none focus:border-purple-500">
+                            <!-- 12성부터 25성까지 옵션 추가 -->
+                            <option value="12">12성</option>
+                            <option value="13">13성</option>
+                            <option value="14">14성</option>
+                            <option value="15">15성</option>
+                            <option value="16">16성</option>
+                            <option value="17" selected>17성</option>
+                            <option value="18">18성</option>
+                            <option value="19">19성</option>
+                            <option value="20">20성</option>
+                            <option value="21">21성</option>
+                            <option value="22">22성</option>
+                            <option value="23">23성</option>
+                            <option value="24">24성</option>
+                            <option value="25">25성</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="h-[360px]">
                     <canvas id="gapTimeSeriesChart"></canvas>
                 </div>
             </div>
@@ -39,6 +66,27 @@
                 <div class="h-[330px]">
                     <canvas id="gapStarChart"></canvas>
                 </div>
+            </div>
+        </div>
+
+        <div class="bg-gray-800 border border-gray-700 rounded-xl p-6 mb-8">
+            <h4 class="text-gray-400 text-xs mb-4">요약: 성별 표본 수 / 시도 수 / 자기상관 표준오차</h4>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-xs">
+                    <thead class="bg-gray-900 text-gray-400">
+                        <tr>
+                            <th class="p-2">STAR</th>
+                            <th class="p-2 text-right">N</th>
+                            <th class="p-2 text-right">n_mean</th>
+                            <th class="p-2 text-right">n_med</th>
+                            <th class="p-2 text-right">autocorr</th>
+                            <th class="p-2 text-right">SE(1/√N)</th>
+                            <th class="p-2 text-right">z_mean</th>
+                            <th class="p-2 text-right">z_std</th>
+                        </tr>
+                    </thead>
+                    <tbody id="gapSummaryTable" class="text-gray-300"></tbody>
+                </table>
             </div>
         </div>
 
@@ -69,6 +117,8 @@
                     console.log('[GapAnalysis-Inline] Data loaded:', Object.keys(gapData));
                 }
 
+                renderDataSource();
+                renderSummaryTable();
                 renderGapAnalysis(star);
             } catch (err) {
                 console.error('[GapAnalysis-Inline] Error:', err);
@@ -195,7 +245,9 @@
             if (ctxStar) {
                 if (gapCharts.star) gapCharts.star.destroy();
 
-                const stars = Object.keys(gapData).sort((a, b) => a - b);
+                const stars = Object.keys(gapData)
+                    .filter(k => Number.isFinite(Number(k)))
+                    .sort((a, b) => Number(a) - Number(b));
                 gapCharts.star = new Chart(ctxStar.getContext('2d'), {
                     type: 'bar',
                     data: {
@@ -226,8 +278,64 @@
             console.log('[GapAnalysis-Inline] Rendering complete for ' + star + '*');
         }
 
+        function renderSummaryTable() {
+            const tbody = document.getElementById('gapSummaryTable');
+            if (!tbody || !gapData) return;
+            const stars = Object.keys(gapData)
+                .filter(k => Number.isFinite(Number(k)))
+                .map(Number)
+                .sort((a, b) => a - b);
+
+            tbody.innerHTML = '';
+            for (const star of stars) {
+                const row = gapData[star];
+                if (!row || !row.summary) continue;
+                const s = row.summary;
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td class="p-2">${star}성</td>
+                    <td class="p-2 text-right">${s.n_obs ?? '-'}</td>
+                    <td class="p-2 text-right">${(s.n_mean ?? 0).toFixed(1)}</td>
+                    <td class="p-2 text-right">${(s.n_median ?? 0).toFixed(1)}</td>
+                    <td class="p-2 text-right">${(row.real?.autocorr ?? 0).toFixed(3)}</td>
+                    <td class="p-2 text-right">${(s.se_autocorr ?? 0).toFixed(3)}</td>
+                    <td class="p-2 text-right">${(s.z_mean ?? 0).toFixed(2)}</td>
+                    <td class="p-2 text-right">${(s.z_std ?? 0).toFixed(2)}</td>
+                `;
+                tbody.appendChild(tr);
+            }
+        }
+
+        function renderDataSource() {
+            const el = document.getElementById('gapDataSource');
+            if (!el || !gapData) return;
+            const meta = gapData._meta;
+            if (!meta || !meta.source) {
+                el.textContent = 'Source: —';
+                return;
+            }
+            const src = meta.source;
+            if (src === 'relabel') {
+                el.textContent = `Source: relabel (${meta.sessions_relabel || 0}/${meta.sessions_total || 0})`;
+            } else if (src === 'original') {
+                el.textContent = `Source: original (${meta.sessions_original || 0}/${meta.sessions_total || 0})`;
+            } else if (src === 'mixed') {
+                el.textContent = `Source: mixed (${meta.sessions_relabel || 0} relabel / ${meta.sessions_original || 0} original)`;
+            } else {
+                el.textContent = `Source: ${src}`;
+            }
+        }
+
         // Expose globally
         window.gapAnalysisInline = { fetch: fetchAndRender };
+
+        // Handle Selector Change
+        const selector = document.getElementById('gapStarSelector');
+        if (selector) {
+            selector.addEventListener('change', (e) => {
+                fetchAndRender(parseInt(e.target.value));
+            });
+        }
 
         // Auto-fetch if this tab is visible
         if (document.getElementById('tab-temporalGap') &&

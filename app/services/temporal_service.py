@@ -10,13 +10,10 @@ class TemporalService:
         self._cache = {}
 
     def get_temporal_gap_data(self, target_stars=None):
-        if "data" in self._cache:
-            return self._cache["data"]
-
         if target_stars is None:
             target_stars = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
             
-        raw_data = self._load_all_data()
+        raw_data, meta = self._load_all_data()
         if not raw_data:
             return {}
 
@@ -38,6 +35,7 @@ class TemporalService:
             # Calculate Real Z-scores
             real_z = []
             hourly_data = []
+            n_list = []
             for d in deltas:
                 n = d["n"]
                 p = d["p_s"]
@@ -47,6 +45,7 @@ class TemporalService:
                 z = (obs_s - exp_s) / std if std > 0 else 0
                 
                 real_z.append(z)
+                n_list.append(n)
                 hourly_data.append({
                     "timestamp": d["timestamp"],
                     "n": n,
@@ -86,45 +85,80 @@ class TemporalService:
                     "autocorr": float(self._autocorr(iid_z)),
                     "skew": float(self._skewness(iid_z)),
                     "kurt": float(self._kurtosis(iid_z))
+                },
+                "summary": {
+                    "n_obs": len(real_z),
+                    "n_mean": float(np.mean(n_list)) if n_list else 0.0,
+                    "n_median": float(np.median(n_list)) if n_list else 0.0,
+                    "z_mean": float(np.mean(real_z)) if real_z else 0.0,
+                    "z_std": float(np.std(real_z)) if real_z else 0.0,
+                    "z_var": float(np.var(real_z)) if real_z else 0.0,
+                    "se_autocorr": float(1.0 / math.sqrt(len(real_z))) if len(real_z) > 0 else 0.0
                 }
             }
             
+        result["_meta"] = meta
         self._cache["data"] = result
         return result
 
     def _load_all_data(self):
         all_entries = []
         if not self.base_dir.exists():
-            return []
+            return [], {"source": "none", "sessions_total": 0, "sessions_relabel": 0, "sessions_original": 0}
             
-        # Recursive search for hourly_snapshots.jsonl
-        # Use a set to avoid processing the same data twice if symlinked or duplicated
+        # Prefer relabeled snapshots if present in a session folder
         seen_snapshots = set()
-        
-        for path in sorted(self.base_dir.rglob("hourly_snapshots.jsonl")):
+        sessions_total = 0
+        sessions_relabel = 0
+        sessions_original = 0
+        for root, _, _ in os.walk(self.base_dir):
+            relabeled = Path(root) / "hourly_snapshots_relabel.jsonl"
+            original = Path(root) / "hourly_snapshots.jsonl"
+            path = relabeled if relabeled.exists() else original
+            if not path.exists():
+                continue
+            sessions_total += 1
+            if relabeled.exists():
+                sessions_relabel += 1
+            else:
+                sessions_original += 1
+
             try:
                 with open(path, "r", encoding="utf-8") as f:
                     for line in f:
                         line = line.strip()
-                        if not line: continue
+                        if not line:
+                            continue
                         try:
                             entry = json.loads(line)
                             if entry.get("data_by_key"):
-                                # Use window_end + success_count sum as a signature to detect duplicates
                                 total_s = sum(v.get("success_count", 0) for v in entry["data_by_key"].values())
                                 sig = f"{entry.get('window_end')}_{total_s}"
                                 if sig in seen_snapshots and entry.get('window_end'):
                                     continue
                                 seen_snapshots.add(sig)
                                 all_entries.append(entry)
-                        except: continue
+                        except:
+                            continue
             except Exception as e:
                 print(f"Error reading {path}: {e}")
                 continue
         
         # Sort by timestamp globally
         all_entries.sort(key=lambda x: x["timestamp"])
-        return all_entries
+        if sessions_relabel and sessions_original:
+            source = "mixed"
+        elif sessions_relabel:
+            source = "relabel"
+        else:
+            source = "original"
+        meta = {
+            "source": source,
+            "sessions_total": sessions_total,
+            "sessions_relabel": sessions_relabel,
+            "sessions_original": sessions_original
+        }
+        return all_entries, meta
 
     def _calculate_deltas(self, raw_data):
         deltas_map = {}
@@ -139,30 +173,29 @@ class TemporalService:
                     if key not in prev_data: continue
                     prev_vals = prev_data[key]
                     
-                    # Cumulative Delta with Reset Logic
-                    if curr_vals["success_count"] < prev_vals["success_count"]:
-                        ds = curr_vals["success_count"]
-                        # df = curr_vals["fail_count"]
-                        # db = curr_vals["boom_count"]
+                    # 1. 누적 데이터 역전 체크 (Data Glitch 방지)
+                    # 현재 값이 이전 값보다 작으면 '패치 리셋'이 아닐 경우(데이터 오염) 무시
+                    if curr_vals["success_count"] < prev_vals["success_count"] or \
+                       curr_vals["fail_count"] < prev_vals["fail_count"] or \
+                       curr_vals["boom_count"] < prev_vals["boom_count"]:
+                        # 넥슨 서버 리셋(50% 이상 폭락)이 아닌 미세한 감소는 글리치로 간주
+                        total_prev = prev_vals["success_count"] + prev_vals["fail_count"] + prev_vals["boom_count"]
+                        total_curr = curr_vals["success_count"] + curr_vals["fail_count"] + curr_vals["boom_count"]
+                        if total_curr < total_prev * 0.5:
+                            # 이건 패치 리셋으로 간주하고 현재 값을 Delta로 사용
+                            ds, df, db = curr_vals["success_count"], curr_vals["fail_count"], curr_vals["boom_count"]
+                        else:
+                            # 이건 데이터 오염(Glitch)이므로 건너뜀
+                            continue
                     else:
                         ds = curr_vals["success_count"] - prev_vals["success_count"]
-                        # df = curr_vals["fail_count"] - prev_vals["fail_count"]
-                        # db = curr_vals["boom_count"] - prev_vals["boom_count"]
-                        
-                    # Recalculate dn based on all fields
-                    # (Simplified: we only need ds and total n change)
-                    # total_curr = curr_vals["success_count"] + curr_vals["fail_count"] + curr_vals["boom_count"]
-                    # total_prev = prev_vals["success_count"] + prev_vals["fail_count"] + prev_vals["boom_count"]
-                    # dn = total_curr - total_prev if total_curr >= total_prev else total_curr
-                    
-                    # More robustly: calculate all deltas and sum them
-                    df = curr_vals["fail_count"] - prev_vals["fail_count"] if curr_vals["fail_count"] >= prev_vals["fail_count"] else curr_vals["fail_count"]
-                    db = curr_vals["boom_count"] - prev_vals["boom_count"] if curr_vals["boom_count"] >= prev_vals["boom_count"] else curr_vals["boom_count"]
-                    # If success reset, fail and boom likely did too
-                    if curr_vals["success_count"] < prev_vals["success_count"]:
-                        df = curr_vals["fail_count"]
-                        db = curr_vals["boom_count"]
-                        
+                        df = curr_vals["fail_count"] - prev_vals["fail_count"]
+                        db = curr_vals["boom_count"] - prev_vals["boom_count"]
+
+                    # 2. 확률 급변 체크 (설정 확률 p_s가 이전과 0.1% 이상 다르면 오염된 데이터로 간주)
+                    if abs(curr_vals["success_rate"] - prev_vals["success_rate"]) > 0.001:
+                        continue
+
                     dn = ds + df + db
                     if dn <= 0: continue
                     
@@ -179,7 +212,11 @@ class TemporalService:
                         "timestamp": curr_ts,
                         "window_end": window_end
                     })
-            prev_data = curr_data
+            
+            # CRITICAL FIX: Only update prev_data if current snapshot is not empty
+            if curr_data and len(curr_data) > 0:
+                prev_data = curr_data
+                
         return deltas_map
 
     def _autocorr(self, x):
