@@ -6,8 +6,15 @@ from ..core.audit_engine import (
     get_event_comparison_stats, get_event_deception_index, get_event_dates,
     get_season_contrast_stats
 )
+from ..services.temporal_service import TemporalService
 
 router = APIRouter(prefix="/api/audit", tags=["audit"])
+
+@router.get("/temporal-gap")
+def get_temporal_gap():
+    """Returns real vs IID gap analysis data."""
+    service = TemporalService()
+    return service.get_temporal_gap_data()
 
 @router.get("/meta")
 def get_audit_metadata():

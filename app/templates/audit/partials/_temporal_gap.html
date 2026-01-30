@@ -1,0 +1,238 @@
+<div id="temporal-gap-root" class="audit-wrapper">
+    <div class="p-6">
+        <h1 class="text-3xl font-bold text-purple-400 mb-2">📉 IID Gap Analysis</h1>
+        <h2 class="text-gray-400 mb-8">실제 데이터 vs 독립 시행(Fair World) 비교: "보정 로직"의 실체를 통계로 시각화</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-gray-800 border border-gray-700 rounded-xl p-6">
+                <h4 class="text-purple-400 text-sm uppercase mb-2">자기상관성 (Autocorrelation)</h4>
+                <div class="text-3xl font-bold" id="gapAutocorr">--</div>
+                <p class="text-gray-500 text-xs mt-2">음수면 리밸런싱(보정) 강력 의심. 행운 뒤에 불운이 강제로 따라오는 정도.</p>
+            </div>
+            <div class="bg-gray-800 border border-gray-700 rounded-xl p-6">
+                <h4 class="text-purple-400 text-sm uppercase mb-2">결과 평탄화 (Variance)</h4>
+                <div class="text-3xl font-bold" id="gapVariance">--</div>
+                <p class="text-gray-500 text-xs mt-2">1.0보다 낮을수록 인위적인 평탄화(결과 고정) 의심.</p>
+            </div>
+            <div class="bg-gray-800 border border-gray-700 rounded-xl p-6">
+                <h4 class="text-purple-400 text-sm uppercase mb-2">비대칭성 (Skewness)</h4>
+                <div class="text-3xl font-bold" id="gapSkew">--</div>
+                <p class="text-gray-500 text-xs mt-2">데이터의 치우침 정도. 0에서 멀수록 한쪽으로 쏠린 분포.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+            <div class="bg-gray-800 border border-gray-700 rounded-xl p-6 h-[450px] lg:col-span-2">
+                <h4 class="text-gray-400 text-xs mb-4">Z-Score 시계열: 실제 데이터(Real) vs 독립 시행 시뮬레이션(Fair World)</h4>
+                <div class="h-[380px]">
+                    <canvas id="gapTimeSeriesChart"></canvas>
+                </div>
+            </div>
+            <div class="bg-gray-800 border border-gray-700 rounded-xl p-6 h-[400px]">
+                <h4 class="text-gray-400 text-xs mb-4">Z-Score 분포 비교: 실제 vs IID</h4>
+                <div class="h-[330px]">
+                    <canvas id="gapDistChart"></canvas>
+                </div>
+            </div>
+            <div class="bg-gray-800 border border-gray-700 rounded-xl p-6 h-[400px]">
+                <h4 class="text-gray-400 text-xs mb-4">단계별 리밸런싱 강도 (Autocorrelation by Star)</h4>
+                <div class="h-[330px]">
+                    <canvas id="gapStarChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-purple-900 bg-opacity-20 border border-purple-800 rounded-xl p-6">
+            <h3 class="text-purple-400 font-bold mb-2">💡 분석 가이드</h3>
+            <ul class="text-sm text-gray-300 space-y-2 list-disc pl-5">
+                <li>보라색 실선(Real)이 초록색 점선(IID)보다 더 빈번하게 반대 방향으로 꺾인다면, 시스템이 실시간으로 확률을 조절하고 있다는 증거입니다.</li>
+                <li>오른쪽 하단의 '자기상관성' 그래프에서 막대가 아래로(음수) 길수록, 해당 성급에서의 보정 개입이 더 강력함을 의미합니다.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Inline IID Gap Analysis - bypasses module loading issues
+    (function () {
+        const gapCharts = { ts: null, dist: null, star: null };
+        let gapData = null;
+
+        async function fetchAndRender(star = 17) {
+            console.log('[GapAnalysis-Inline] Fetching data for ' + star + '*');
+
+            try {
+                if (!gapData) {
+                    const res = await fetch('/api/audit/temporal-gap');
+                    if (!res.ok) throw new Error('HTTP ' + res.status);
+                    gapData = await res.json();
+                    console.log('[GapAnalysis-Inline] Data loaded:', Object.keys(gapData));
+                }
+
+                renderGapAnalysis(star);
+            } catch (err) {
+                console.error('[GapAnalysis-Inline] Error:', err);
+                const el = document.getElementById('gapAutocorr');
+                if (el) el.innerHTML = '<span style="color:#cf6679">Error</span>';
+            }
+        }
+
+        function renderGapAnalysis(star) {
+            const starData = gapData[star];
+            if (!starData) {
+                console.warn('[GapAnalysis-Inline] No data for star ' + star);
+                return;
+            }
+
+            // Update Metrics
+            const autocorr = document.getElementById('gapAutocorr');
+            if (autocorr) {
+                const val = starData.real.autocorr;
+                autocorr.innerHTML = `<span style="color:${val < 0 ? '#cf6679' : '#03dac6'}">${val.toFixed(2)}</span>`;
+            }
+
+            const variance = document.getElementById('gapVariance');
+            if (variance) {
+                const val = starData.real.variance;
+                const color = val < 0.7 ? '#cf6679' : (val < 0.9 ? '#ffb74d' : '#03dac6');
+                variance.innerHTML = `<span style="color:${color}">${val.toFixed(2)}</span>`;
+            }
+
+            const skew = document.getElementById('gapSkew');
+            if (skew) {
+                const val = starData.real.skew;
+                skew.innerHTML = `<span style="color:${Math.abs(val) > 0.5 ? '#ffb74d' : '#03dac6'}">${val.toFixed(2)}</span>`;
+            }
+
+            // Render Time Series Chart
+            const ctxTS = document.getElementById('gapTimeSeriesChart');
+            if (ctxTS) {
+                if (gapCharts.ts) gapCharts.ts.destroy();
+
+                const labels = starData.real.hourly.map(d => {
+                    // Use window_end if available, else timestamp
+                    const ts = d.window_end || d.timestamp;
+                    // Format: MM/DD HH:mm
+                    const m = ts.slice(5, 7);
+                    const day = ts.slice(8, 10);
+                    const h = ts.slice(11, 16);
+                    return `${m}/${day} ${h}`;
+                });
+                gapCharts.ts = new Chart(ctxTS.getContext('2d'), {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [
+                            {
+                                label: 'Real Z-Score',
+                                data: starData.real.z_scores,
+                                borderColor: '#bb86fc',
+                                backgroundColor: 'rgba(187, 134, 252, 0.1)',
+                                fill: false,
+                                tension: 0.1,
+                                borderWidth: 2
+                            },
+                            {
+                                label: 'IID Z-Score',
+                                data: starData.iid.z_scores,
+                                borderColor: '#03dac6',
+                                borderDash: [5, 5],
+                                fill: false,
+                                tension: 0.1,
+                                borderWidth: 1.5
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                title: { display: true, text: 'Z-Score', color: '#888' },
+                                grid: { color: 'rgba(255,255,255,0.05)' },
+                                ticks: { color: '#666' }
+                            },
+                            x: { ticks: { color: '#666' } }
+                        },
+                        plugins: { legend: { position: 'bottom', labels: { color: '#888' } } }
+                    }
+                });
+            }
+
+            // Render Distribution Chart
+            const ctxDist = document.getElementById('gapDistChart');
+            if (ctxDist) {
+                if (gapCharts.dist) gapCharts.dist.destroy();
+
+                const bins = [-3, -2, -1, 0, 1, 2, 3];
+                const getCounts = (zScores) => bins.slice(0, -1).map((b, i) =>
+                    zScores.filter(z => z >= b && z < bins[i + 1]).length
+                );
+
+                gapCharts.dist = new Chart(ctxDist.getContext('2d'), {
+                    type: 'bar',
+                    data: {
+                        labels: ['-3~-2', '-2~-1', '-1~0', '0~1', '1~2', '2~3'],
+                        datasets: [
+                            { label: 'Real', data: getCounts(starData.real.z_scores), backgroundColor: 'rgba(187, 134, 252, 0.5)' },
+                            { label: 'IID', data: getCounts(starData.iid.z_scores), backgroundColor: 'rgba(3, 218, 198, 0.5)' }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { labels: { color: '#888' } } },
+                        scales: {
+                            x: { ticks: { color: '#666' } },
+                            y: { ticks: { color: '#666' } }
+                        }
+                    }
+                });
+            }
+
+            // Render Star Comparison Chart
+            const ctxStar = document.getElementById('gapStarChart');
+            if (ctxStar) {
+                if (gapCharts.star) gapCharts.star.destroy();
+
+                const stars = Object.keys(gapData).sort((a, b) => a - b);
+                gapCharts.star = new Chart(ctxStar.getContext('2d'), {
+                    type: 'bar',
+                    data: {
+                        labels: stars.map(s => s + '★'),
+                        datasets: [{
+                            label: 'Autocorrelation',
+                            data: stars.map(s => gapData[s].real.autocorr),
+                            backgroundColor: stars.map(s => gapData[s].real.autocorr < -0.2 ? '#cf6679' : '#bb86fc')
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                title: { display: true, text: 'Correlation', color: '#888' },
+                                min: -0.6,
+                                max: 0.6,
+                                ticks: { color: '#666' }
+                            },
+                            x: { ticks: { color: '#666' } }
+                        },
+                        plugins: { legend: { display: false } }
+                    }
+                });
+            }
+
+            console.log('[GapAnalysis-Inline] Rendering complete for ' + star + '*');
+        }
+
+        // Expose globally
+        window.gapAnalysisInline = { fetch: fetchAndRender };
+
+        // Auto-fetch if this tab is visible
+        if (document.getElementById('tab-temporalGap') &&
+            !document.getElementById('tab-temporalGap').classList.contains('hidden')) {
+            fetchAndRender(17);
+        }
+    })();
+</script>

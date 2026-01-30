@@ -29,46 +29,50 @@ class StarforceCrawler:
         
     async def crawl(self) -> dict:
         """
-        메인 크롤링 함수
-        1. 페이지 로드하며 메타데이터 캡처
-        2. 모든 /probs API 응답 캡처
-        3. 결과 반환 및 저장
+        메인 크롤링 함수 (최대 3회 재시도)
         """
-        print(f"[{self._timestamp()}] 크롤링 시작...")
-        
-        async with async_playwright() as p:
-            browser = await p.chromium.launch(headless=self.headless)
-            context = await browser.new_context(
-                user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-            )
-            page = await context.new_page()
+        max_retries = 3
+        for attempt in range(1, max_retries + 1):
+            self.metadata = None
+            self.prob_data = []
             
-            # API 응답 캡처 핸들러 등록
-            page.on("response", self._handle_response)
+            print(f"[{self._timestamp()}] 크롤링 시도 {attempt}/{max_retries}...")
             
-            try:
-                # 페이지 로드
-                print(f"[{self._timestamp()}] 페이지 로드 중...")
-                await page.goto(PAGE_URL, timeout=REQUEST_TIMEOUT)
+            async with async_playwright() as p:
+                browser = await p.chromium.launch(headless=self.headless)
+                context = await browser.new_context(
+                    user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+                )
+                page = await context.new_page()
+                page.on("response", self._handle_response)
                 
-                # 동적 콘텐츠 로드 대기
-                await page.wait_for_timeout(PAGE_LOAD_WAIT)
-                
-                # 스크롤하여 추가 데이터 로드 (lazy loading 대응)
-                await self._scroll_page(page)
-                
-                print(f"[{self._timestamp()}] 데이터 캡처 완료!")
-                print(f"  - 메타데이터: {'✓' if self.metadata else '✗'}")
-                print(f"  - 확률 데이터: {len(self.prob_data)}개 테이블")
-                
-            except Exception as e:
-                print(f"[{self._timestamp()}] 에러 발생: {e}")
-            finally:
-                await browser.close()
+                try:
+                    await page.goto(PAGE_URL, timeout=REQUEST_TIMEOUT)
+                    # 대기 시간: 시도 횟수가 늘어날수록 조금 더 기다림
+                    wait_time = PAGE_LOAD_WAIT + (attempt - 1) * 5000
+                    await page.wait_for_timeout(wait_time)
+                    await self._scroll_page(page)
+                    
+                    # 데이터가 들어왔는지 확인
+                    if len(self.prob_data) > 0:
+                        print(f"[{self._timestamp()}] {len(self.prob_data)}개 테이블 수집 성공!")
+                        await browser.close()
+                        break
+                    else:
+                        print(f"[{self._timestamp()}] 데이터 캡처 실패 (응답 없음)")
+                        
+                except Exception as e:
+                    print(f"[{self._timestamp()}] 에러 발생: {e}")
+                finally:
+                    await browser.close()
+            
+            if attempt < max_retries:
+                retry_wait = 5 * attempt
+                print(f"[{self._timestamp()}] {retry_wait}초 후 재시도합니다...")
+                await asyncio.sleep(retry_wait)
         
         # 결과 구성
         result = self._build_result()
-        
         # 저장
         self._save_result(result)
         

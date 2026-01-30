@@ -5,7 +5,11 @@ on:
     # 매 시간 10분에 실행 (넥슨 나우 갱신 시간 고려)
     - cron: '10 * * * *'
   workflow_dispatch:
-    # 수동 실행 옵션
+
+# 동시 실행 방지
+concurrency:
+  group: starforce-crawl
+  cancel-in-progress: true
 
 jobs:
   crawl:
@@ -17,7 +21,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          # 데이터를 다시 커밋하기 위해 필요
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
@@ -36,14 +39,26 @@ jobs:
           playwright install chromium --with-deps
 
       - name: Run Crawler
+        env:
+          CI: true
         run: |
-          # 1회 크롤링 및 데이터 처리 실행
           python -m crawler.main --headless
 
       - name: Commit and Push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add crawler/data/latest.json
+          # 모든 JSON 데이터와 세션 로그 추가
+          git add crawler/data/*.json
           git add crawler/sessions/
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto: Update Starforce data ($(date +'%Y-%m-%d %H:%M:%S'))" && git push)
+
+      - name: Upload Logs on Failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: crawler-failure-logs
+          path: |
+            crawler/data/
+            *.png
+            *.log

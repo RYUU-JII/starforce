@@ -13,7 +13,22 @@
             title="Audit">
             <span class="text-2xl">🔬</span>
         </button>
+        <button onclick="switchMainTab('temporalGap')"
+            class="p-3 mb-4 rounded-xl transition-all duration-300 hover:bg-gray-700 opacity-50" id="btn-temporalGap"
+            title="IID Gap Analysis">
+            <span class="text-2xl">📊</span>
+        </button>
     </nav>
+    <div id="debug-error-layer"
+        style="position:fixed; bottom:10px; right:10px; background:rgba(255,0,0,0.8); color:white; z-index:10000; padding:10px; border-radius:5px; display:none; max-width:300px; font-size:12px;">
+    </div>
+    <script>
+        window.onerror = function (msg, url, line) {
+            const el = document.getElementById('debug-error-layer');
+            el.style.display = 'block';
+            el.innerHTML += `<div>Error: ${msg} <br> at ${line}</div>`;
+        };
+    </script>
 
     <!-- Content Area -->
     <main class="flex-1 overflow-auto relative">
@@ -22,6 +37,9 @@
         </div>
         <div id="tab-audit" class="tab-pane w-full h-full hidden p-4">
             {% include "audit/_main.html" %}
+        </div>
+        <div id="tab-temporalGap" class="tab-pane w-full h-full hidden p-4">
+            {% include "audit/partials/_temporal_gap.html" %}
         </div>
     </main>
 </div>
@@ -32,24 +50,40 @@
             el.classList.add('hidden');
             el.classList.remove('block');
         });
+        ['simulator', 'audit', 'temporalGap'].forEach(id => {
+            const btn = document.getElementById('btn-' + id);
+            if (btn) {
+                btn.classList.remove('active-tab-btn', 'opacity-100', 'bg-gray-700');
+                btn.classList.add('opacity-50');
+            }
+        });
+
         const activePane = document.getElementById('tab-' + tab);
-        activePane.classList.remove('hidden');
-        activePane.classList.add('block');
-
-        document.getElementById('btn-simulator').classList.remove('active-tab-btn', 'opacity-100', 'bg-gray-700');
-        document.getElementById('btn-simulator').classList.add('opacity-50');
-
-        document.getElementById('btn-audit').classList.remove('active-tab-btn', 'opacity-100', 'bg-gray-700');
-        document.getElementById('btn-audit').classList.add('opacity-50');
+        if (activePane) {
+            activePane.classList.remove('hidden');
+            activePane.classList.add('block');
+        }
 
         const btn = document.getElementById('btn-' + tab);
-        btn.classList.add('active-tab-btn', 'opacity-100', 'bg-gray-700');
-        btn.classList.remove('opacity-50');
+        if (btn) {
+            btn.classList.add('active-tab-btn', 'opacity-100', 'bg-gray-700');
+            btn.classList.remove('opacity-50');
+        }
 
         // Optional: Trigger resize for charts if needed
         window.dispatchEvent(new Event('resize'));
+
+        // Handle sub-logic for Temporal Gap
+        if (tab === 'temporalGap') {
+            setTimeout(() => {
+                if (window.gapAnalysisInline) {
+                    window.gapAnalysisInline.fetch(17);
+                }
+            }, 100);
+        }
     }
 </script>
+
 <style>
     .active-tab-btn {
         box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
