@@ -2,22 +2,46 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyd
+*.so
+*.egg-info/
+build/
+dist/
+docs/
+
+# C++ Build Artifacts
+*.obj
+*.lib
+*.exp
+*.ilk
+*.pdb
+
+# Local/Temporary Files
+*.bak
+*.log
+*.txt
+*.json
+!requirements.txt
+!package.json
+
+# Development/Testing
+test_*.py
+debug_*.py
+analysis_*.py
+benchmark_*.py
+verification_*.py
+run_debug.py
+payload*.json
+result*.json
+cpp_debug.txt
+config_debug.txt
+
+# Environment
 .venv/
+env/
 venv/
-ENV/
+.env
 
-# Crawler Data (수집된 원본 raw JSON은 용량이 크므로 제외 권장)
-# 만약 데이터도 깃허브에 백업하고 싶다면 아래 주석을 해제하세요.
-# crawler/data/starforce_*.json
-# !crawler/data/latest.json
-
-# 세션 데이터 (분석용 Delta 데이터는 깃허브에 저장하여 Actions에서 활용)
-# crawler/sessions/*/hourly_snapshots.jsonl
-
-# IDE
+# IDEs
 .vscode/
 .idea/
-
-# OS
-.DS_Store
-Thumbs.db
