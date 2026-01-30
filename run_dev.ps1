@@ -12,4 +12,4 @@ if (Test-Path $venvActivate) {
   Write-Host "Warning: .venv not found. Using current Python environment." -ForegroundColor Yellow
 }
 
-python -m uvicorn app.main:app --reload --host $BindHost --port $Port
+python -m uvicorn main:app --reload --host $BindHost --port $Port
