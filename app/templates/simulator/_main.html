@@ -8,43 +8,222 @@
     <div class="flex items-center">
         <div class="bg-gray-800 px-4 py-2 rounded border border-gray-700 flex items-center space-x-4">
             <div class="flex flex-col text-right">
-                <span class="text-[10px] text-gray-500 uppercase font-bold">Luck Handling</span>
-                <span class="text-xs text-red-400 font-bold" id="mode-label">Independent</span>
+                <span class="text-[10px] text-gray-500 uppercase font-bold">Share Scope</span>
+                <span class="text-xs text-red-400 font-bold" id="scope-label">Global (One‑User)</span>
             </div>
-            <label class="inline-flex items-center cursor-pointer">
-                <input type="checkbox" id="toggle-deck-mode" value="" class="sr-only peer" checked>
-                <div
-                    class="relative w-11 h-6 bg-gray-600 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-red-600">
-                </div>
-            </label>
         </div>
     </div>
 </header>
 
 <!-- Controls -->
-<div
-    class="max-w-4xl mx-auto bg-gray-800 rounded-xl p-4 mb-8 shadow-2xl border border-gray-700 flex space-x-6 items-center">
-    <div class="w-32">
-        <label class="text-xs text-gray-400 block mb-1">Simulations</label>
-        <input type="number" id="sim-count" value="200"
-            class="w-full bg-gray-900 border border-gray-600 rounded p-1 text-center text-white text-sm focus:border-blue-500 outline-none">
-    </div>
-    <div class="flex-1">
-        <label class="text-xs text-red-400 font-bold block mb-2">Rigged Block Intensity (Prison Factor)</label>
-        <input type="range" id="intensity-slider" min="1" max="100" value="40"
-            class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-red-500">
-        <div class="flex justify-between text-[10px] text-gray-500 mt-1">
-            <span>Weak (1)</span>
-            <span class="text-red-400 font-bold" id="intensity-val">40</span>
-            <span>Strong (100)</span>
+<div class="max-w-7xl mx-auto bg-gray-800 rounded-xl p-4 mb-8 shadow-2xl border border-gray-700">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <!-- 1. Global Setup (Always Visible) -->
+        <div class="bg-gray-900/40 rounded-lg p-4 border border-gray-700">
+            <div class="text-xs text-gray-400 uppercase font-bold mb-3">Setup</div>
+
+            <div class="space-y-4">
+                <!-- Population -->
+                <div class="grid grid-cols-2 gap-2">
+                    <div>
+                        <label class="text-xs text-gray-400 block mb-1">Users</label>
+                        <input type="number" id="user-count" value="2000" min="1"
+                            class="w-full bg-gray-900 border border-gray-600 rounded p-2 text-center text-white text-sm focus:border-blue-500 outline-none">
+                    </div>
+                    <div>
+                        <label class="text-xs text-gray-400 block mb-1">Runs/User</label>
+                        <input type="number" id="runs-per-user" value="1" min="1"
+                            class="w-full bg-gray-900 border border-gray-600 rounded p-2 text-center text-white text-sm focus:border-blue-500 outline-none">
+                    </div>
+                </div>
+
+                <!-- Scope -->
+                <div>
+                    <label class="text-xs text-gray-400 block mb-1">Share Scope</label>
+                    <select id="share-scope"
+                        class="w-full bg-gray-900 border border-gray-600 rounded p-2 text-white text-sm focus:border-blue-500 outline-none">
+                        <option value="session">Session (New Deck/Run)</option>
+                        <option value="global-relay" selected>Global (One-User Relay)</option>
+                        <option value="global-queue">Global (Round-Robin)</option>
+                    </select>
+                </div>
+
+                <!-- Auto Calibrate (Moved from Strategy) -->
+                <div class="pt-2 border-t border-gray-700">
+                    <label class="text-xs text-gray-400 flex items-center gap-2 cursor-pointer">
+                        <input type="checkbox" id="auto-calibrate" class="accent-blue-500" checked>
+                        <span>Auto‑calibrate (Match Fair Avg)</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Simulation Mode & Parameters -->
+        <div class="bg-gray-900/40 rounded-lg p-4 border border-gray-700 relative">
+            <div class="text-xs text-gray-400 uppercase font-bold mb-3">Simulation Logic</div>
+
+            <!-- Mode Selector -->
+            <div class="mb-4">
+                <label class="text-xs text-blue-400 font-bold block mb-1">Mode Selection</label>
+                <select id="sim-mode"
+                    class="w-full bg-gray-800 border border-gray-600 rounded p-2 text-white text-sm focus:border-blue-500 outline-none">
+                    <option value="standard">Standard (Fair IID)</option>
+                    <option value="rigged_deck" selected>Rigged (Cluster Deck)</option>
+                    <option value="rigged_dual">Rigged (Dual A/B)</option>
+                    <option value="markov">Markov Chain</option>
+                </select>
+                <div class="text-[10px] text-gray-500 mt-1 h-8" id="mode-desc">
+                    Cluster Deck. Pre-shuffled deck with controlled streakiness.
+                </div>
+            </div>
+
+            <!-- Dynamic Params Area -->
+            <div class="border-t border-gray-700 pt-3">
+                <!-- Standard Placeholder -->
+                <div id="params-standard" class="hidden text-center text-gray-500 text-xs italic py-2">
+                    Pure randomness.<br>No special parameters.
+                </div>
+
+                <!-- Deck Params -->
+                <div id="params-deck" class="">
+                    <label class="text-xs text-blue-400 font-bold block mb-1 flex justify-between">
+                        Mean Streak Length <span id="val-corr-a" class="text-gray-300">1.0</span>
+                    </label>
+                    <input type="range" id="corr-length-a" min="1" max="10" step="0.1" value="1.0"
+                        class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-blue-500"
+                        oninput="document.getElementById('val-corr-a').innerText = this.value">
+                    <div class="text-[10px] text-gray-500 mt-1">Controls "clumping". 1.0 = Random-like, >1.0 = Waves.
+                    </div>
+                </div>
+
+                <div id="params-deck-mode" class="mt-4">
+                    <label class="text-xs text-blue-400 font-bold block mb-1">Streak Length Mode</label>
+                    <div class="flex items-center space-x-4">
+                        <label class="flex items-center space-x-2 text-xs text-gray-400 cursor-pointer">
+                            <input type="radio" name="deck-len-mode" value="fixed" checked class="accent-blue-500">
+                            <span>Fixed Constant (Original)</span>
+                        </label>
+                        <label class="flex items-center space-x-2 text-xs text-gray-400 cursor-pointer">
+                            <input type="radio" name="deck-len-mode" value="mean" class="accent-blue-500">
+                            <span>Stochastic Mean (New)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Anti-Cluster (For Deck A / Single Deck) -->
+                <div id="params-anti-cluster" class="mt-4 hidden">
+                    <label class="text-xs text-gray-400 flex items-center gap-2 cursor-pointer">
+                        <input type="checkbox" id="anti-cluster" class="accent-blue-500">
+                        <span>Anti‑Clustering (Lower Variance)</span>
+                    </label>
+                    <div class="text-[10px] text-gray-500 mt-1">
+                        Avoids consecutive identical outcomes from the deck when possible.
+                    </div>
+                </div>
+
+                <!-- Dual Params -->
+                <div id="params-dual" class="hidden space-y-4 mt-2">
+                    <!-- Presets -->
+                    <div class="flex flex-wrap gap-2 mb-2">
+                        <button type="button" id="dual-preset-normal"
+                            class="bg-gray-700 hover:bg-gray-600 text-[9px] px-2 py-1 rounded text-gray-300 border border-gray-600 transition">Normal Variance</button>
+                        <button type="button" id="dual-preset-whale"
+                            class="bg-gray-700 hover:bg-gray-600 text-[9px] px-2 py-1 rounded text-red-300 border border-red-900/30 transition">Whale "Luck"</button>
+                        <button type="button" id="dual-preset-extreme"
+                            class="bg-gray-700 hover:bg-gray-600 text-[9px] px-2 py-1 rounded text-purple-300 border border-purple-900/30 transition">Extreme Chaos</button>
+                    </div>
+
+                    <!-- Population Split -->
+                    <div class="bg-gray-900/60 p-3 rounded border border-gray-700">
+                        <label class="text-xs text-yellow-400 font-bold block mb-1 flex justify-between">
+                            Population Split (Nice vs Mean) <span id="bias-val" class="text-gray-300">50%</span>
+                        </label>
+                        <input type="range" id="dual-bias" min="0" max="1" step="0.05" value="0.5"
+                            class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-yellow-500"
+                            oninput="document.getElementById('bias-val').innerText = `${Math.round(this.value*100)}% Mean` ">
+                        <div class="flex justify-between text-[9px] text-gray-500 mt-1">
+                            <span>More Nice (A)</span>
+                            <span>More Mean (B)</span>
+                        </div>
+                    </div>
+
+                    <!-- Deck B Detail Card -->
+                    <div class="bg-red-900/10 p-3 rounded border border-red-900/30">
+                        <div class="text-[10px] text-red-500 uppercase font-bold mb-2 flex justify-between">
+                            Deck B (The "Mean" Crowd)
+                            <span class="text-[9px] normal-case font-normal text-gray-500">Multiplier relative to A</span>
+                        </div>
+                        <label class="text-xs text-red-400 font-bold block mb-1 flex justify-between">
+                            Multiplier <span id="val-corr-b-unified" class="text-gray-300">5.0</span>
+                        </label>
+                        <input type="range" id="corr-length-b-unified" min="1" max="10" step="0.1" value="5.0"
+                            class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-red-500"
+                            oninput="document.getElementById('val-corr-b-unified').innerText = this.value">
+                        <div class="text-[9px] text-gray-500 mt-1 italic">"Streaks are 5x longer than the nice crowd."</div>
+                    </div>
+                </div>
+
+                <!-- Markov Params -->
+                <div id="params-markov" class="hidden">
+                    <label class="text-xs text-green-400 font-bold block mb-1 flex justify-between">
+                        Rho (Stickiness) <span id="val-markov-rho" class="text-gray-300">0.00</span>
+                    </label>
+                    <input type="range" id="markov-rho" min="-0.99" max="0.99" step="0.01" value="0.0"
+                        class="w-full h-2 bg-gray-800 rounded-lg appearance-none cursor-pointer accent-green-500"
+                        oninput="document.getElementById('val-markov-rho').innerText = Number(this.value).toFixed(2)">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 3. Action & Status -->
+        <div class="bg-gray-900/40 rounded-lg p-4 border border-gray-700 flex flex-col justify-center">
+            <button id="run-btn"
+                class="w-full h-16 bg-gradient-to-r from-blue-600 to-red-600 hover:from-blue-500 hover:to-red-500 text-white font-bold text-lg rounded-lg transform hover:scale-[1.02] transition shadow-xl mb-4">
+                RUN AUDIT
+            </button>
+            <div class="text-[10px] text-gray-500 text-center mb-4">
+                Simulates 12→22★ attempts.<br>
+                Generates variance reports & cost analysis.
+            </div>
+
+            <!-- Advanced Toggle -->
+            <div class="mt-auto pt-4 text-center border-t border-gray-700">
+                <button id="toggle-deck-inspect" class="text-xs text-purple-400 underline hover:text-purple-300">
+                    Toggle Deck Inspector
+                </button>
+            </div>
         </div>
     </div>
-    <div class="flex-none">
-        <button onclick="runCompare()" id="run-btn"
-            class="bg-gradient-to-r from-blue-600 to-red-600 hover:from-blue-500 hover:to-red-500 text-white font-bold py-3 px-8 rounded-lg text-sm transform hover:scale-[1.05] transition shadow-xl whitespace-nowrap">
-            RUN AUDIT
-        </button>
-    </div>
+
+    <!-- Deck Inspector Collapsible -->
+    <details id="deck-inspect-details" class="mt-4 bg-gray-900/40 rounded-lg border border-gray-700 p-4">
+        <summary class="text-xs text-gray-400 uppercase font-bold cursor-pointer select-none text-purple-400">
+            🧐 Deck Inspection (Advanced)
+        </summary>
+        <div class="mt-4">
+            <div class="flex items-center gap-4 mb-4">
+                <select id="deck-inspect-star"
+                    class="bg-gray-800 text-white text-xs p-1 rounded border border-gray-600">
+                    <option value="12">12 Star</option>
+                    <option value="17" selected>17 Star</option>
+                    <option value="20">20 Star</option>
+                    <option value="21">21 Star</option>
+                </select>
+                <div class="flex items-center gap-2 bg-gray-800 p-1 rounded border border-gray-600">
+                    <button id="btn-inspect-s"
+                        class="text-xs px-2 py-0.5 rounded bg-blue-600 text-white">Success</button>
+                    <button id="btn-inspect-f"
+                        class="text-xs px-2 py-0.5 rounded text-gray-400 hover:bg-gray-700">Fail</button>
+                </div>
+                <div id="deck-loading" class="hidden text-xs text-blue-400 animate-pulse ml-auto">Updating...</div>
+            </div>
+            <div class="relative h-48 w-full">
+                <canvas id="chart-deck-analysis"></canvas>
+            </div>
+        </div>
+    </details>
 </div>
 
 <!-- Variance Dashboard -->
@@ -107,6 +286,31 @@
             <div class="text-sm text-gray-400">Computing Time</div>
             <div class="text-2xl font-mono text-purple-300" id="sim-time">-</div>
         </div>
+        <div class="text-center mt-4">
+            <div class="text-sm text-gray-400">Avg Clicks / Run</div>
+            <div class="text-xl font-mono text-purple-300" id="sim-clicks">-</div>
+        </div>
+        <div class="text-center mt-4">
+            <div class="text-sm text-gray-400">Rigged Deck Wraps</div>
+            <div class="text-xl font-mono text-purple-300" id="sim-wraps">-</div>
+        </div>
+    </div>
+</div>
+
+<!-- App Modules -->
+<script type="module" src="/static/js/modules/main.js"></script>
+
+<!-- Legacy / Fallback (removed) -->
+
+<!-- Strategy Debug -->
+<div class="max-w-7xl mx-auto bg-gray-800 rounded-lg border border-gray-700 mb-8 overflow-hidden">
+    <div class="bg-gray-700/50 p-4 border-b border-gray-700 flex justify-between items-center">
+        <h3 class="font-bold text-gray-200">🧪 Strategy Snapshot (Temp)</h3>
+        <span class="text-xs text-gray-500">iid baseline vs rigged deck metrics</span>
+    </div>
+    <div class="p-4">
+        <pre id="strategy-box"
+            class="text-[11px] text-gray-300 bg-gray-900/60 border border-gray-700 rounded p-3 overflow-auto max-h-64"></pre>
     </div>
 </div>
 
@@ -114,33 +318,61 @@
 <div class="max-w-7xl mx-auto bg-gray-800 p-6 rounded-lg border border-gray-700 shadow-xl mb-8">
     <div class="flex flex-col md:flex-row justify-between items-center mb-6">
         <div class="flex space-x-2 mb-4 md:mb-0">
-            <button onclick="setChartMode('fail')" id="tab-fail"
+            <button id="tab-fail"
                 class="px-4 py-2 rounded bg-gray-700 text-gray-300 hover:bg-gray-600 text-sm font-bold transition">Fail
                 Streaks</button>
-            <button onclick="setChartMode('success')" id="tab-success"
+            <button id="tab-success"
                 class="px-4 py-2 rounded bg-gray-900 text-gray-500 hover:bg-gray-700 text-sm font-bold transition">Success
                 Streaks</button>
-            <button onclick="setChartMode('meso')" id="tab-meso"
+            <button id="tab-meso"
                 class="px-4 py-2 rounded bg-gray-900 text-gray-500 hover:bg-gray-700 text-sm font-bold transition">Meso
                 Cost</button>
         </div>
 
         <div class="flex items-center space-x-3 bg-gray-900 px-4 py-2 rounded-lg border border-gray-700">
-            <span class="text-xs text-gray-400 uppercase font-bold">Options</span>
-            <button onclick="toggleCurve()" id="btn-curve"
+            <span class="text-xs text-gray-400 uppercase font-bold">View</span>
+            <button id="view-hist"
                 class="text-xs bg-gray-700 text-gray-300 px-3 py-1 rounded hover:bg-gray-600 transition">
-                Histogram (Bar)
+                Histogram
+            </button>
+            <button id="view-tail"
+                class="text-xs bg-gray-900 text-gray-500 px-3 py-1 rounded hover:bg-gray-600 transition">
+                Tail (CCDF)
             </button>
             <div class="w-px h-4 bg-gray-600"></div>
-            <button onclick="toggleLog()" id="btn-log"
-                class="text-xs bg-gray-900 text-gray-500 px-3 py-1 rounded hover:bg-gray-800 transition">
-                Log Scale: OFF
+            <button id="btn-smooth"
+                class="text-xs bg-gray-900 text-gray-500 px-3 py-1 rounded hover:bg-gray-600 transition">
+                Smooth (Gaussian): OFF
             </button>
+            <div class="w-px h-4 bg-gray-600"></div>
+            <span class="text-xs text-gray-400 uppercase font-bold">Threshold</span>
+            <button id="range-1"
+                class="text-xs bg-gray-900 text-gray-500 px-2 py-1 rounded hover:bg-gray-600 transition">≥1%</button>
+            <button id="range-0.1"
+                class="text-xs bg-blue-600 text-white px-2 py-1 rounded hover:bg-gray-600 transition">≥0.1%</button>
+            <button id="range-0.01"
+                class="text-xs bg-gray-900 text-gray-500 px-2 py-1 rounded hover:bg-gray-600 transition">≥0.01%</button>
+            <button id="range-0"
+                class="text-xs bg-gray-900 text-gray-500 px-2 py-1 rounded hover:bg-gray-600 transition">Full</button>
+            <div class="w-px h-4 bg-gray-600"></div>
+            <div class="flex items-center gap-1">
+                <span class="text-xs text-gray-400 font-bold">Max X</span>
+                <input type="number" id="chart-max-x" value="200" min="10" step="10"
+                    class="w-16 bg-gray-900 border border-gray-600 rounded p-1 text-center text-white text-xs focus:border-blue-500 outline-none">
+            </div>
         </div>
     </div>
 
     <div class="relative h-96 w-full">
         <canvas id="chart-comparison"></canvas>
+    </div>
+    <div class="flex justify-between items-center mt-2 text-xs text-gray-500">
+        <button id="btn-log-y" class="bg-gray-900 text-gray-500 px-2 py-1 rounded hover:bg-gray-800 transition">
+            Log Y: OFF
+        </button>
+        <button id="btn-log-x" class="bg-gray-900 text-gray-500 px-2 py-1 rounded hover:bg-gray-800 transition">
+            Log X (Cost): OFF
+        </button>
     </div>
     <p class="text-center text-xs text-gray-500 mt-4" id="chart-desc">
         Displaying consecutive failure streak distribution.
