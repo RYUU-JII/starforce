@@ -100,9 +100,14 @@ class DeltaCalculator:
             first = probs[0]
             probtable_id = self._extract_probtableid(prob_entry.get("url", ""))
             
-            # 순서 기반 라벨링 지원을 위해 발생 횟수 추적
-            table_counts[probtable_id] = table_counts.get(probtable_id, 0) + 1
-            occurrence = table_counts[probtable_id]
+            # 성 추출 (테이블 이름에서 파싱)
+            table_name = first.get("probtable_name", "")
+            star_level_str = table_name.replace("성", "").strip()
+            
+            # 순서 기반 라벨링: '성(Star)' 단위로 발생 횟수 추적
+            # (같은 성의 테이블이 2개라면, 첫 번째=Catch ON, 두 번째=Catch OFF 로 추정)
+            table_counts[star_level_str] = table_counts.get(star_level_str, 0) + 1
+            occurrence = table_counts[star_level_str]
             
             key = self._make_key(first, probtable_id, occurrence)
             
