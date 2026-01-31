@@ -16,15 +16,18 @@ from .data_processor import DeltaCalculator, SessionManager
 SESSIONS_DIR = DATA_DIR.parent / "sessions"
 
 
-def scheduled_crawl():
+async def scheduled_crawl():
     """스케줄에 의해 호출되는 크롤링 + 처리 함수 (자동 패치 감지)"""
     print(f"\n{'='*50}")
     print(f"스케줄 크롤링 시작: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print(f"{'='*50}")
     
     try:
-        # 1. 크롤링
-        result = asyncio.run(run_crawler(headless=True))
+        # 1. 크롤링 (10분 타임아웃 설정)
+        result = await asyncio.wait_for(run_crawler(headless=True), timeout=600.0)
+        
+        if not result.get("prob_data"):
+            raise RuntimeError("크롤링 데이터가 없습니다 (prob_data is empty). 스냅샷 저장을 건너뜁니다.")
         
         # 2. 세션 관리 및 Delta 계산
         session_mgr = SessionManager(SESSIONS_DIR)
@@ -62,10 +65,13 @@ def run_scheduler():
     print(f"-" * 50)
     
     # 시작 시 즉시 1회 실행
-    scheduled_crawl()
+    asyncio.run(scheduled_crawl())
     
-    # 스케줄 등록
-    schedule.every(CRAWL_INTERVAL_HOURS).hours.do(scheduled_crawl)
+    # 스케줄 등록 (wrapper 필요)
+    def job():
+        asyncio.run(scheduled_crawl())
+        
+    schedule.every(CRAWL_INTERVAL_HOURS).hours.do(job)
     
     print(f"\n다음 크롤링 예정: {CRAWL_INTERVAL_HOURS}시간 후")
     print(f"종료하려면 Ctrl+C를 누르세요.\n")
