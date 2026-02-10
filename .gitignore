@@ -21,6 +21,8 @@ docs/
 *.log
 *.txt
 *.json
+!crawler/data/*.json
+!crawler/sessions/
 !requirements.txt
 !package.json
 
